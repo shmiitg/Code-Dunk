@@ -1,0 +1,147 @@
+.blog-heading {
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: rgb(0, 0, 0, 10%) 0 1px 2px, rgb(0, 0, 0, 8%) 0 2px 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.blog-list {
+  color: #000;
+  box-shadow: rgb(0, 0, 0, 10%) 0 1px 2px, rgb(0, 0, 0, 8%) 0 2px 8px;
+}
+
+.blog {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.blog:last-child {
+  border-bottom: none;
+}
+
+.blog-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.blog-description {
+  font-size: 14px;
+  margin: 0.5rem 0;
+}
+
+.blog-author {
+  color: grey;
+  font-size: 12px;
+}
+
+.blog-write {
+  margin: auto;
+  width: fit-content;
+  margin-top: 5rem;
+}
+
+.blog-btn {
+  line-height: 1.4;
+  border-radius: 3px;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 9px 13px;
+  background: #455a64;
+  border: 1px solid #b0bec5;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+  outline: 0;
+  cursor: pointer;
+}
+
+.blog-btn:hover {
+  color: #fff;
+}
+
+/* 
+==========
+Blog Form 
+==========
+*/
+
+.blog-form-field {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.blog-form-field input,
+.blog-form-field textarea {
+  font-weight: 400;
+}
+
+.blog-form-field textarea {
+  padding: 9px 13px;
+  border-radius: 3px;
+  color: #546e7a;
+  border: 1px solid #cfd8dc;
+  text-overflow: ellipsis;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 18rem;
+  transition: 0.4s all;
+}
+
+.blog-form-field > label {
+  font-size: 1.75rem;
+}
+
+/* 
+==========
+Read Blog
+==========
+*/
+
+.read-blog-container {
+  max-width: 70rem;
+  margin: auto;
+}
+
+.read-blog-title {
+  font-size: 3.75rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.read-blog-description {
+  font-size: 2.15rem;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+
+.read-blog-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.read-blog-date {
+  margin-top: 0.25rem;
+}
+
+.read-blog-author a {
+  font-size: inherit;
+  color: var(--clr-black);
+}
+
+.read-blog-author a:hover {
+  text-decoration: underline;
+}
+
+.read-blog-content {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+}

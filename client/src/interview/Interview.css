@@ -1,0 +1,157 @@
+.interviews-container {
+  border-radius: 3px;
+}
+
+.interview-heading {
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: rgb(0, 0, 0, 10%) 0 1px 2px, rgb(0, 0, 0, 8%) 0 2px 8px;
+}
+
+.interview-heading-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.interview-heading-info {
+  color: grey;
+}
+
+.interview-experience {
+  box-shadow: rgb(0, 0, 0, 10%) 0 1px 2px, rgb(0, 0, 0, 8%) 0 2px 8px;
+}
+
+.interview-item {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.interview-item:last-child {
+  border-bottom: none;
+}
+
+.interview-item-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.interview-item-company {
+  font-size: 14px;
+  margin: 0.5rem 0;
+}
+
+.interview-item-user {
+  margin: 3px 0 5px;
+  font-size: 13px;
+}
+
+.interview-item-date {
+  color: grey;
+  font-size: 12px;
+}
+
+.interview-share {
+  margin: auto;
+  width: fit-content;
+  margin-top: 5rem;
+}
+
+.interview-btn {
+  line-height: 1.4;
+  border-radius: 3px;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 9px 13px;
+  background: #455a64;
+  border: 1px solid #b0bec5;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+  outline: 0;
+  cursor: pointer;
+}
+
+.interview-btn:hover {
+  color: #fff;
+}
+
+/* 
+==========
+Blog Form 
+==========
+*/
+
+.interview-form-field {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.interview-form-field input,
+.interview-form-field textarea {
+  font-weight: 400;
+}
+
+.inteview-form-field > label {
+  font-size: 1.75rem;
+}
+
+.interview-form-field > textarea {
+  font: inherit;
+  min-height: 15rem;
+  resize: none;
+  overflow: hidden;
+  border: 1px solid #cfd8dc;
+  color: #546e7a;
+  padding: 9px 13px;
+  border-radius: 3px;
+}
+
+/* 
+===============
+Read Interview
+===============
+*/
+
+.read-interview-container {
+  max-width: 70rem;
+  margin: auto;
+}
+
+.read-interview-title {
+  font-size: 3.75rem;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.read-interview-company {
+  font-size: 2.15rem;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+
+.read-interview-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.read-interview-author a {
+  font-size: inherit;
+  color: var(--clr-black);
+}
+
+.read-interview-author a:hover {
+  text-decoration: underline;
+}
+
+.read-interview-content {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+}

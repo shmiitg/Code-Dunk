@@ -1,0 +1,45 @@
+.form-container {
+  max-width: 38rem;
+  margin: 3rem auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-logo {
+  width: 7.5rem;
+  margin: 0 auto 3.5rem;
+}
+
+.form-logo img {
+  width: 100%;
+}
+
+.form-fields {
+  margin-bottom: 1.75rem;
+}
+
+input,
+button {
+  padding: 9px 13px;
+  line-height: 1.4;
+  border-radius: 3px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.btn-account {
+  background: #455a64;
+  border: 1px solid #b0bec5;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+  outline: 0;
+  cursor: pointer;
+}
+
+.account-toggle {
+  margin-top: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+}

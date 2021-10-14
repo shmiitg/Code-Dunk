@@ -1,0 +1,116 @@
+/* 
+Left
+*/
+
+.edit-list {
+  padding: 2rem;
+  box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 8%);
+}
+
+.edit-card {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.edit-info {
+  display: flex;
+  padding: 1.2rem;
+  padding-bottom: 0;
+}
+
+.edit-info-left {
+  flex-basis: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.edit-info-right {
+  flex-basis: 25%;
+}
+
+.edit-title {
+  flex-basis: 25%;
+  min-width: 12rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.edit-desc {
+  flex: 1;
+  min-width: 23rem;
+  margin-bottom: 1rem;
+}
+
+.edit-btn {
+  cursor: pointer;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.edit-form {
+  margin-top: -2px;
+  flex: 1;
+  min-width: 23rem;
+  margin-bottom: 1rem;
+}
+
+.edit-form input,
+.edit-form select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.2;
+  padding: 8px;
+  width: 50%;
+  border-radius: 3px;
+  color: #546e7a;
+  border: 1px solid #cfd8dc;
+  font-weight: 300;
+  transition: 0.4s all;
+}
+
+.edit-form input:focus,
+.edit-form select:focus {
+  outline: none;
+}
+
+.edit-form-btn {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.edit-form-btn .btn {
+  padding: 5px 10px 6px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.save-btn {
+  background: #64b9f9;
+}
+
+.cancel-btn {
+  background: #e6e1dc;
+}
+
+/* 
+Right
+*/
+
+.main-info {
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 15rem;
+}
+
+.basic-info {
+  margin-top: 0.75rem;
+}
+
+.name {
+  font-size: 2rem;
+}

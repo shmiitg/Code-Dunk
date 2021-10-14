@@ -1,0 +1,92 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-black: #273239;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s color ease-in-out;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  width: 100%;
+  color: #546e7a;
+  border: 1px solid #cfd8dc;
+  font-weight: 300;
+  transition: 0.4s all;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/*
+==============
+Common classes
+==============
+*/
+
+.container {
+  margin: 15rem auto;
+  padding: 0 6rem;
+  background-color: #fff;
+}
+
+.small-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  flex-basis: 60%;
+  padding: 0 2rem;
+}
+
+.sidebar {
+  flex-basis: 40%;
+  padding: 0 2rem;
+}
+
+.main-card,
+.sidebar-card {
+  margin-bottom: 5rem;
+}
+
+.sidebar-card-heading {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar-card-content {
+  padding: 0.5rem;
+}

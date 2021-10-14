@@ -1,0 +1,80 @@
+/* 
+Left Container
+*/
+
+.problems-card {
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+
+.problems-title {
+  font-size: 1.65rem;
+  padding: 1rem 0 1.5rem;
+  text-align: center;
+  color: #121212;
+  font-weight: 600;
+}
+
+.problems-card ul > li {
+  padding: 0.25rem;
+}
+
+.problems-card li > a {
+  color: var(--clr-black);
+}
+
+.problems-card li > a:hover {
+  text-decoration: underline;
+}
+
+/* 
+Right Container
+*/
+
+.company-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured-list-card {
+  display: flex;
+  gap: 2rem;
+  padding: 0.7rem 1rem;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+}
+
+.featured-list-card:hover {
+  background: #ececec;
+  transition: 0.3s ease-in;
+}
+
+.featured-list-card-left {
+  display: flex;
+  font-size: 2.5rem;
+  color: #454545;
+}
+
+.featured-list-card-title {
+  line-height: 1.4;
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: var(--clr-black);
+}
+
+.company-name {
+  background: #f1f1f1;
+  padding: 0.3rem 1rem 0.5rem;
+  border-radius: 13px;
+  margin: 0 12px 14px 0;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #595e68;
+}
+
+.company-name:hover {
+  color: #595e68;
+  background: #e6e6e6;
+}
