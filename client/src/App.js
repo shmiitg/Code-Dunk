@@ -5,6 +5,7 @@ import Navbar from './navbar/Navbar';
 import Home from './home/Home';
 // Problems
 import Problems from './problems/Problems';
+import Problem from './problems/Problem';
 // Contest
 import Contests from './contest/Contests';
 import Contest from './contest/Contest';
@@ -34,6 +35,7 @@ function App() {
           <Route exact path="/" component={Home}></Route>
           {/* Problems */}
           <Route exact path="/problems" component={Problems}></Route>
+          <Route path="/problem" component={Problem}></Route>
           {/* Contests */}
           <Route exact path="/contests" component={Contests}></Route>
           <Route path="/contest" component={Contest}></Route>

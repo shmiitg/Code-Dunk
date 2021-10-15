@@ -6,6 +6,7 @@ const Contest = () => {
     const history = useHistory();
     const { pathname } = useLocation();
     const [contest, setContest] = useState({ title: '' });
+
     const fetchData = async () => {
         const contestName = pathname.split("/")[2];
         const res = await fetch(`/api/contest/${contestName}`);

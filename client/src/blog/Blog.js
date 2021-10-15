@@ -8,7 +8,7 @@ const Blog = () => {
     const [blogCount, setBlogCount] = useState(false);
 
     const fetchData = async () => {
-        const res = await fetch('/blogs/fetch');
+        const res = await fetch('/api/blogs');
         const data = await res.json();
         if (res.status === 200) {
             if (data.blogs.length) {

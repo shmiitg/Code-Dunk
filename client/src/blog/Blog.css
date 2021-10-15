@@ -78,16 +78,15 @@ Blog Form
   font-weight: 400;
 }
 
-.blog-form-field textarea {
+.blog-form-field > textarea {
+  font: inherit;
+  min-height: 15rem;
+  resize: none;
+  overflow: hidden;
+  border: 1px solid #cfd8dc;
+  color: #546e7a;
   padding: 9px 13px;
   border-radius: 3px;
-  color: #546e7a;
-  border: 1px solid #cfd8dc;
-  text-overflow: ellipsis;
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 18rem;
-  transition: 0.4s all;
 }
 
 .blog-form-field > label {

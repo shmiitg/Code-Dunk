@@ -7,7 +7,7 @@ const BlogForm = () => {
     const handleInterviewInput = (e) => setInterviewArticle({ ...interviewArticle, [e.target.name]: e.target.value });
     const interviewSave = async () => {
         const { title, company, content } = interviewArticle;
-        const res = await fetch('/interview/save', {
+        const res = await fetch('/api/interview/save', {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ title, company, content })
@@ -16,7 +16,7 @@ const BlogForm = () => {
         const data = await res.json();
         if (res.status === 200) {
             window.alert(data.msg);
-            history.push('/interview');
+            history.push('/interviews');
         } else {
             window.alert(data.error);
         }
@@ -62,7 +62,7 @@ const BlogForm = () => {
                     </div>
                 </form>
                 <div className="interview-share">
-                    <Link className="interview-btn" to="/interview" onClick={interviewSave}>Save</Link>
+                    <div className="interview-btn" onClick={interviewSave}>Save</div>
                 </div>
             </div>
         </div >

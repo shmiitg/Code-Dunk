@@ -5,6 +5,9 @@ const cookieParser = require("cookie-parser");
 
 const indexRouter = require('./routes/index');
 const authRouter = require('./routes/auth');
+const problemRouter = require('./routes/problem');
+const blogRouter = require('./routes/blog');
+const interviewRouter = require('./routes/interview');
 const contestRouter = require('./routes/contest');
 const userRouter = require('./routes/user');
 
@@ -18,8 +21,11 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/', indexRouter);
 app.use('/', authRouter);
+app.use('/api', problemRouter);
 app.use('/api', contestRouter);
 app.use('/api', userRouter);
+app.use('/api', blogRouter);
+app.use('/api', interviewRouter);
 app.use("*", (req, res) => res.status(404).json({ error: "not found" }));
 
 const DB = process.env.USER_DB;

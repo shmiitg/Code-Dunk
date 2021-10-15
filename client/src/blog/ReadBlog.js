@@ -10,7 +10,7 @@ const ReadBlog = () => {
     const [blog, setBlog] = useState({ title: '', description: '', content: '', author: '' });
     const [date, setDate] = useState('');
     const fetchBlog = async () => {
-        const res = await axios.get(`/blog/fetch/${id}`);
+        const res = await axios.get(`/api/blog/read/${id}`);
         const blogData = await res.data.blog;
         if (res.status === 200) {
             setBlog(blogData);
@@ -20,6 +20,7 @@ const ReadBlog = () => {
     useEffect(() => {
         fetchBlog();
     }, [id])
+
     return (
         <div className="container">
             <div className="read-blog-container">

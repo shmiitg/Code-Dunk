@@ -8,7 +8,7 @@ const Interview = () => {
     const [interviewCount, setInterviewCount] = useState(false);
 
     const fetchData = async () => {
-        const res = await fetch('/interviews/fetch');
+        const res = await fetch('/api/interviews');
         const data = await res.json();
         if (res.status === 200) {
             if (data.interviews.length) {
