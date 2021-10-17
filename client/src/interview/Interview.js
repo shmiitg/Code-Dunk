@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import Loading from '../loading/Loading';
 import './Interview.css';
 
 const Interview = () => {
     const history = useHistory();
+    const [loading, setLoading] = useState(true);
     const [interviews, setInterviews] = useState([]);
     const [interviewCount, setInterviewCount] = useState(false);
 
     const fetchData = async () => {
         const res = await fetch('/api/interviews');
         const data = await res.json();
+        setLoading(false);
         if (res.status === 200) {
             if (data.interviews.length) {
                 setInterviewCount(true);
@@ -17,14 +20,16 @@ const Interview = () => {
             setInterviews(data.interviews);
         }
     }
+
     useEffect(() => {
         fetchData();
-    }, [interviews]);
+    }, []);
 
     const viewInterview = id => {
         history.push('/interview/read/' + id);
     }
 
+    if (loading) return (<Loading />)
     return (
         <div className="container">
             <div className="small-container">
@@ -34,15 +39,13 @@ const Interview = () => {
                         <div className="interview-heading-info">Read other's interview experience and share yours</div>
                     </div>
                     <div className="main-card">
-                        {interviewCount && interviews.map(interview => {
-                            return (
-                                <div key={interview._id} className="interview-item" onClick={() => viewInterview(interview._id)}>
-                                    <div className="interview-item-title">{interview.title}</div>
-                                    <div className="interview-item-company">{interview.company}</div>
-                                    <div className="interview-item-user">{interview.author}</div>
-                                </div>
-                            )
-                        })}
+                        {interviewCount && interviews.map(interview => (
+                            <div key={interview._id} className="interview-item" onClick={() => viewInterview(interview._id)}>
+                                <div className="interview-item-title">{interview.title}</div>
+                                <div className="interview-item-company">{interview.company}</div>
+                                <div className="interview-item-user">{interview.author}</div>
+                            </div>
+                        ))}
                     </div>
 
                     <div className="interview-share">

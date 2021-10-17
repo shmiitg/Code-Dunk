@@ -22,6 +22,7 @@ const Register = () => {
             window.alert(data.error);
         }
     }
+
     return (
         <div className="container">
             <div className="form-container">

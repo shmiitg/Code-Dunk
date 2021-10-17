@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
-
+import { useState, useContext } from 'react';
 import Navbar from './navbar/Navbar';
 import Home from './home/Home';
 // Problems
@@ -22,47 +22,60 @@ import BlogForm from './blog/BlogForm';
 import ReadBlog from './blog/ReadBlog';
 import UserContextProvider from './context/UserContext';
 // Dashboard
-import Dashboard from './user/Dashboard';
-import EditProfile from './user/EditProfile';
+import DashBoard from './user/dashboard/DashBoard';
+import EditProfile from './user/editprofile/EditProfile';
+
+import LoadingContextProvider from './context/LoadingContext';
+
+const DefaultRoutes = () => {
+  return (
+    <>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home}></Route>
+        {/* Problems */}
+        <Route exact path="/problems" component={Problems}></Route>
+        <Route path="/problem" component={Problem}></Route>
+        {/* Contests */}
+        <Route exact path="/contests" component={Contests}></Route>
+        <Route path="/contest" component={Contest}></Route>
+        {/* Interviews */}
+        <Route exact path="/interviews" component={Interview}></Route>
+        <Route exact path="/interview/new" component={InterviewForm}></Route>
+        <Route exact path="/interview/read/:id" component={ReadInterview}></Route>
+        {/* Authentication */}
+        <Route exact path="/login" component={Login}></Route>
+        <Route exact path="/register" component={Register}></Route>
+        {/* Dashboard */}
+        <Route exact path="/profile/dashboard" component={DashBoard}></Route>
+        <Route exact path="/profile/edit" component={EditProfile}></Route>
+        {/* Blogs */}
+        <Route exact path="/blogs" component={Blog}></Route>
+        <Route exact path="/blog/new" component={BlogForm}></Route>
+        <Route exact path="/blog/read/:id" component={ReadBlog}></Route>
+      </Switch>
+    </>
+  )
+}
 
 function App() {
 
   return (
     <Router>
-      <UserContextProvider>
-        <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home}></Route>
-          {/* Problems */}
-          <Route exact path="/problems" component={Problems}></Route>
-          <Route path="/problem" component={Problem}></Route>
-          {/* Contests */}
-          <Route exact path="/contests" component={Contests}></Route>
-          <Route path="/contest" component={Contest}></Route>
-          {/* Interviews */}
-          <Route exact path="/interviews" component={Interview}></Route>
-          <Route exact path="/interview/new" component={InterviewForm}></Route>
-          <Route exact path="/interview/read/:id" component={ReadInterview}></Route>
-          {/* Authentication */}
-          <Route exact path="/login" component={Login}></Route>
-          <Route exact path="/register" component={Register}></Route>
-          {/* Dashboard */}
-          <Route exact path="/profile/dashboard" component={Dashboard}></Route>
-          <Route exact path="/profile/edit" component={EditProfile}></Route>
-          {/* Blogs */}
-          <Route exact path="/blogs" component={Blog}></Route>
-          <Route exact path="/blog/new" component={BlogForm}></Route>
-          <Route exact path="/blog/read/:id" component={ReadBlog}></Route>
-        </Switch>
-      </UserContextProvider>
+      <LoadingContextProvider>
+        <UserContextProvider>
+          <DefaultRoutes />
+        </UserContextProvider>
+      </LoadingContextProvider >
     </Router >
+
   );
 }
 
 
 // For No Navbar
 
-// const App = withRouter(({ location }) => {
+// const App = withRouter(({location}) => {
 
 //   return (
 //     <UserContextProvider>

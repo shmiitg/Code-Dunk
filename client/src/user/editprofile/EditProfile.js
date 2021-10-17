@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import "./EditProfile.css";
-import avatar from '../images/avatar.jpg';
 import axios from 'axios';
+import Loading from '../../loading/Loading';
+import avatar from '../../images/avatar.jpg';
+import "./EditProfile.css";
 
 const EditProfile = () => {
-
+    const [loading, setLoading] = useState(true);
     const [editName, setEditName] = useState(false);
     const [editGender, setEditGender] = useState(false);
     const [editLocation, setEditLocation] = useState(false);
@@ -14,7 +15,7 @@ const EditProfile = () => {
 
     const handleInput = e => setDetails({ ...details, [e.target.name]: e.target.value });
 
-    const fetchData = async () => {
+    const editData = async () => {
         const res = await axios.get('/user/info');
         const data = await res.data;
         if (res.status === 200) {
@@ -24,19 +25,33 @@ const EditProfile = () => {
         }
     }
 
+    const fetchData = async () => {
+        const res = await axios.get('/user/info');
+        const data = await res.data;
+        setLoading(false);
+        if (res.status === 200) {
+            setDetails(data.user);
+        } else {
+            window.alert(data.error)
+        }
+    }
+
     const editNameBtn = () => {
+        editData();
         setEditName(true);
         setEditGender(false);
         setEditLocation(false);
     }
 
     const editGenderBtn = () => {
+        editData();
         setEditGender(true);
         setEditName(false);
         setEditLocation(false);
     }
 
     const editLocationBtn = () => {
+        editData();
         setEditLocation(true);
         setEditName(false);
         setEditGender(false);
@@ -60,17 +75,17 @@ const EditProfile = () => {
     }
 
     const cancelDetail = () => {
-        fetchData();
+        editData();
         setEditName(false);
         setEditGender(false);
         setEditLocation(false);
     }
 
-
     useEffect(() => {
         fetchData();
     }, []);
 
+    if (loading) return (<Loading />)
     return (
         <div className="container">
             <div className="user-container">

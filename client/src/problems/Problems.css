@@ -1,3 +1,9 @@
+.problem-container {
+  display: flex;
+  max-width: 130rem;
+  margin: auto;
+}
+
 /* 
 Left Container
 */
@@ -77,4 +83,76 @@ Right Container
 .company-name:hover {
   color: #595e68;
   background: #e6e6e6;
+}
+
+/* 
+Problem
+*/
+
+.problem-card {
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.problem-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.25rem;
+}
+
+.problem-title {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.problem-difficulty {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.problem-description {
+  margin-bottom: 1rem;
+}
+
+.problem-options {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 5px 3px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.option-number {
+  font-size: 2rem;
+  margin-right: 5px;
+  border: 1px solid #bde4bd;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+}
+
+.problem-check {
+  margin-top: 1.25rem;
+}
+
+.right-answer,
+.wrong-answer {
+  display: none;
+}
+
+.show-right,
+.show-wrong {
+  display: block !important;
+  margin-top: 1rem;
 }

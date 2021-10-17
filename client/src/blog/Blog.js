@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import Loading from '../loading/Loading';
 import './Blog.css';
 
 const Blog = () => {
     const history = useHistory();
+    const [loading, setLoading] = useState(true);
     const [blogs, setBlogs] = useState([]);
     const [blogCount, setBlogCount] = useState(false);
 
     const fetchData = async () => {
         const res = await fetch('/api/blogs');
         const data = await res.json();
+        setLoading(false);
         if (res.status === 200) {
             if (data.blogs.length) {
                 setBlogCount(true);
@@ -17,14 +20,16 @@ const Blog = () => {
             setBlogs(data.blogs);
         }
     }
+
     useEffect(() => {
         fetchData();
-    }, [blogs]);
+    }, []);
 
     const viewBlog = id => {
         history.push('/blog/read/' + id);
     }
 
+    if (loading) return (<Loading />)
     return (
         <div className="container">
             <div className="small-container">
@@ -46,10 +51,10 @@ const Blog = () => {
                 <div className="sidebar">
 
                 </div>
-            </div >
-        </div>
-
+            </div>
+        </div >
     )
+
 }
 
 export default Blog

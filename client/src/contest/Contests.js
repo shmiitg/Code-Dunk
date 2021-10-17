@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import './Contests.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import NewContest from './components/NewContest';
+import './Contests.css';
 
 const Contests = () => {
     const [contests, setContests] = useState([]);
@@ -23,12 +24,7 @@ const Contests = () => {
 
     return (
         <div className="container">
-            <div className="new-contest-card">
-                <div className="time-left">Starts in 5 days</div>
-                <div className="contest-name">Contest 170</div>
-                <div className="contest-date">Oct 10, 2021 @ 8:00 AM - 9:30 AM GMT+5:30</div>
-                <div className="contest-register">Register</div>
-            </div>
+            <NewContest />
             <div className="contest-container">
                 <div className="sidebar">
                     <div className="rankings-card">
