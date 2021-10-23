@@ -7,12 +7,12 @@ import Loading from '../loading/Loading';
 const ReadBlog = () => {
     const history = useHistory();
     const location = useLocation();
-    const id = location.pathname.split('/')[3];
+    const link = location.pathname.split('/')[3];
     const [loading, setLoading] = useState(true);
     const [blog, setBlog] = useState({ title: '', description: '', content: '', author: '' });
     const [date, setDate] = useState('');
     const fetchBlog = async () => {
-        const res = await fetch(`/api/blog/read/${id}`);
+        const res = await fetch(`/api/blog/read/${link}`);
         const data = await res.json();
         setLoading(false);
         if (res.status === 200) {
@@ -20,12 +20,15 @@ const ReadBlog = () => {
             setDate(moment(data.blog.createdAt).format('MMM DD, YYYY'));
         }
         else if (res.status == 404) {
-            history.push('/');
+            history.push('/blogs');
+        }
+        else {
+            window.alert(data.error);
         }
     }
     useEffect(() => {
         fetchBlog();
-    }, [id])
+    }, [link])
 
     if (loading) return (<Loading />)
     return (

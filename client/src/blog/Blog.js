@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Loading from '../loading/Loading';
 import './Blog.css';
 
 const Blog = () => {
-    const history = useHistory();
     const [loading, setLoading] = useState(true);
     const [blogs, setBlogs] = useState([]);
     const [blogCount, setBlogCount] = useState(false);
@@ -34,7 +33,7 @@ const Blog = () => {
                     <div className="main-card">
                         {blogCount && blogs.map(blog => (
                             <div className="post">
-                                <Link key={blog._id} className="post-link" to={`/blog/read/${blog._id}`}>
+                                <Link key={blog._id} className="post-link" to={`/blog/read/${blog.link}`}>
                                     <div className="post-title">{blog.title}</div>
                                     <div className="post-desc">{blog.description}</div>
                                     <div className="post-author">Contributed by <span>{blog.author}</span></div>

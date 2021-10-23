@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Loading from '../loading/Loading';
 import './Interview.css';
 
 const Interview = () => {
-    const history = useHistory();
     const [loading, setLoading] = useState(true);
     const [interviews, setInterviews] = useState([]);
     const [interviewCount, setInterviewCount] = useState(false);
@@ -37,7 +36,7 @@ const Interview = () => {
                     <div className="main-card">
                         {interviewCount && interviews.map(interview => (
                             <div className="post">
-                                <Link key={interview._id} className="post-link" to={`/interview/read/${interview._id}`}>
+                                <Link key={interview._id} className="post-link" to={`/interview/read/${interview.link}`}>
                                     <div className="post-title">{interview.title}</div>
                                     <div className="post-desc">{interview.company}</div>
                                     <div className="post-author">{interview.author}</div>

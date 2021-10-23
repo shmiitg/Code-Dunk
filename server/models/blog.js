@@ -21,6 +21,11 @@ const schema = new mongoose.Schema({
     author: {
         type: String,
         required: true
+    },
+    link: {
+        type: String,
+        required: true,
+        unique: true
     }
 }, { timestamps: true }
 )
