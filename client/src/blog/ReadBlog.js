@@ -1,36 +1,43 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
+import { Link, useHistory } from 'react-router-dom';
 import moment from 'moment';
+import Loading from '../loading/Loading';
 
 const ReadBlog = () => {
+    const history = useHistory();
     const location = useLocation();
     const id = location.pathname.split('/')[3];
+    const [loading, setLoading] = useState(true);
     const [blog, setBlog] = useState({ title: '', description: '', content: '', author: '' });
     const [date, setDate] = useState('');
     const fetchBlog = async () => {
-        const res = await axios.get(`/api/blog/read/${id}`);
-        const blogData = await res.data.blog;
+        const res = await fetch(`/api/blog/read/${id}`);
+        const data = await res.json();
+        setLoading(false);
         if (res.status === 200) {
-            setBlog(blogData);
-            setDate(moment(blogData.createdAt).format('MMM DD, YYYY'));
+            setBlog(data.blog);
+            setDate(moment(data.blog.createdAt).format('MMM DD, YYYY'));
+        }
+        else if (res.status == 404) {
+            history.push('/');
         }
     }
     useEffect(() => {
         fetchBlog();
     }, [id])
 
+    if (loading) return (<Loading />)
     return (
         <div className="container">
-            <div className="read-blog-container">
-                <div className="read-blog-title">{blog.title}</div>
-                <div className="read-blog-description">{blog.description}</div>
-                <div className="read-blog-info">
-                    <div className="read-blog-author"><Link to={`/profile/dashboard?user=${blog.author}`}>{blog.author}</Link></div>
-                    <div className="read-blog-date">{date}</div>
+            <div className="read-post-container">
+                <div className="read-post-title">{blog.title}</div>
+                <div className="read-post-desc">{blog.description}</div>
+                <div className="read-post-info">
+                    <div className="read-post-author"><Link to={`/profile/dashboard?user=${blog.author}`}>{blog.author}</Link></div>
+                    <div className="read-post-date">{date}</div>
                 </div>
-                <div className="read-blog-content">{blog.content}</div>
+                <div className="read-post-content">{blog.content}</div>
             </div>
         </div >
     )

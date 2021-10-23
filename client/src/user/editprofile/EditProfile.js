@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import Loading from '../../loading/Loading';
 import avatar from '../../images/avatar.jpg';
 import "./EditProfile.css";
 
 const EditProfile = () => {
+    const history = useHistory();
     const [loading, setLoading] = useState(true);
     const [editName, setEditName] = useState(false);
     const [editGender, setEditGender] = useState(false);
@@ -26,13 +28,13 @@ const EditProfile = () => {
     }
 
     const fetchData = async () => {
-        const res = await axios.get('/user/info');
-        const data = await res.data;
+        const res = await fetch('/user/info');
+        const data = await res.json();
         setLoading(false);
         if (res.status === 200) {
             setDetails(data.user);
         } else {
-            window.alert(data.error)
+            history.push('/login');
         }
     }
 

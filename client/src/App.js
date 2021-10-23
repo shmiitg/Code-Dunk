@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import { useState, useContext } from 'react';
 import Navbar from './navbar/Navbar';
 import Home from './home/Home';
 // Problems
 import Problems from './problems/Problems';
 import Problem from './problems/Problem';
+import MCQ from './problems/MCQ';
 // Contest
 import Contests from './contest/Contests';
 import Contest from './contest/Contest';
@@ -25,8 +25,6 @@ import UserContextProvider from './context/UserContext';
 import DashBoard from './user/dashboard/DashBoard';
 import EditProfile from './user/editprofile/EditProfile';
 
-import LoadingContextProvider from './context/LoadingContext';
-
 const DefaultRoutes = () => {
   return (
     <>
@@ -36,6 +34,7 @@ const DefaultRoutes = () => {
         {/* Problems */}
         <Route exact path="/problems" component={Problems}></Route>
         <Route path="/problem" component={Problem}></Route>
+        <Route path="/mcq" component={MCQ}></Route>
         {/* Contests */}
         <Route exact path="/contests" component={Contests}></Route>
         <Route path="/contest" component={Contest}></Route>
@@ -62,11 +61,9 @@ function App() {
 
   return (
     <Router>
-      <LoadingContextProvider>
-        <UserContextProvider>
-          <DefaultRoutes />
-        </UserContextProvider>
-      </LoadingContextProvider >
+      <UserContextProvider>
+        <DefaultRoutes />
+      </UserContextProvider>
     </Router >
 
   );

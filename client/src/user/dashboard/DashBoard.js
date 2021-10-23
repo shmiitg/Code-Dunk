@@ -27,7 +27,7 @@ const Dashboard = () => {
             setUserData(user);
             setDashBoardData(dashBoard);
         } else if (res.status === 404) {
-            history.push('/blogs');
+            history.push('/');
         }
         else {
             history.push('/');
@@ -43,7 +43,7 @@ const Dashboard = () => {
         <div className="container">
             <div className="user-container">
                 <div className="sidebar left">
-                    <Profile name={userData.name} username={userData.name} location={userData.location} education={userData.education} skills={userData.skills} />
+                    <Profile name={userData.name} username={userData.username} location={userData.location} education={userData.education} skills={userData.skills} />
                 </div>
                 <div className="main right">
                     <Rating rating={dashBoardData.rating} ranking={dashBoardData.ranking} contests={dashBoardData.contests} />

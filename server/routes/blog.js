@@ -18,6 +18,9 @@ router.get('/blog/read/:id', async (req, res) => {
     try {
         const id = req.params.id;
         const blog = await Blog.findById(id);
+        if (!blog) {
+            return res.status(404).json({ error: 'Nothing found' });
+        }
         res.status(200).json({ blog: blog });
     } catch (err) {
         res.status(500).json({ error: 'Some error occured' });

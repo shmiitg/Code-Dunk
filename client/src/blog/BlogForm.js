@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const BlogForm = () => {
     const history = useHistory();
@@ -20,6 +20,17 @@ const BlogForm = () => {
             window.alert(data.error);
         }
     }
+    const checkAuth = async () => {
+        const res = await fetch('/user/info');
+        if (res.status !== 200) {
+            alert('Login to continue');
+            history.push('/login');
+        }
+    }
+
+    useEffect(() => {
+        checkAuth();
+    }, [])
 
     useEffect(() => {
         const autoExpand = (field) => {
@@ -46,22 +57,22 @@ const BlogForm = () => {
                 <div className="blog-heading">
                     <div className="blog-heading-title">Write a Blog</div>
                 </div>
-                <form method="POST" className="blog-form">
-                    <div className="blog-form-field">
+                <form method="POST" className="post-form">
+                    <div className="post-form-field">
                         <label htmlFor="title">Title</label>
                         <input required value={blogArticle.title} onChange={handleBlogInput} autoComplete="off" name="title" />
                     </div>
-                    <div className="blog-form-field">
+                    <div className="post-form-field">
                         <label htmlFor="description">Desciption</label>
                         <input required value={blogArticle.description} onChange={handleBlogInput} autoComplete="off" name="description" />
                     </div>
-                    <div className="blog-form-field">
+                    <div className="post-form-field">
                         <label htmlFor="content">Content</label>
-                        <textarea required onChange={handleBlogInput} name="content">{blogArticle.content}</textarea>
+                        <textarea required onChange={handleBlogInput} name="content"></textarea>
                     </div>
                 </form>
-                <div className="blog-write">
-                    <div className="blog-btn" onClick={blogSave}>Save</div>
+                <div className="post-write">
+                    <div className="post-write-btn" onClick={blogSave}>Save</div>
                 </div>
             </div>
         </div >

@@ -1,11 +1,6 @@
 const mongoose = require('mongoose');
 
 const schema = new mongoose.Schema({
-    title: {
-        type: String,
-        required: true,
-        unique: true
-    },
     description: {
         type: String,
         required: true
@@ -18,12 +13,16 @@ const schema = new mongoose.Schema({
         type: String,
         required: true
     },
-    link: {
+    options: {
+        type: Array,
+        required: true
+    },
+    answer: {
         type: String,
         required: true
     }
 }, { timestamps: true }
 )
 
-const Problem = mongoose.model('problem', schema);
-module.exports = Problem;
+const MCQ = mongoose.model('mcq', schema);
+module.exports = MCQ;

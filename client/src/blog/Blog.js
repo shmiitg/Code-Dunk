@@ -25,10 +25,6 @@ const Blog = () => {
         fetchData();
     }, []);
 
-    const viewBlog = id => {
-        history.push('/blog/read/' + id);
-    }
-
     if (loading) return (<Loading />)
     return (
         <div className="container">
@@ -37,15 +33,17 @@ const Blog = () => {
                     <div className="blog-heading">Blogs trending this week</div>
                     <div className="main-card">
                         {blogCount && blogs.map(blog => (
-                            <div key={blog._id} className="blog" onClick={() => viewBlog(blog._id)}>
-                                <div className="blog-title">{blog.title}</div>
-                                <div className="blog-description">{blog.description}</div>
-                                <div className="blog-author">Contributed by : <span>{blog.author}</span></div>
+                            <div className="post">
+                                <Link key={blog._id} className="post-link" to={`/blog/read/${blog._id}`}>
+                                    <div className="post-title">{blog.title}</div>
+                                    <div className="post-desc">{blog.description}</div>
+                                    <div className="post-author">Contributed by <span>{blog.author}</span></div>
+                                </Link>
                             </div>
                         ))}
                     </div>
-                    <div className="blog-write">
-                        <Link className="blog-btn" to="/blog/new">Write a blog</Link>
+                    <div className="post-write">
+                        <Link className="post-write-btn" to="/blog/new">Write a blog</Link>
                     </div>
                 </div>
                 <div className="sidebar">

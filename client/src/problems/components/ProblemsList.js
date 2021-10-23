@@ -15,14 +15,26 @@ const ProblemsList = () => {
             data.problems.forEach(problem => {
                 const idx = probs.map(obj => obj.topic).indexOf(problem.topic);
                 if (idx === -1) {
-                    probs.push({ topic: problem.topic, questions: [problem.title] })
+                    probs.push({ topic: problem.topic, questions: [{ title: problem.title, link: problem.link }] })
                 }
                 else {
-                    probs[idx].questions.push(problem.title);
+                    probs[idx].questions.push({ title: problem.title, link: problem.link });
                 }
             })
             setProblems(probs);
         }
+    }
+
+    const genLink = (str) => {
+        let ans = '';
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] === ' ') {
+                ans += '-';
+            } else {
+                ans += str[i].toLowerCase();
+            }
+        }
+        return ans;
     }
 
     useEffect(() => {
@@ -37,9 +49,10 @@ const ProblemsList = () => {
                     <div className="problems-title">{problem.topic}</div>
                     <ul className="problems-list">
                         {problem.questions.map((p, idx) => (
-                            <li key={idx}>{idx + 1}. <Link to={'/problem/' + p[0].toLowerCase() + p.substr(1).replace(/\s+/g, '-')}>{p}</Link></li>
+                            <li key={idx}>{idx + 1}. <Link to={'/problem/' + p.link}>{p.title}</Link></li>
                         ))}
                     </ul>
+                    <div className="problems-mcq"><Link to={`/mcq/${genLink(problem.topic)}`}>Multiple Choice questions on {problem.topic}</Link></div>
                 </div>
             ))}
         </div>

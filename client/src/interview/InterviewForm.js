@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const BlogForm = () => {
     const history = useHistory();
@@ -12,7 +12,6 @@ const BlogForm = () => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ title, company, content })
         });
-        console.log(res);
         const data = await res.json();
         if (res.status === 200) {
             window.alert(data.msg);
@@ -21,6 +20,18 @@ const BlogForm = () => {
             window.alert(data.error);
         }
     }
+
+    const checkAuth = async () => {
+        const res = await fetch('/user/info');
+        if (res.status !== 200) {
+            alert('Login to continue');
+            history.push('/login');
+        }
+    }
+
+    useEffect(() => {
+        checkAuth();
+    }, [])
 
     useEffect(() => {
         const autoExpand = (field) => {
@@ -47,22 +58,22 @@ const BlogForm = () => {
                 <div className="interview-heading">
                     <div className="interview-heading-title">Share your interview experience</div>
                 </div>
-                <form method="POST" className="interveiw-form">
-                    <div className="interview-form-field">
+                <form method="POST" className="post-form">
+                    <div className="post-form-field">
                         <label htmlFor="title">Title</label>
                         <input required value={interviewArticle.title} onChange={handleInterviewInput} autoComplete="off" name="title" />
                     </div>
-                    <div className="interview-form-field">
+                    <div className="post-form-field">
                         <label htmlFor="company">Company</label>
                         <input required value={interviewArticle.company} onChange={handleInterviewInput} autoComplete="off" name="company" />
                     </div>
-                    <div className="interview-form-field">
+                    <div className="post-form-field">
                         <label htmlFor="content">Content</label>
-                        <textarea onChange={handleInterviewInput} name="content" id="content">{interviewArticle.content}</textarea>
+                        <textarea onChange={handleInterviewInput} name="content" id="content"></textarea>
                     </div>
                 </form>
-                <div className="interview-share">
-                    <div className="interview-btn" onClick={interviewSave}>Save</div>
+                <div className="post-write">
+                    <div className="post-write-btn" onClick={interviewSave}>Save</div>
                 </div>
             </div>
         </div >

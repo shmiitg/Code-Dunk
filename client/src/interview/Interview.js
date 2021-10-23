@@ -25,10 +25,6 @@ const Interview = () => {
         fetchData();
     }, []);
 
-    const viewInterview = id => {
-        history.push('/interview/read/' + id);
-    }
-
     if (loading) return (<Loading />)
     return (
         <div className="container">
@@ -40,16 +36,17 @@ const Interview = () => {
                     </div>
                     <div className="main-card">
                         {interviewCount && interviews.map(interview => (
-                            <div key={interview._id} className="interview-item" onClick={() => viewInterview(interview._id)}>
-                                <div className="interview-item-title">{interview.title}</div>
-                                <div className="interview-item-company">{interview.company}</div>
-                                <div className="interview-item-user">{interview.author}</div>
+                            <div className="post">
+                                <Link key={interview._id} className="post-link" to={`/interview/read/${interview._id}`}>
+                                    <div className="post-title">{interview.title}</div>
+                                    <div className="post-desc">{interview.company}</div>
+                                    <div className="post-author">{interview.author}</div>
+                                </Link>
                             </div>
                         ))}
                     </div>
-
-                    <div className="interview-share">
-                        <Link className="interview-btn" to="/interview/new">Share you experience</Link>
+                    <div className="post-write">
+                        <Link className="post-write-btn" to="/interview/new">Share you experience</Link>
                     </div>
                 </div>
                 <div className="sidebar">

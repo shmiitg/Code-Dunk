@@ -19,6 +19,9 @@ router.get('/interview/read/:id', async (req, res) => {
     try {
         const id = req.params.id;
         const interview = await Interview.findById(id);
+        if (!interview) {
+            return res.status(404).json({ error: 'Nothing found' });
+        }
         res.status(200).json({ interview: interview });
     } catch (err) {
         res.status(500).json({ error: 'Some error occured' });
