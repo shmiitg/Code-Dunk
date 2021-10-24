@@ -11,16 +11,20 @@ const schema = new mongoose.Schema({
         required: true
     },
     duration: {
-        type: String,
+        type: Object,
         required: true
     },
     questions: {
         type: Array,
-        required: false
+        required: true
     },
     contributer: {
         type: String,
         default: ''
+    },
+    link: {
+        type: String,
+        required: true
     }
 }, { timestamps: true }
 )

@@ -19,7 +19,7 @@ const ReadInterview = () => {
             setInterview(data.interview);
             setDate(moment(data.interview.createdAt).format('MMM DD, YYYY'));
         }
-        else if (res.status == 404) {
+        else if (res.status === 404) {
             history.push('/interview');
         }
     }

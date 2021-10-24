@@ -5,9 +5,42 @@ const MCQ = require('../models/mcq');
 const verifyJWT = require('../middleware/auth');
 const router = express.Router();
 
-router.get('/problems', async (req, res) => {
+router.get('/problems/daily', async (req, res) => {
     try {
         const problems = await Problem.find();
+        res.status(200).json({ problems: problems });
+    } catch (err) {
+        res.status(500).json({ error: 'Some error occured' });
+    }
+})
+
+router.get('/problems', async (req, res) => {
+    try {
+        const problems = await Problem.find({ status: true });
+        res.status(200).json({ problems: problems });
+    } catch (err) {
+        res.status(500).json({ error: 'Some error occured' });
+    }
+})
+
+router.get('/companies', async (req, res) => {
+    try {
+        const problems = await Problem.find({ status: true });
+        const companyList = [];
+        problems.forEach(problem => {
+            problem.companies.forEach(company => companyList.push(company))
+        })
+        res.status(200).json({ companies: companyList });
+    } catch (err) {
+        res.status(500).json({ error: 'Some error occured' });
+    }
+})
+
+router.get('/problems/company/:company', async (req, res) => {
+    try {
+        const company = req.params.company;
+        const problems = await Problem.find({ companies: { $all: [company] } })
+        console.log(problems);
         res.status(200).json({ problems: problems });
     } catch (err) {
         res.status(500).json({ error: 'Some error occured' });

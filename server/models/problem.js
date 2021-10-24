@@ -18,6 +18,14 @@ const schema = new mongoose.Schema({
         type: String,
         required: true
     },
+    companies: {
+        type: Array,
+        required: false
+    },
+    status: {
+        type: Boolean,
+        required: true
+    },
     link: {
         type: String,
         required: true

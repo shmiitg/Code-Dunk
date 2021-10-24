@@ -1,20 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import ReadMoreProblem from '../../components/ReadMoreProblem'
 
 const ProblemsMain = () => {
-    const [problems, setProblems] = useState([
-        { title: 'Check if all elements of given Linked List corresponds to a downward path from any node in given Binary Tree', statement: 'Find permutation of numbers upto N' },
-        { title: 'Find permutation of numbers upto N with a specific sum in a specific range', statement: 'Find permutation of numbers upto N with a specific sum in a specific range' },
-        { title: 'System Design', statement: 'Find permutation of numbers upto N with a specific sum in a specific range' },
-    ])
+    const [problems, setProblems] = useState([])
+
+    const fetchData = async () => {
+        const res = await fetch('/api/problems/daily');
+        const data = await res.json();
+        if (res.status === 200) {
+            setProblems([data.problems[0], data.problems[1], data.problems[2]]);
+        }
+    }
+
+    useEffect(() => {
+        fetchData();
+    }, [])
 
     return (
         <div className="main-card">
             {problems.map((problem, index) => (
-                <div key={index} className="home-problem-card">
-                    <Link to="/"><div className="home-problem-title">{problem.title}</div></Link>
-                    <div className="home-problem-statement">{problem.statement}</div>
-                </div>
+                <ReadMoreProblem key={index} title={problem.title} difficulty='' description={problem.description} link={`/problem/${problem.link}`} />
             ))}
         </div>
     )

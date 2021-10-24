@@ -1,0 +1,37 @@
+.problem-rm-card {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0 3.15rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.problem-rm-card:last-child {
+  border: none;
+}
+
+.problem-rm-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.problem-rm-title {
+  font-size: 14pt;
+  font-weight: 500;
+  color: var(--clr-black);
+}
+
+.problem-rm-description {
+  margin-top: 1rem;
+  letter-spacing: 0.016rem;
+  font-size: 11pt;
+  color: #989898;
+}
+
+.problem-rm-description a {
+  color: var(--clr-black);
+  font-size: 11pt;
+}
+
+.problem-rm-description a:hover {
+  text-decoration: underline;
+}

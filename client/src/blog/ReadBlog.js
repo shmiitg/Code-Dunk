@@ -19,7 +19,7 @@ const ReadBlog = () => {
             setBlog(data.blog);
             setDate(moment(data.blog.createdAt).format('MMM DD, YYYY'));
         }
-        else if (res.status == 404) {
+        else if (res.status === 404) {
             history.push('/blogs');
         }
         else {

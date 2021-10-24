@@ -25,17 +25,17 @@ const ProblemsList = () => {
         }
     }
 
-    const genLink = (str) => {
-        let ans = '';
-        for (let i = 0; i < str.length; i++) {
-            if (str[i] === ' ') {
-                ans += '-';
-            } else {
-                ans += str[i].toLowerCase();
-            }
-        }
-        return ans;
+    function string_to_slug(str) {
+        str = str.replace(/^\s+|\s+$/g, ''); // trim
+        str = str.toLowerCase();
+        str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+            .replace(/\s+/g, '-') // collapse whitespace and replace by -
+            .replace(/-+/g, '-') // collapse dashes
+            .replace(/^-+/, '') // trim - from start of text
+            .replace(/-+$/, ''); // trim - from end of text
+        return str;
     }
+
 
     useEffect(() => {
         fetchData();
@@ -52,7 +52,7 @@ const ProblemsList = () => {
                             <li key={idx}>{idx + 1}. <Link to={'/problem/' + p.link}>{p.title}</Link></li>
                         ))}
                     </ul>
-                    <div className="problems-mcq"><Link to={`/mcq/${genLink(problem.topic)}`}>Multiple Choice questions on {problem.topic}</Link></div>
+                    <div className="problems-mcq"><Link to={`/mcq/${string_to_slug(problem.topic)}`}>Multiple Choice questions on {problem.topic}</Link></div>
                 </div>
             ))}
         </div>

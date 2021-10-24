@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
+import UserContextProvider from './context/UserContext';
 import Navbar from './navbar/Navbar';
 import Home from './home/Home';
 // Problems
 import Problems from './problems/Problems';
 import Problem from './problems/Problem';
 import MCQ from './problems/MCQ';
+import CompanyProblems from './problems/CompanyProblems';
 // Contest
 import Contests from './contest/Contests';
 import Contest from './contest/Contest';
@@ -20,7 +22,6 @@ import Register from './authentication/Register';
 import Blog from './blog/Blog';
 import BlogForm from './blog/BlogForm';
 import ReadBlog from './blog/ReadBlog';
-import UserContextProvider from './context/UserContext';
 // Dashboard
 import DashBoard from './user/dashboard/DashBoard';
 import EditProfile from './user/editprofile/EditProfile';
@@ -35,6 +36,7 @@ const DefaultRoutes = () => {
         <Route exact path="/problems" component={Problems}></Route>
         <Route path="/problem" component={Problem}></Route>
         <Route path="/mcq" component={MCQ}></Route>
+        <Route path="/problems/company" component={CompanyProblems}></Route>
         {/* Contests */}
         <Route exact path="/contests" component={Contests}></Route>
         <Route path="/contest" component={Contest}></Route>

@@ -75,9 +75,9 @@ Right Container
   color: var(--clr-black);
 }
 
-.company-name {
+.company-link {
   background: #f1f1f1;
-  padding: 0.3rem 1rem 0.5rem;
+  padding: 4px 1rem 6px;
   border-radius: 13px;
   margin: 0 12px 14px 0;
   font-size: 10pt;
@@ -85,9 +85,20 @@ Right Container
   color: #595e68;
 }
 
-.company-name:hover {
+.company-link:hover {
   color: #595e68;
   background: #e6e6e6;
+}
+
+.company-question-count {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding: 0 7px 1px;
+  border-radius: 15px;
+  margin-left: 4px;
+  color: #fff;
+  background: #454545;
 }
 
 /* 

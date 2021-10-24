@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import moment from 'moment';
 import NewContest from './components/NewContest';
 import './Contests.css';
 
 const Contests = () => {
     const [contests, setContests] = useState([]);
+    const [newContests, setNewContests] = useState([]);
 
     const fetchData = async () => {
         const res = await axios.get('/api/contests');
         const data = await res.data;
         if (res.status === 200) {
-            const contests = data.contests;
-            setContests(contests);
+            setContests(data.contests);
+            setNewContests(data.newContests)
         } else {
             window.alert(data.error);
         }
@@ -24,7 +26,11 @@ const Contests = () => {
 
     return (
         <div className="container">
-            <NewContest />
+            <div className="nc-container">
+                {newContests.map((contest, index) => (
+                    <NewContest key={index} title={contest.title} startTime={contest.startTime} duration={contest.duration} dateNow={new Date().getMinutes()} />
+                ))}
+            </div>
             <div className="contest-container">
                 <div className="sidebar">
                     <div className="rankings-card">
@@ -48,11 +54,10 @@ const Contests = () => {
                                     {contests.map(contest => (
                                         <tr key={contest._id} className="cssbdr">
                                             <td className="contest-detail">
-                                                <div className="past-contest-name"><Link to={'/contest/' + contest.title.replace(/\s+/g, '-')}>{contest.title}</Link></div>
-                                                <div className="past-contest-date">{contest.startTime}</div>
+                                                <div className="past-contest-name"><Link to={'/contest/' + contest.link}>{contest.title}</Link></div>
+                                                <div className="past-contest-date">{moment(contest.startTime).format('MMM DD, YYYY')} at {moment(contest.startTime).format('h:mm A')}</div>
                                             </td>
-                                            <td className="past-contest-duration">{contest.duration}</td>
-                                            <td className="past-contest-virtual"><div className="virtual"><Link to={'/contest/' + contest.title.replace(/\s+/g, '-')}>Virtual</Link></div></td>
+                                            <td className="past-contest-duration">{contest.duration.h} h {contest.duration.m} m</td>
                                         </tr>
                                     ))}
                                 </tbody>
