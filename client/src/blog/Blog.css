@@ -44,9 +44,12 @@
   margin: auto;
   width: fit-content;
   margin-top: 5rem;
+  display: flex;
+  gap: 1rem;
 }
 
-.post-write-btn {
+.post-write-btn,
+.post-cancel-btn {
   line-height: 1.4;
   border-radius: 3px;
   font-size: inherit;
@@ -60,6 +63,7 @@
   cursor: pointer;
 }
 
-.post-write-btn:hover {
+.post-write-btn:hover,
+.post-cancel-btn:hover {
   color: #fff;
 }

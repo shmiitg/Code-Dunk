@@ -17,11 +17,26 @@
 
 .read-post-info {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   font-size: 1.5rem;
   font-weight: 400;
   margin-top: 1.5rem;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.read-post-info-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.post-edit,
+.post-delete {
+  font-size: 2.25rem;
+}
+
+.read-post-info-right svg {
+  cursor: pointer;
 }
 
 .read-post-author a {

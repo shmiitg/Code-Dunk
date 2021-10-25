@@ -18,11 +18,27 @@ const ReadInterview = () => {
         if (res.status === 200) {
             setInterview(data.interview);
             setDate(moment(data.interview.createdAt).format('MMM DD, YYYY'));
-        }
-        else if (res.status === 404) {
+        } else if (res.status === 404) {
             history.push('/interview');
+        } else {
+            window.alert(data.error);
         }
     }
+
+    const deleteInterview = async () => {
+        const res = await fetch(`/api/interview/delete/${link}`, {
+            method: 'DELETE',
+            headers: { 'Content-type': 'application/json' }
+        })
+        const data = await res.json();
+        if (res.status === 200) {
+            window.alert(data.msg);
+            history.push('/interviews');
+        } else {
+            window.alert(data.error);
+        }
+    }
+
     useEffect(() => {
         fetchInterview();
     }, [link])
@@ -30,11 +46,14 @@ const ReadInterview = () => {
     if (loading) return (<Loading />)
     return (
         <ReadPost
+            type="interview"
             title={interview.title}
             desc={interview.company}
             author={interview.author}
             date={date}
             content={interview.content}
+            link={interview.link}
+            del={deleteInterview}
         />
     )
 }

@@ -18,14 +18,27 @@ const ReadBlog = () => {
         if (res.status === 200) {
             setBlog(data.blog);
             setDate(moment(data.blog.createdAt).format('MMM DD, YYYY'));
-        }
-        else if (res.status === 404) {
+        } else if (res.status === 404) {
             history.push('/blogs');
-        }
-        else {
+        } else {
             window.alert(data.error);
         }
     }
+
+    const deleteBlog = async () => {
+        const res = await fetch(`/api/blog/delete/${link}`, {
+            method: 'DELETE',
+            headers: { 'Content-type': 'application/json' }
+        })
+        const data = await res.json();
+        if (res.status === 200) {
+            window.alert(data.msg);
+            history.push('/blogs');
+        } else {
+            window.alert(data.error);
+        }
+    }
+
     useEffect(() => {
         fetchBlog();
     }, [link])
@@ -33,11 +46,14 @@ const ReadBlog = () => {
     if (loading) return (<Loading />)
     return (
         <ReadPost
+            type="blog"
             title={blog.title}
             desc={blog.description}
             author={blog.author}
             date={date}
             content={blog.content}
+            link={blog.link}
+            del={deleteBlog}
         />
     )
 }

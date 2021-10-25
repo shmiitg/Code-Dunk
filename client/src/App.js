@@ -15,6 +15,7 @@ import Contest from './contest/Contest';
 import Interview from './interview/Interview';
 import InterviewForm from './interview/InterviewForm';
 import ReadInterview from './interview/ReadInterview';
+import InterviewEdit from './interview/InterviewEdit'
 // Auth
 import Login from './authentication/Login';
 import Register from './authentication/Register';
@@ -22,6 +23,7 @@ import Register from './authentication/Register';
 import Blog from './blog/Blog';
 import BlogForm from './blog/BlogForm';
 import ReadBlog from './blog/ReadBlog';
+import BlogEdit from './blog/BlogEdit'
 // Dashboard
 import DashBoard from './user/dashboard/DashBoard';
 import EditProfile from './user/editprofile/EditProfile';
@@ -44,6 +46,7 @@ const DefaultRoutes = () => {
         <Route exact path="/interviews" component={Interview}></Route>
         <Route exact path="/interview/new" component={InterviewForm}></Route>
         <Route exact path="/interview/read/:id" component={ReadInterview}></Route>
+        <Route path="/interview/edit" component={InterviewEdit}></Route>
         {/* Authentication */}
         <Route exact path="/login" component={Login}></Route>
         <Route exact path="/register" component={Register}></Route>
@@ -54,6 +57,7 @@ const DefaultRoutes = () => {
         <Route exact path="/blogs" component={Blog}></Route>
         <Route exact path="/blog/new" component={BlogForm}></Route>
         <Route exact path="/blog/read/:id" component={ReadBlog}></Route>
+        <Route path="/blog/edit" component={BlogEdit}></Route>
       </Switch>
     </>
   )

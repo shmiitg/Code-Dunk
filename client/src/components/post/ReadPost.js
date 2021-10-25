@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaEdit } from 'react-icons/fa';
+import { MdDelete } from 'react-icons/md';
 import './ReadPost.css';
 
-const ReadPost = ({ title, desc, author, date, content }) => {
+const ReadPost = ({ type, title, desc, author, date, content, link, del }) => {
     const contentDivs = content.split('\n');
 
     return (
@@ -11,8 +13,14 @@ const ReadPost = ({ title, desc, author, date, content }) => {
                 <div className="read-post-title">{title}</div>
                 <div className="read-post-desc">{desc}</div>
                 <div className="read-post-info">
-                    <div className="read-post-author"><Link to={`/profile/dashboard?user=${author}`}>{author}</Link></div>
-                    <div className="read-post-date">{date}</div>
+                    <div className="read-post-info-left">
+                        <div className="read-post-author"><Link to={`/profile/dashboard?user=${author}`}>{author}</Link></div>
+                        <div className="read-post-date">{date}</div>
+                    </div>
+                    <div className="read-post-info-right">
+                        <Link to={`/${type}/edit/${link}`} className="post-edit"><FaEdit /></Link>
+                        <div onClick={del} className="post-delete"><MdDelete /></div>
+                    </div>
                 </div>
                 <div className="read-post-content">
                     {contentDivs.map((cont, index) => (
