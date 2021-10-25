@@ -5,9 +5,9 @@ import Navbar from './navbar/Navbar';
 import Home from './home/Home';
 // Problems
 import Problems from './problems/Problems';
-import Problem from './problems/Problem';
-import MCQ from './problems/MCQ';
-import CompanyProblems from './problems/CompanyProblems';
+import Problem from './problems/problem/Problem';
+import MCQ from './problems/mcq/MCQ';
+import CompanyProblems from './problems/company/CompanyProblems';
 // Contest
 import Contests from './contest/Contests';
 import Contest from './contest/Contest';

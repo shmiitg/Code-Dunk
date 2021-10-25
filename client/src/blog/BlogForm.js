@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom';
+import PostForm from '../components/post/PostForm';
 
 const BlogForm = () => {
     const history = useHistory();
@@ -32,50 +33,16 @@ const BlogForm = () => {
         checkAuth();
     }, [])
 
-    useEffect(() => {
-        const autoExpand = (field) => {
-            // Reset field height
-            field.style.height = 'inherit';
-            // Get the computed styles for the element
-            var computed = window.getComputedStyle(field);
-            // Calculate the height
-            var height = parseInt(computed.getPropertyValue('border-top-width'), 10)
-                + field.scrollHeight
-                + parseInt(computed.getPropertyValue('border-bottom-width'), 10);
-
-            field.style.height = height + 'px';
-        };
-        document.addEventListener('input', (e) => {
-            if (e.target.tagName.toLowerCase() !== 'textarea') return;
-            autoExpand(e.target);
-        }, false);
-    }, [])
-
     return (
-        <div className="container">
-            <div className="blog-container">
-                <div className="blog-heading">
-                    <div className="blog-heading-title">Write a Blog</div>
-                </div>
-                <form method="POST" className="post-form">
-                    <div className="post-form-field">
-                        <label htmlFor="title">Title</label>
-                        <input required value={blogArticle.title} onChange={handleBlogInput} autoComplete="off" name="title" />
-                    </div>
-                    <div className="post-form-field">
-                        <label htmlFor="description">Desciption</label>
-                        <input required value={blogArticle.description} onChange={handleBlogInput} autoComplete="off" name="description" />
-                    </div>
-                    <div className="post-form-field">
-                        <label htmlFor="content">Content</label>
-                        <textarea required onChange={handleBlogInput} name="content"></textarea>
-                    </div>
-                </form>
-                <div className="post-write">
-                    <div className="post-write-btn" onClick={blogSave}>Save</div>
-                </div>
-            </div>
-        </div >
+        <PostForm
+            name="Write a Blog"
+            title={blogArticle.title}
+            input_desc_name="description"
+            desc_name="Description"
+            desc={blogArticle.description}
+            handleInput={handleBlogInput}
+            save={blogSave}
+        />
     )
 }
 

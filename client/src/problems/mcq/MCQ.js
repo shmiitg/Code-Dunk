@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useHistory } from 'react-router';
-import Loading from '../loading/Loading';
+import Loading from '../../loading/Loading';
 import './MCQ.css';
 
 const MCQ = () => {

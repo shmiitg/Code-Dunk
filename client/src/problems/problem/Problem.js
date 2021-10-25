@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useHistory } from 'react-router';
-import Loading from '../loading/Loading';
-import Compiler from './Compiler';
+import Loading from '../../loading/Loading';
+import Compiler from '../compiler/Compiler';
 
 const Problem = () => {
     const history = useHistory();

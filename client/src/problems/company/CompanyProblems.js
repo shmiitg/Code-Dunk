@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import ReadMoreProblem from '../components/ReadMoreProblem';
+import ReadMoreProblem from '../../components/ReadMoreProblem';
 import { IoCaretBack } from 'react-icons/io5'
 import './CompanyProblems.css';
 

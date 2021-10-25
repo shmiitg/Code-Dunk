@@ -31,9 +31,9 @@ const Blog = () => {
                 <div className="main">
                     <div className="blog-heading">Blogs trending this week</div>
                     <div className="main-card">
-                        {blogCount && blogs.map(blog => (
+                        {blogCount && blogs.map((blog, index) => (
                             <div className="post">
-                                <Link key={blog._id} className="post-link" to={`/blog/read/${blog.link}`}>
+                                <Link key={index} className="post-link" to={`/blog/read/${blog.link}`}>
                                     <div className="post-title">{blog.title}</div>
                                     <div className="post-desc">{blog.description}</div>
                                     <div className="post-author">Contributed by <span>{blog.author}</span></div>

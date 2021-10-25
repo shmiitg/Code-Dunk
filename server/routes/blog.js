@@ -31,27 +31,21 @@ router.get('/blog/read/:link', async (req, res) => {
 function string_to_slug(str) {
     str = str.replace(/^\s+|\s+$/g, ''); // trim
     str = str.toLowerCase();
-
-    // remove accents, swap ñ for n, etc
-    var from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
-    var to = "aaaaeeeeiiiioooouuuunc------";
-    for (var i = 0, l = from.length; i < l; i++) {
-        str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
-    }
-
-    str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+    str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
         .replace(/\s+/g, '-') // collapse whitespace and replace by -
         .replace(/-+/g, '-') // collapse dashes
         .replace(/^-+/, '') // trim - from start of text
         .replace(/-+$/, ''); // trim - from end of text
 
-
     return str;
 }
 
 router.post('/blog/save', verifyJWT, async (req, res) => {
+    const { title, description, content } = req.body;
+    if (!title || !description || !content) {
+        return res.status(422).json({ error: 'All fields are required' });
+    }
     try {
-        const { title, description, content } = req.body;
         const user = await User.findOne({ email: req.user.email });
         const email = user.email;
         const author = user.username;

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router';
-import { Link } from 'react-router-dom';
 import moment from 'moment';
 import Loading from '../loading/Loading';
+import ReadPost from '../components/post/ReadPost';
 
 const ReadInterview = () => {
     const history = useHistory();
@@ -29,17 +29,13 @@ const ReadInterview = () => {
 
     if (loading) return (<Loading />)
     return (
-        <div className="container">
-            <div className="read-post-container">
-                <div className="read-post-title">{interview.title}</div>
-                <div className="read-post-desc">{interview.company}</div>
-                <div className="read-post-info">
-                    <div className="read-post-author"><Link to={`/profile/dashboard?user=${interview.author}`}>{interview.author}</Link></div>
-                    <div className="read-post-date">{date}</div>
-                </div>
-                <div className="read-post-content">{interview.content}</div>
-            </div>
-        </div >
+        <ReadPost
+            title={interview.title}
+            desc={interview.company}
+            author={interview.author}
+            date={date}
+            content={interview.content}
+        />
     )
 }
 

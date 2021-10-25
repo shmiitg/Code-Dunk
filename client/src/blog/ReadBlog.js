@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router';
 import moment from 'moment';
 import Loading from '../loading/Loading';
+import ReadPost from '../components/post/ReadPost';
 
 const ReadBlog = () => {
     const history = useHistory();
@@ -32,17 +32,13 @@ const ReadBlog = () => {
 
     if (loading) return (<Loading />)
     return (
-        <div className="container">
-            <div className="read-post-container">
-                <div className="read-post-title">{blog.title}</div>
-                <div className="read-post-desc">{blog.description}</div>
-                <div className="read-post-info">
-                    <div className="read-post-author"><Link to={`/profile/dashboard?user=${blog.author}`}>{blog.author}</Link></div>
-                    <div className="read-post-date">{date}</div>
-                </div>
-                <div className="read-post-content">{blog.content}</div>
-            </div>
-        </div >
+        <ReadPost
+            title={blog.title}
+            desc={blog.description}
+            author={blog.author}
+            date={date}
+            content={blog.content}
+        />
     )
 }
 
