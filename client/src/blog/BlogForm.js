@@ -5,7 +5,11 @@ import PostForm from '../components/post/PostForm';
 const BlogForm = () => {
     const history = useHistory();
     const [blogArticle, setBlogArticle] = useState({ title: '', description: '', content: '' });
-    const handleBlogInput = e => setBlogArticle({ ...blogArticle, [e.target.name]: e.target.value });
+    const handleBlogInput = (e) => {
+        let value = e.target.value;
+        if (value === '\n') value = '</br>';
+        setBlogArticle({ ...blogArticle, [e.target.name]: value })
+    }
     const blogSave = async () => {
         const { title, description, content } = blogArticle;
         const res = await fetch('/api/blog/save', {

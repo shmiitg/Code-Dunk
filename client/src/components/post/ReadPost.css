@@ -5,7 +5,6 @@
 
 .read-post-title {
   font-size: 3.75rem;
-  text-transform: capitalize;
   font-weight: 400;
 }
 
@@ -42,4 +41,15 @@
   margin-top: 3rem;
   font-size: 2rem;
   font-weight: 400;
+  min-height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-lines {
+  line-height: 2.8rem;
+}
+
+.line-break {
+  height: 2.8rem;
 }

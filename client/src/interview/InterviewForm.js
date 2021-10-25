@@ -5,7 +5,11 @@ import PostForm from '../components/post/PostForm';
 const InterviewForm = () => {
     const history = useHistory();
     const [interviewArticle, setInterviewArticle] = useState({ title: '', company: '', content: '' });
-    const handleInterviewInput = (e) => setInterviewArticle({ ...interviewArticle, [e.target.name]: e.target.value });
+    const handleInterviewInput = (e) => {
+        let value = e.target.value;
+        if (value === '\n') value = '</br>';
+        setInterviewArticle({ ...interviewArticle, [e.target.name]: value })
+    }
     const interviewSave = async () => {
         const { title, company, content } = interviewArticle;
         const res = await fetch('/api/interview/save', {
