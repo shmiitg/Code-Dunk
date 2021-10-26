@@ -21,7 +21,7 @@ router.get('/contests', async (req, res) => {
         }
         allContests.forEach(contest => {
             const startTime = contest.startTime;
-            let starts = new Date(startTime).valueOf();
+            let starts = new Date(startTime).getTime();
             let duration = contest.duration;
             let hr = duration.h;
             let min = duration.m + hr * 60;
@@ -37,7 +37,7 @@ router.get('/contests', async (req, res) => {
                 newContests.push(contest);
             }
         })
-        res.status(200).json({ contests: contests, newContests: newContests });
+        res.status(200).json({ contests: contests, runningContests: runningContests, newContests: newContests });
     } catch (err) {
         res.status(500).json({ error: "Some error occured" });
     }

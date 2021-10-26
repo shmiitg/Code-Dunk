@@ -1,20 +1,30 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 import moment from 'moment';
 import NewContest from './components/NewContest';
+import RunningContest from './components/RunningContest';
 import './Contests.css';
 
 const Contests = () => {
     const [contests, setContests] = useState([]);
     const [newContests, setNewContests] = useState([]);
+    const [runningContests, setRunningContests] = useState([]);
+    const [newContestStatus, setNewContestStatus] = useState([]);
+    const [runningContestStatus, setRunningContestStatus] = useState([]);
 
     const fetchData = async () => {
-        const res = await axios.get('/api/contests');
-        const data = await res.data;
+        const res = await fetch('/api/contests');
+        const data = await res.json();
         if (res.status === 200) {
+            const newContestArray = []
+            const runningContestArray = [];
+            for (let i = 0; i < data.newContests.length; i++) newContestArray[i] = 0
+            for (let i = 0; i < data.runningContests.length; i++) runningContestArray[i] = 0
             setContests(data.contests);
-            setNewContests(data.newContests)
+            setNewContests(data.newContests);
+            setRunningContests(data.runningContests);
+            setNewContestStatus(newContestArray);
+            setRunningContestStatus(runningContestArray);
         } else {
             window.alert(data.error);
         }
@@ -22,13 +32,16 @@ const Contests = () => {
 
     useEffect(() => {
         fetchData();
-    }, [])
+    }, [newContestStatus, runningContestStatus])
 
     return (
         <div className="container">
             <div className="nc-container">
                 {newContests.map((contest, index) => (
-                    <NewContest key={index} title={contest.title} startTime={contest.startTime} duration={contest.duration} dateNow={new Date().getMinutes()} />
+                    <NewContest key={index} status={newContestStatus} setStatus={setNewContestStatus} index={index} title={contest.title} startTime={contest.startTime} duration={contest.duration} />
+                ))}
+                {runningContests.map((contest, index) => (
+                    <RunningContest key={index} status={runningContestStatus} setStatus={setRunningContestStatus} index={index} title={contest.title} startTime={contest.startTime} duration={contest.duration} />
                 ))}
             </div>
             <div className="contest-container">

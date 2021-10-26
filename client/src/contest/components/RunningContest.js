@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment';
-import './NewContest.css';
 
-const NewContest = ({ status, setStatus, index, title, startTime, duration }) => {
+const RunningContest = ({ status, setStatus, index, title, startTime, duration }) => {
     const [starts, setStarts] = useState(' ');
     const date = moment(startTime).format('MMM DD, YYYY');
     const start = moment(startTime).format('h:mm A');
@@ -27,10 +26,18 @@ const NewContest = ({ status, setStatus, index, title, startTime, duration }) =>
         return ans;
     }
 
+    useEffect(() => {
+        daysLeft();
+        const interval = setInterval(daysLeft, 60000);
+        return () => clearInterval(interval);
+    }, [starts])
+
+
     const daysLeft = () => {
         let curr = new Date().getTime();
         let start = new Date(startTime).getTime();
-        const distance = start - curr;
+        let end = start + (duration.h * 60 + duration.m) * 60 * 1000;
+        const distance = end - curr;
         let days = Math.floor(distance / (1000 * 60 * 60 * 24));
         let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -49,20 +56,14 @@ const NewContest = ({ status, setStatus, index, title, startTime, duration }) =>
         }
     }
 
-    useEffect(() => {
-        daysLeft();
-        const interval = setInterval(daysLeft, 60000);
-        return () => clearInterval(interval);
-    }, [starts])
-
     return (
         <div className="nc-card">
-            <div className="nc-time">{`Starts in ${starts}`}</div>
+            <div className="nc-time">Contest Started</div>
             <div className="nc-name">{title}</div>
             <div className="nc-date">{date} @ {start} - {end}</div>
-            <div className="nc-register">Register</div>
+            <div className="nc-ends">{`Ends in ${starts}`}</div>
         </div>
     )
 }
 
-export default NewContest
+export default RunningContest

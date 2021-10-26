@@ -18,9 +18,6 @@ const Navbar = () => {
     const [courses, setCourses] = useState(["Data Structrues", "Algorithms", "Web Development",
         "Machine Learning", "Python", "C++", "Puzzles"]);
 
-    const [dropDown, setDropDown] = useState(false);
-    const toggleDropDown = () => setDropDown(prev => !prev);
-
     const fetchData = async () => {
         const res = await fetch('/user/info');
         const data = await res.json();
@@ -53,10 +50,8 @@ const Navbar = () => {
                             <Link className="login-btn" to="/login">Sign In</Link>
                         </div>
                         :
-                        <div className="user nav-item">
-                            <FaUserCircle onClick={toggleDropDown} />
-                            {dropDown && <DropDown toggleDropDown={toggleDropDown} setDropDown={setDropDown} />}
-                        </div>}
+                        <DropDown />
+                    }
                 </div>
             </div>
             <div className="course-topics">
