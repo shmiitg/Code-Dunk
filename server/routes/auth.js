@@ -31,6 +31,7 @@ router.post('/auth/register', async (req, res) => {
         await dashboard.save();
         res.status(200).json({ msg: 'Successfully registered' });
     } catch (err) {
+        console.log(err);
         res.status(500).json({ error: 'Some error occured' });
     }
 })

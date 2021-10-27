@@ -1,11 +1,12 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import logo from '../images/programming.png';
+import logo from '../images/logo.png';
 import { UserContext } from '../context/UserContext';
+import Loading from '../loading/Loading';
 import './Auth.css'
 
-
 const Login = () => {
+    const [loading, setLoading] = useState(true);
     const history = useHistory();
     const [user, setUser] = useState({ key: '', password: '' })
     const handleLoginInput = e => setUser({ ...user, [e.target.name]: e.target.value });
@@ -19,6 +20,7 @@ const Login = () => {
         });
         const data = await res.json();
         if (res.status === 200) {
+            window.alert(data.msg);
             history.push('/');
             setUserName(data.userName);
         } else {
@@ -26,6 +28,19 @@ const Login = () => {
         }
     }
 
+    const fetchData = async () => {
+        const res = await fetch('/user/info');
+        setLoading(false);
+        if (res.status === 200) {
+            history.push('/');
+        }
+    }
+
+    useEffect(() => {
+        fetchData();
+    }, [])
+
+    if (loading) return <Loading />
     return (
         <div className="container">
             <div className="form-container">

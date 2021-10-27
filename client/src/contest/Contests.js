@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import moment from 'moment';
 import NewContest from './components/NewContest';
 import RunningContest from './components/RunningContest';
+import Loading from '../loading/Loading';
 import './Contests.css';
 
 const Contests = () => {
+    const [loading, setLoading] = useState(true);
     const [contests, setContests] = useState([]);
     const [newContests, setNewContests] = useState([]);
     const [runningContests, setRunningContests] = useState([]);
@@ -15,6 +17,7 @@ const Contests = () => {
     const fetchData = async () => {
         const res = await fetch('/api/contests');
         const data = await res.json();
+        setLoading(false);
         if (res.status === 200) {
             const newContestArray = []
             const runningContestArray = [];
@@ -34,6 +37,7 @@ const Contests = () => {
         fetchData();
     }, [newContestStatus, runningContestStatus])
 
+    if (loading) return <Loading />
     return (
         <div className="container">
             <div className="nc-container">
@@ -47,7 +51,7 @@ const Contests = () => {
             <div className="contest-container">
                 <div className="sidebar">
                     <div className="rankings-card">
-                        <div className="ranking-heading">Global Rankings</div>
+                        <div className="ranking-heading"></div>
                     </div>
                 </div>
                 <div className="main">

@@ -1,8 +1,12 @@
 import React, { useState } from "react";
+import { useLocation } from 'react-router-dom';
 import "./Compiler.css";
 
 const Compiler = () => {
-
+    const { pathname } = useLocation();
+    const link = pathname.split('/')[2];
+    console.log(link);
+    const [correct, setCorrect] = useState(false);
     const [state, setState] = useState({
         input: localStorage.getItem('input') || ``,
         output: ``,
@@ -27,7 +31,11 @@ const Compiler = () => {
         localStorage.setItem('language_Id', e.target.value)
     };
 
-    const submit = async (e) => {
+    const submitCode = async (e) => {
+        window.alert('Feature to be added in future');
+    }
+
+    const runCode = async (e) => {
         e.preventDefault();
         toggleRunner(1);
         let outputText = document.getElementById("output");
@@ -80,6 +88,7 @@ const Compiler = () => {
             const output = atob(jsonGetSolution.stdout);
             outputText.innerHTML = "";
             outputText.innerHTML += `${output}\nExecution Time : ${jsonGetSolution.time} Secs\nMemory used : ${jsonGetSolution.memory} bytes`;
+
         } else if (jsonGetSolution.stderr) {
             const error = atob(jsonGetSolution.stderr);
             outputText.innerHTML = "";
@@ -145,13 +154,14 @@ const Compiler = () => {
                     <div className="code-result">
                         <div className="text-area">
                             <textarea className="result-show" id="input" onChange={userInput}></textarea>
-                            <textarea readonly='true' className="result-hide" id="output"></textarea>
+                            <textarea readOnly className="result-hide" id="output"></textarea>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="run-code">
-                <button type="submit" className="run-code-btn" onClick={submit}>Run Code</button>
+                <button type="submit" className="run-code-btn" onClick={submitCode}>Submit</button>
+                <button type="submit" className="run-code-btn" onClick={runCode}>Run Code</button>
             </div>
         </div>
     );

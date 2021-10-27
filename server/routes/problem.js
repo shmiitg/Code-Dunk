@@ -74,6 +74,21 @@ const getTopic = (str) => {
     return ans;
 }
 
+router.get('/problem/tc/:link', verifyJWT, async (req, res) => {
+    try {
+        let link = req.params.link;
+        const problem = await Problem.findOne({ link: link });
+        let tc = '', ans = '';
+        if (problem.tc) {
+            tc = problem.tc;
+            ans = problem.ans;
+        }
+        res.status(200).json({ tc: tc, ans: ans });
+    } catch (err) {
+        res.status(500).json({ error: 'Some error occured' });
+    }
+})
+
 router.get('/mcq/:topic', async (req, res) => {
     try {
         let topicLink = req.params.topic;

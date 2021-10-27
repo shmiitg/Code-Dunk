@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import DropDown from './components/DropDown';
 import { UserContext } from '../context/UserContext';
-import { FaUserCircle } from 'react-icons/fa';
+import logo from '../images/logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -38,6 +38,9 @@ const Navbar = () => {
         <div className="navbar">
             <div className="nav-links">
                 <div className="nav-left">
+                    <div className="nav-item nav-logo">
+                        <Link to="/"><img src={logo} alt="logo" /></Link>
+                    </div>
                     {navLinks.map((navlink, index) => (
                         <div key={index} className="nav-item">
                             <Link to={navlink.address}>{navlink.name}</Link>

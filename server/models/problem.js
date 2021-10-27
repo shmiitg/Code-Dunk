@@ -14,6 +14,14 @@ const schema = new mongoose.Schema({
         type: String,
         required: true
     },
+    tc: {
+        type: Array,
+        required: false
+    },
+    ans: {
+        type: Array,
+        required: false
+    },
     difficulty: {
         type: String,
         required: true

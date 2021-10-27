@@ -40,6 +40,13 @@ Left
   margin-bottom: 1rem;
 }
 
+.edit-desc input {
+  border: none;
+  padding: 0;
+  color: var(--clr-black);
+  font-weight: inherit;
+}
+
 .edit-btn {
   cursor: pointer;
   width: fit-content;
@@ -59,7 +66,6 @@ Left
   font-size: inherit;
   line-height: 1.2;
   padding: 8px;
-  width: 50%;
   border-radius: 3px;
   color: #546e7a;
   border: 1px solid #cfd8dc;

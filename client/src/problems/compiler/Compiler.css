@@ -89,8 +89,9 @@
 }
 
 .run-code {
-  text-align: right;
   padding: 1rem 1rem 0.5rem 0;
+  display: flex;
+  gap: 1rem;
 }
 
 .run-code-btn {

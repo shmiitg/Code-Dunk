@@ -99,7 +99,9 @@ const EditProfile = () => {
                                     <div className="edit-info">
                                         <div className="edit-info-left">
                                             <div className="edit-title">Name</div>
-                                            <div className="edit-desc">{details.name}</div>
+                                            <div className="edit-desc">
+                                                <input type="text" value={details.name} readOnly placeholder="Your Name" />
+                                            </div>
                                         </div>
                                         <div className="edit-info-right">
                                             <div className="edit-btn" onClick={editNameBtn}>Edit</div>
@@ -110,7 +112,7 @@ const EditProfile = () => {
                                         <div className="edit-info-left">
                                             <div className="edit-title">Name</div>
                                             <div className="edit-form">
-                                                <input name="name" type="text" autoComplete="off" value={details.name} onChange={handleInput} />
+                                                <input name="name" type="text" autoComplete="off" value={details.name} onChange={handleInput} placeholder="Your Name" />
                                                 <div className="edit-form-btn">
                                                     <div className="save-btn btn" onClick={saveDetail}>Save</div>
                                                     <div className="cancel-btn btn" onClick={cancelDetail}>Cancel</div>
@@ -125,7 +127,9 @@ const EditProfile = () => {
                                     <div className="edit-info">
                                         <div className="edit-info-left">
                                             <div className="edit-title">Gender</div>
-                                            <div className="edit-desc">{details.gender}</div>
+                                            <div className="edit-desc">
+                                                <input type="text" value={details.gender} readOnly placeholder="Not provided" />
+                                            </div>
                                         </div>
                                         <div className="edit-info-right">
                                             <div className="edit-btn" onClick={editGenderBtn}>Edit</div>
@@ -137,7 +141,7 @@ const EditProfile = () => {
                                             <div className="edit-title">Gender</div>
                                             <div className="edit-form">
                                                 <select name="gender" onChange={handleInput}>
-                                                    <option value="Not provided" selected={details.gender === 'Not provided'}>Select..</option>
+                                                    <option value="" selected={details.gender === 'Not provided'}>Select..</option>
                                                     <option value="Male" selected={details.gender === 'Male'}>Male</option>
                                                     <option value="Female" selected={details.gender === 'Female'}>Female</option>
                                                 </select>
@@ -155,7 +159,9 @@ const EditProfile = () => {
                                     <div className="edit-info">
                                         <div className="edit-info-left">
                                             <div className="edit-title">Location</div>
-                                            <div className="edit-desc">{details.location}</div>
+                                            <div className="edit-desc">
+                                                <input type="text" value={details.location} readOnly placeholder="Your location" />
+                                            </div>
                                         </div>
                                         <div className="edit-info-right">
                                             <div className="edit-btn" onClick={editLocationBtn}>Edit</div>
@@ -167,7 +173,7 @@ const EditProfile = () => {
                                             <div className="edit-title">Location</div>
                                             <div className="edit-form">
                                                 <select name="location" onChange={handleInput}>
-                                                    <option value="Your location" selected={details.location === 'Your location'}>Select..</option>
+                                                    <option value="" selected={details.location === 'Your location'}>Select..</option>
                                                     {countries.map((country, index) => (
                                                         <option key={index} value={country} selected={details.location === country}>{country}</option>
                                                     ))}

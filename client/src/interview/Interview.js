@@ -29,21 +29,24 @@ const Interview = () => {
         <div className="container">
             <div className="small-container">
                 <div className="main">
-                    <div className="interview-heading">
-                        <div className="interview-heading-title">Interview Experience</div>
-                        <div className="interview-heading-info">Read other's interview experience and share yours</div>
-                    </div>
-                    <div className="main-card">
-                        {interviewCount && interviews.map((interview, index) => (
-                            <div className="post">
-                                <Link key={index} className="post-link" to={`/interview/read/${interview.link}`}>
-                                    <div className="post-title">{interview.title}</div>
-                                    <div className="post-desc">{interview.company}</div>
-                                    <div className="post-author">{interview.author}</div>
-                                </Link>
+                    {interviewCount &&
+                        <div className="posts">
+                            <div className="blog-heading">
+                                Read other's interview experience and share yours
                             </div>
-                        ))}
-                    </div>
+                            <div className="main-card">
+                                {interviews.map((interview, index) => (
+                                    <div key={index} className="post">
+                                        <Link className="post-link" to={`/interview/read/${interview.link}`}>
+                                            <div className="post-title">{interview.title}</div>
+                                            <div className="post-desc">{interview.company}</div>
+                                            <div className="post-author">{interview.author}</div>
+                                        </Link>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    }
                     <div className="post-write">
                         <Link className="post-write-btn" to="/interview/new">Share you experience</Link>
                     </div>

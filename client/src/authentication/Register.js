@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
-import logo from '../images/programming.png';
+import React, { useState, useEffect } from 'react'
+import { Link, useHistory } from 'react-router-dom';
+import Loading from '../loading/Loading';
+import logo from '../images/logo.png';
 
 const Register = () => {
+    const [loading, setLoading] = useState(true);
     const history = useHistory();
     const [user, setUser] = useState({ username: '', email: '', password: '', cpassword: '' })
     const handleInput = e => setUser({ ...user, [e.target.name]: e.target.value });
@@ -23,6 +25,19 @@ const Register = () => {
         }
     }
 
+    const fetchData = async () => {
+        const res = await fetch('/user/info');
+        setLoading(false);
+        if (res.status === 200) {
+            history.push('/');
+        }
+    }
+
+    useEffect(() => {
+        fetchData();
+    }, [])
+
+    if (loading) return <Loading />
     return (
         <div className="container">
             <div className="form-container">

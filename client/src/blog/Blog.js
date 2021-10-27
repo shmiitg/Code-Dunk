@@ -29,18 +29,22 @@ const Blog = () => {
         <div className="container">
             <div className="small-container">
                 <div className="main">
-                    <div className="blog-heading">Blogs trending this week</div>
-                    <div className="main-card">
-                        {blogCount && blogs.map((blog, index) => (
-                            <div className="post">
-                                <Link key={index} className="post-link" to={`/blog/read/${blog.link}`}>
-                                    <div className="post-title">{blog.title}</div>
-                                    <div className="post-desc">{blog.description}</div>
-                                    <div className="post-author">Contributed by <span>{blog.author}</span></div>
-                                </Link>
+                    {blogCount &&
+                        <div className="posts">
+                            <div className="blog-heading">Blogs trending this week</div>
+                            <div className="main-card">
+                                {blogs.map((blog, index) => (
+                                    <div key={index} className="post">
+                                        <Link className="post-link" to={`/blog/read/${blog.link}`}>
+                                            <div className="post-title">{blog.title}</div>
+                                            <div className="post-desc">{blog.description}</div>
+                                            <div className="post-author">Contributed by <span>{blog.author}</span></div>
+                                        </Link>
+                                    </div>
+                                ))}
                             </div>
-                        ))}
-                    </div>
+                        </div>
+                    }
                     <div className="post-write">
                         <Link className="post-write-btn" to="/blog/new">Write a blog</Link>
                     </div>

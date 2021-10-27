@@ -51,6 +51,15 @@
   color: #121212;
 }
 
+.nav-logo a {
+  display: flex;
+  margin-top: 3px;
+}
+
+.nav-logo img {
+  width: 10rem;
+}
+
 .course-item a {
   font-weight: 500;
   color: var(--clr-black);

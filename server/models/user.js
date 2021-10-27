@@ -13,23 +13,23 @@ const schema = new mongoose.Schema({
     },
     name: {
         type: String,
-        default: 'Your name'
+        required: false,
     },
     gender: {
         type: String,
-        default: 'Not provided'
+        required: false
     },
     location: {
         type: String,
-        default: 'Your location'
+        required: false
     },
     birthday: {
         type: String,
-        default: ''
+        required: false
     },
     education: {
         type: String,
-        default: ''
+        required: false
     },
     skills: {
         type: String,
@@ -41,7 +41,7 @@ const schema = new mongoose.Schema({
     },
     profilePic: {
         type: String,
-        default: ''
+        required: false
     },
     role: {
         type: String,

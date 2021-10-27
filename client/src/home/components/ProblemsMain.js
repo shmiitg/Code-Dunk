@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import ReadMoreProblem from '../../components/ReadMoreProblem'
+import Loading from '../../loading/Loading';
+import ReadMoreProblem from '../../components/ReadMoreProblem';
 
 const ProblemsMain = () => {
+    const [loading, setLoading] = useState(true);
     const [problems, setProblems] = useState([])
 
     const fetchData = async () => {
         const res = await fetch('/api/problems/daily');
         const data = await res.json();
+        setLoading(false);
         if (res.status === 200) {
             setProblems([data.problems[0], data.problems[1], data.problems[2]]);
         }
@@ -17,6 +20,7 @@ const ProblemsMain = () => {
         fetchData();
     }, [])
 
+    if (loading) return <Loading />
     return (
         <div className="main-card">
             {problems.map((problem, index) => (
