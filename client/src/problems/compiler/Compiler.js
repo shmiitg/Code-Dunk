@@ -48,7 +48,7 @@ const Compiler = () => {
                 headers: {
                     "content-type": "application/json",
                     "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
-                    "x-rapidapi-key": "494e74d1d5mshfba3d07486b324ep171433jsnd4ee546a1da5",
+                    "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
                     accept: "application/json",
                 },
                 body: JSON.stringify({
@@ -77,7 +77,7 @@ const Compiler = () => {
                     method: "GET",
                     headers: {
                         "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
-                        "x-rapidapi-key": "494e74d1d5mshfba3d07486b324ep171433jsnd4ee546a1da5",
+                        "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
                         "content-type": "application/json",
                     },
                 });
