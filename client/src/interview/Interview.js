@@ -1,21 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Loading from '../loading/Loading';
+import PostsLoading from '../components/post/PostsLoading';
 import './Interview.css';
 
 const Interview = () => {
     const [loading, setLoading] = useState(true);
     const [interviews, setInterviews] = useState([]);
-    const [interviewCount, setInterviewCount] = useState(false);
 
     const fetchData = async () => {
         const res = await fetch('/api/interviews');
         const data = await res.json();
         setLoading(false);
         if (res.status === 200) {
-            if (data.interviews.length) {
-                setInterviewCount(true);
-            }
             setInterviews(data.interviews);
         }
     }
@@ -24,29 +20,29 @@ const Interview = () => {
         fetchData();
     }, []);
 
-    if (loading) return (<Loading />)
     return (
         <div className="container">
             <div className="small-container">
                 <div className="main">
-                    {interviewCount &&
-                        <div className="posts">
-                            <div className="blog-heading">
-                                Read other's interview experience and share yours
-                            </div>
-                            <div className="main-card">
-                                {interviews.map((interview, index) => (
-                                    <div key={index} className="post">
-                                        <Link className="post-link" to={`/interview/read/${interview.link}`}>
-                                            <div className="post-title">{interview.title}</div>
-                                            <div className="post-desc">{interview.company}</div>
-                                            <div className="post-author">{interview.author}</div>
-                                        </Link>
-                                    </div>
-                                ))}
-                            </div>
+                    <div className="posts">
+                        <div className="blog-heading">
+                            Read other's interview experience and share yours
                         </div>
-                    }
+                        <div className="main-card">
+                            {!loading && interviews.map((interview, index) => (
+                                <div key={index} className="post">
+                                    <Link className="post-link" to={`/interview/read/${interview.link}`}>
+                                        <div className="post-title">{interview.title}</div>
+                                        <div className="post-desc">{interview.company}</div>
+                                        <div className="post-author">Contributed by <span>{interview.author}</span></div>
+                                    </Link>
+                                </div>
+                            ))}
+                            {loading && [1, 2, 3, 4].map(n => (
+                                <PostsLoading key={n} />
+                            ))}
+                        </div>
+                    </div>
                     <div className="post-write">
                         <Link className="post-write-btn" to="/interview/new">Share you experience</Link>
                     </div>

@@ -1,21 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Loading from '../loading/Loading';
+import PostsLoading from '../components/post/PostsLoading';
 import './Blog.css';
 
 const Blog = () => {
     const [loading, setLoading] = useState(true);
     const [blogs, setBlogs] = useState([]);
-    const [blogCount, setBlogCount] = useState(false);
 
     const fetchData = async () => {
         const res = await fetch('/api/blogs');
         const data = await res.json();
         setLoading(false);
         if (res.status === 200) {
-            if (data.blogs.length) {
-                setBlogCount(true);
-            }
             setBlogs(data.blogs);
         }
     }
@@ -24,30 +20,30 @@ const Blog = () => {
         fetchData();
     }, []);
 
-    if (loading) return (<Loading />)
     return (
         <div className="container">
             <div className="small-container">
                 <div className="main">
-                    {blogCount &&
-                        <div className="posts">
-                            <div className="blog-heading">Blogs trending this week</div>
-                            <div className="main-card">
-                                {blogs.map((blog, index) => (
-                                    <div key={index} className="post">
-                                        <Link className="post-link" to={`/blog/read/${blog.link}`}>
-                                            <div className="post-title">{blog.title}</div>
-                                            <div className="post-desc">{blog.description}</div>
-                                            <div className="post-author">Contributed by <span>{blog.author}</span></div>
-                                        </Link>
-                                    </div>
-                                ))}
-                            </div>
+                    <div className="posts">
+                        <div className="blog-heading">Blogs trending this week</div>
+                        <div className="main-card">
+                            {!loading && blogs.map((blog, index) => (
+                                <div key={index} className="post">
+                                    <Link className="post-link" to={`/blog/read/${blog.link}`}>
+                                        <div className="post-title">{blog.title}</div>
+                                        <div className="post-desc">{blog.description}</div>
+                                        <div className="post-author">Contributed by <span>{blog.author}</span></div>
+                                    </Link>
+                                </div>
+                            ))}
+                            {loading && [1, 2, 3, 4].map(n => (
+                                <PostsLoading key={n} />
+                            ))}
                         </div>
-                    }
-                    <div className="post-write">
-                        <Link className="post-write-btn" to="/blog/new">Write a blog</Link>
                     </div>
+                    {!loading && <div className="post-write">
+                        <Link className="post-write-btn" to="/blog/new">Write a blog</Link>
+                    </div>}
                 </div>
                 <div className="sidebar">
 
