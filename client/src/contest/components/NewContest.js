@@ -27,7 +27,7 @@ const NewContest = ({ status, setStatus, index, title, startTime, duration }) =>
         return ans;
     }
 
-    const daysLeft = () => {
+    function timeLeft() {
         let curr = new Date().getTime();
         let start = new Date(startTime).getTime();
         const distance = start - curr;
@@ -43,17 +43,15 @@ const NewContest = ({ status, setStatus, index, title, startTime, duration }) =>
         else if (minutes === 1) setStarts(minutes + ' minute');
         else if (seconds >= 1) setStarts(' less than a minute');
         else {
-            let arr = status;
-            arr[index] = 1;
-            setStatus(arr);
+            setStatus(true);
         }
     }
 
     useEffect(() => {
-        daysLeft();
-        const interval = setInterval(daysLeft, 60000);
+        timeLeft();
+        const interval = setInterval(timeLeft, 5000);
         return () => clearInterval(interval);
-    }, [starts])
+    }, [])
 
     return (
         <div className="nc-card">

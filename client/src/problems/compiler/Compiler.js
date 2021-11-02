@@ -6,7 +6,6 @@ const Compiler = () => {
     const { pathname } = useLocation();
     const link = pathname.split('/')[2];
     console.log(link);
-    const [correct, setCorrect] = useState(false);
     const [state, setState] = useState({
         input: localStorage.getItem('input') || ``,
         output: ``,

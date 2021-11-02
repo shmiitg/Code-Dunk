@@ -43,9 +43,9 @@ const Interview = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="post-write">
+                    {!loading && <div className="post-write">
                         <Link className="post-write-btn" to="/interview/new">Share you experience</Link>
-                    </div>
+                    </div>}
                 </div>
                 <div className="sidebar">
 

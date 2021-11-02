@@ -26,14 +26,7 @@ const RunningContest = ({ status, setStatus, index, title, startTime, duration }
         return ans;
     }
 
-    useEffect(() => {
-        daysLeft();
-        const interval = setInterval(daysLeft, 60000);
-        return () => clearInterval(interval);
-    }, [starts])
-
-
-    const daysLeft = () => {
+    function timeLeft() {
         let curr = new Date().getTime();
         let start = new Date(startTime).getTime();
         let end = start + (duration.h * 60 + duration.m) * 60 * 1000;
@@ -50,11 +43,15 @@ const RunningContest = ({ status, setStatus, index, title, startTime, duration }
         else if (minutes === 1) setStarts(minutes + ' minute');
         else if (seconds >= 1) setStarts(' less than a minute');
         else {
-            let arr = status;
-            arr[index] = 1;
-            setStatus(arr);
+            setStatus(true);
         }
     }
+
+    useEffect(() => {
+        timeLeft();
+        const interval = setInterval(timeLeft, 5000);
+        return () => clearInterval(interval);
+    }, [])
 
     return (
         <div className="nc-card">

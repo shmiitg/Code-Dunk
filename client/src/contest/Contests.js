@@ -11,13 +11,13 @@ const Contests = () => {
     const [contests, setContests] = useState([]);
     const [newContests, setNewContests] = useState([]);
     const [runningContests, setRunningContests] = useState([]);
-    const [newContestStatus, setNewContestStatus] = useState([]);
-    const [runningContestStatus, setRunningContestStatus] = useState([]);
+    const [status, setStatus] = useState(false);
 
     const fetchData = async () => {
         const res = await fetch('/api/contests');
         const data = await res.json();
         setLoading(false);
+        setStatus(false);
         if (res.status === 200) {
             const newContestArray = []
             const runningContestArray = [];
@@ -26,8 +26,6 @@ const Contests = () => {
             setContests(data.contests);
             setNewContests(data.newContests);
             setRunningContests(data.runningContests);
-            setNewContestStatus(newContestArray);
-            setRunningContestStatus(runningContestArray);
         } else {
             window.alert(data.error);
         }
@@ -35,17 +33,17 @@ const Contests = () => {
 
     useEffect(() => {
         fetchData();
-    }, [newContestStatus, runningContestStatus])
+    }, [status])
 
     if (loading) return <Loading />
     return (
         <div className="container">
             <div className="nc-container">
                 {newContests.map((contest, index) => (
-                    <NewContest key={index} status={newContestStatus} setStatus={setNewContestStatus} index={index} title={contest.title} startTime={contest.startTime} duration={contest.duration} />
+                    <NewContest key={index} status={status} setStatus={setStatus} index={index} title={contest.title} startTime={contest.startTime} duration={contest.duration} />
                 ))}
                 {runningContests.map((contest, index) => (
-                    <RunningContest key={index} status={runningContestStatus} setStatus={setRunningContestStatus} index={index} title={contest.title} startTime={contest.startTime} duration={contest.duration} />
+                    <RunningContest key={index} status={status} setStatus={setStatus} index={index} title={contest.title} startTime={contest.startTime} duration={contest.duration} />
                 ))}
             </div>
             <div className="contest-container">
