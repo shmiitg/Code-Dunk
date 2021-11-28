@@ -3,49 +3,183 @@
   padding: 0 3rem;
   background: #fff;
 }
+
 /* 
 Left Container
 */
 
-.problems-card {
+.problem-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.problem-single-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 20rem;
+  padding: 1.2rem;
+  flex-basis: calc(90% / 3);
+  border: 1px solid #b0b0b0;
+  border-radius: 2px;
+  margin-bottom: 2.5rem;
+  min-height: 12.5rem;
+}
+
+.problem-card-top {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: space-between;
   padding: 0 1rem;
-  margin-bottom: 3rem;
+  gap: 2rem;
 }
 
-.problems-title {
-  font-size: 1.65rem;
-  padding: 1rem 0 1.5rem;
+.problem-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.problem-card-img {
+  width: 3.6rem;
+  display: flex;
+}
+
+.problem-card-img img {
+  width: inherit;
+}
+
+.problem-link a {
+  color: #423d69;
+  line-height: 1.3;
+  font-size: 1.5rem;
+}
+
+.problem-question-count {
+  margin-top: 3px;
+}
+
+.problem-progress {
   text-align: center;
-  color: #121212;
-  font-weight: 600;
+  line-height: 1.15rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.problems-card ul > li {
-  padding: 0.25rem 1rem;
+.problem-progress .bar {
+  width: 100%;
+  height: 1rem;
+  background-color: #e7e6f1;
+  border-radius: 2rem;
 }
 
-.problems-card li > a,
-.problems-mcq a {
-  color: var(--clr-black);
-}
-
-.problems-card li > a:hover,
-.problems-mcq a:hover {
-  text-decoration: underline;
-}
-
-.problems-mcq {
-  margin-top: 1rem;
+.problem-progress .current-bar {
+  height: inherit;
+  background-color: #655ea1;
+  border-radius: inherit;
 }
 
 /* 
-Right Container
+============
+Progress Bar
+============
+*/
+
+.progress-card {
+  display: flex;
+  gap: 5rem;
+}
+
+.box {
+  display: inline-block;
+}
+
+.progress {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress > .inner {
+  position: absolute;
+  color: #655ea1;
+}
+
+.progress > svg {
+  height: 100%;
+  display: block;
+}
+
+.problem-statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 1rem;
+}
+
+.stats {
+  display: flex;
+  width: 12rem;
+  justify-content: space-between;
+}
+
+.stats-right {
+  font-weight: 500;
+  flex-basis: 30%;
+  text-align: center;
+}
+
+/* 
+=========
+Company
+=========
 */
 
 .company-list {
   display: flex;
   flex-wrap: wrap;
 }
+
+.company-link {
+  background: #e7e6f1;
+  padding: 4px 1rem 6px;
+  border-radius: 13px;
+  margin: 0 12px 14px 0;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #595e68;
+}
+
+.company-link:hover {
+  color: #595e68;
+  background: #e0dff1;
+}
+
+.company-question-count {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding: 0 7px 1px;
+  border-radius: 15px;
+  margin-left: 4px;
+  color: #fff;
+  background: #655ea1;
+}
+
+/* 
+==============
+Featured List
+==============
+*/
 
 .featured-list-card {
   display: flex;
@@ -73,32 +207,6 @@ Right Container
   font-weight: 500;
   font-size: 1.7rem;
   color: var(--clr-black);
-}
-
-.company-link {
-  background: #f1f1f1;
-  padding: 4px 1rem 6px;
-  border-radius: 13px;
-  margin: 0 12px 14px 0;
-  font-size: 10pt;
-  font-weight: 500;
-  color: #595e68;
-}
-
-.company-link:hover {
-  color: #595e68;
-  background: #e6e6e6;
-}
-
-.company-question-count {
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  padding: 0 7px 1px;
-  border-radius: 15px;
-  margin-left: 4px;
-  color: #fff;
-  background: #454545;
 }
 
 /* 

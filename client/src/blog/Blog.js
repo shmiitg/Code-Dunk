@@ -22,32 +22,27 @@ const Blog = () => {
 
     return (
         <div className="container">
-            <div className="small-container">
-                <div className="main">
-                    <div className="posts">
-                        <div className="blog-heading">Blogs trending this week</div>
-                        <div className="main-card">
-                            {!loading && blogs.map((blog, index) => (
-                                <div key={index} className="post">
-                                    <Link className="post-link" to={`/blog/read/${blog.link}`}>
-                                        <div className="post-title">{blog.title}</div>
-                                        <div className="post-desc">{blog.description}</div>
-                                        <div className="post-author">Contributed by <span>{blog.author}</span></div>
-                                    </Link>
-                                </div>
-                            ))}
-                            {loading && [1, 2, 3, 4].map(n => (
-                                <PostsLoading key={n} />
-                            ))}
-                        </div>
+            <div className="container-md">
+                <div className="posts">
+                    <div className="blog-heading">Blogs trending this week</div>
+                    <div className="main-card">
+                        {!loading && blogs.map((blog, index) => (
+                            <div key={index} className="post">
+                                <Link className="post-link" to={`/blog/read/${blog.link}`}>
+                                    <div className="post-title">{blog.title}</div>
+                                    <div className="post-desc">{blog.description}</div>
+                                    <div className="post-author">Contributed by <span>{blog.author}</span></div>
+                                </Link>
+                            </div>
+                        ))}
+                        {loading && [1, 2, 3, 4].map(n => (
+                            <PostsLoading key={n} />
+                        ))}
                     </div>
-                    {!loading && <div className="post-write">
-                        <Link className="post-write-btn" to="/blog/new">Write a blog</Link>
-                    </div>}
                 </div>
-                <div className="sidebar">
-
-                </div>
+                {!loading && <div className="post-write">
+                    <Link className="post-write-btn" to="/blog/new">Write a blog</Link>
+                </div>}
             </div>
         </div >
     )

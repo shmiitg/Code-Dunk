@@ -90,3 +90,21 @@ Common classes
 .sidebar-card-content {
   padding: 0.5rem;
 }
+
+.container-sm {
+  max-width: 70rem;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.container-md {
+  max-width: 75rem;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.container-lg {
+  max-width: 85rem;
+  margin: auto;
+  margin-bottom: 5rem;
+}

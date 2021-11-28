@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import Loading from '../../loading/Loading';
 import ReadMoreProblem from '../../components/ReadMoreProblem';
 
@@ -8,7 +7,7 @@ const ProblemsMain = () => {
     const [problems, setProblems] = useState([])
 
     const fetchData = async () => {
-        const res = await fetch('/api/problems/daily');
+        const res = await fetch('/api/problems');
         const data = await res.json();
         setLoading(false);
         if (res.status === 200) {

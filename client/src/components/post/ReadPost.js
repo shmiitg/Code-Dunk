@@ -9,7 +9,7 @@ const ReadPost = ({ type, title, desc, author, date, content, link, del }) => {
 
     return (
         <div className="container">
-            <div className="read-post-container">
+            <div className="container-lg">
                 <div className="read-post-title">{title}</div>
                 <div className="read-post-desc">{desc}</div>
                 <div className="read-post-info">

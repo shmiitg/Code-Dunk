@@ -17,20 +17,6 @@ const schema = new mongoose.Schema({
     contests: {
         type: Number,
         default: 0
-    },
-    problems: {
-        easy: {
-            type: Number,
-            default: 0
-        },
-        medium: {
-            type: Number,
-            default: 0
-        },
-        hard: {
-            type: Number,
-            default: 0
-        }
     }
 },
     { timestamps: true }

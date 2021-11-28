@@ -15,6 +15,10 @@ const schema = new mongoose.Schema({
         type: String,
         required: false,
     },
+    problems: {
+        type: Array,
+        required: false
+    },
     gender: {
         type: String,
         required: false

@@ -11,10 +11,8 @@ const Dashboard = () => {
     const { search } = useLocation();
     const [loading, setLoading] = useState(true);
     const [userData, setUserData] = useState({ username: '', name: '', location: '', education: '', skill: '' });
-    const [dashBoardData, setDashBoardData] = useState({
-        rating: '', ranking: '', contest: '',
-        problems: { easy: '', medium: '', hard: '' }
-    });
+    const [dashBoardData, setDashBoardData] = useState({ rating: '', ranking: '', contest: '' });
+    const [problemsData, setProblemsData] = useState([]);
 
     const fetchData = async () => {
         const username = search.split('=')[1];
@@ -24,12 +22,11 @@ const Dashboard = () => {
         if (res.status === 200) {
             const user = data.user;
             const dashBoard = data.dashBoard;
+            const problems = data.problems;
             setUserData(user);
             setDashBoardData(dashBoard);
-        } else if (res.status === 404) {
-            history.push('/');
-        }
-        else {
+            setProblemsData(problems);
+        } else {
             history.push('/');
         }
     }
@@ -47,7 +44,7 @@ const Dashboard = () => {
                 </div>
                 <div className="main right">
                     <Rating rating={dashBoardData.rating} ranking={dashBoardData.ranking} contests={dashBoardData.contests} />
-                    <Problems easy={dashBoardData.problems.easy} medium={dashBoardData.problems.medium} hard={dashBoardData.problems.hard} />
+                    <Problems easy={problemsData[0]} medium={problemsData[1]} hard={problemsData[2]} />
                 </div>
             </div>
         </div>

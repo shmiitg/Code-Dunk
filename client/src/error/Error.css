@@ -1,0 +1,9 @@
+.error {
+  font-size: 5rem;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

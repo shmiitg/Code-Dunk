@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import ReadMoreProblem from '../../components/ReadMoreProblem';
-import { IoCaretBack } from 'react-icons/io5'
+import { IoCaretBack } from 'react-icons/io5';
 import './CompanyProblems.css';
 
 const CompanyProblems = () => {
@@ -26,7 +26,7 @@ const CompanyProblems = () => {
 
     return (
         <div className="container">
-            <div className="company-problems-container">
+            <div className="container-lg">
                 <div className="go-back">
                     <Link to="/problems">
                         <IoCaretBack />

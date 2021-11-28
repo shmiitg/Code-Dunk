@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { withRouter } from 'react-router';
+// import { withRouter } from 'react-router';
 import UserContextProvider from './context/UserContext';
 import Navbar from './navbar/Navbar';
 import Home from './home/Home';
+import Error from './error/Error';
 // Problems
 import Problems from './problems/Problems';
+import ProblemsList from './problems/problemlist/ProblemsList';
 import Problem from './problems/problem/Problem';
-import MCQ from './problems/mcq/MCQ';
 import CompanyProblems from './problems/company/CompanyProblems';
 // Contest
 import Contests from './contest/Contests';
@@ -36,8 +37,8 @@ const DefaultRoutes = () => {
         <Route exact path="/" component={Home}></Route>
         {/* Problems */}
         <Route exact path="/problems" component={Problems}></Route>
+        <Route exact path="/problems/:topic" component={ProblemsList}></Route>
         <Route path="/problem" component={Problem}></Route>
-        <Route path="/mcq" component={MCQ}></Route>
         <Route path="/problems/company" component={CompanyProblems}></Route>
         {/* Contests */}
         <Route exact path="/contests" component={Contests}></Route>
@@ -58,6 +59,8 @@ const DefaultRoutes = () => {
         <Route exact path="/blog/new" component={BlogForm}></Route>
         <Route exact path="/blog/read/:id" component={ReadBlog}></Route>
         <Route path="/blog/edit" component={BlogEdit}></Route>
+
+        <Route component={Error}></Route>
       </Switch>
     </>
   )
