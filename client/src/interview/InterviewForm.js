@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom';
 import PostForm from '../components/post/PostForm';
+import { slug } from '../hooks and functions/Slug';
 
 const InterviewForm = () => {
     const history = useHistory();
@@ -9,18 +10,6 @@ const InterviewForm = () => {
         let value = e.target.value;
         if (value === '\n') value = '</br>';
         setInterviewArticle({ ...interviewArticle, [e.target.name]: value })
-    }
-
-    function string_to_slug(str) {
-        str = str.replace(/^\s+|\s+$/g, ''); // trim
-        str = str.toLowerCase();
-        str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
-            .replace(/\s+/g, '-') // collapse whitespace and replace by -
-            .replace(/-+/g, '-') // collapse dashes
-            .replace(/^-+/, '') // trim - from start of text
-            .replace(/-+$/, ''); // trim - from end of text
-
-        return str;
     }
 
     const interviewSave = async () => {
@@ -33,7 +22,7 @@ const InterviewForm = () => {
         const data = await res.json();
         if (res.status === 200) {
             window.alert(data.msg);
-            history.push(`/interview/read/${string_to_slug(title)}`);
+            history.push(`/interview/read/${slug(title)}`);
         } else {
             window.alert(data.error);
         }

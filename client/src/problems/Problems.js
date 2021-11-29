@@ -3,7 +3,6 @@ import ProblemsCards from './components/ProblemsCards';
 import Loading from '../loading/Loading';
 import Progress from './components/Progress';
 import Companies from './components/Companies';
-import FeaturedList from './components/FeaturedList';
 import './Problems.css';
 
 const Problems = () => {
@@ -68,7 +67,6 @@ const Problems = () => {
                 <div className="sidebar">
                     <Progress total={total} done={done} days={days} />
                     <Companies />
-                    <FeaturedList />
                 </div>
             </div>
         </div >

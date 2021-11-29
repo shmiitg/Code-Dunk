@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Loading from '../../loading/Loading';
 import { IoCaretBack } from 'react-icons/io5';

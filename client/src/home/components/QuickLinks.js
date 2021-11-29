@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { FaEdit, FaCode, FaPython } from 'react-icons/fa';
+import { RiArticleFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
 const QuickLinks = () => {
     const [links, setLinks] = useState([
-        { title: 'Write an Article', icon: <FaEdit />, address: '/blog/new' },
+        { title: 'Write an Article', icon: <RiArticleFill />, address: '/blog/new' },
         { title: 'Data Structures Practice', icon: <FaCode />, address: '/problems/data-structures' },
         { title: 'Share Interview Experience', icon: <FaEdit />, address: '/interview/new' },
         { title: 'Python Tutorial', icon: <FaPython />, address: '/tutorial/python' }

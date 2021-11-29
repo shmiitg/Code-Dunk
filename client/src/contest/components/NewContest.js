@@ -35,7 +35,7 @@ const NewContest = ({ status, setStatus, index, title, startTime, duration }) =>
         let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        if (days >= 1) setStarts(days + ' days');
+        if (days > 1) setStarts(days + ' days');
         else if (days === 1) setStarts(days + ' day');
         else if (hours > 1) setStarts(hours + ' hours');
         else if (hours === 1) setStarts(hours + ' hour');

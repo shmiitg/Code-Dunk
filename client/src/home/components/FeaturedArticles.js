@@ -1,23 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import moment from 'moment';
 
 const FeaturedArticles = () => {
-    const [articles, setArticles] = useState([
-        { title: 'Master the Coding Interview – Contest Series Based On Real Interviews', date: '8 Aug, 2021' },
-        { title: 'Must Do Coding Questions for Product Based Companies', date: '8 Aug, 2021' },
-        { title: 'Recently Asked Interview Questions in Product Based Companies', date: '8 Aug, 2021' }
-    ])
+    const [blogs, setBlogs] = useState([])
+
+    const fetchData = async () => {
+        const res = await fetch('/api/blogs');
+        const data = await res.json();
+        res.status === 200 && setBlogs(data.blogs.slice(0, 3));
+    }
+
+    useEffect(() => {
+        fetchData();
+    }, []);
 
     return (
         <div className="sidebar-card">
             <div className="sidebar-card-heading">Featured Articles</div>
             <div className="sidebar-card-content">
-                {articles.map((article, index) => (
+                {blogs.map((blog, index) => (
                     <div key={index} className="home-article-card" >
                         <div className="home-article-card-left">{index > 9 ? `${index + 1}` : `0${index + 1}`}</div>
                         <div className="home-article-card-right">
-                            <Link to="/" className="home-article-card-title">{article.title}</Link>
-                            <div className="home-article-card-date">{article.date}</div>
+                            <Link to={`/blog/read/${blog.link}`} className="home-article-card-title">{blog.title}</Link>
+                            <div className="home-article-card-date">{moment(blog.createdAt).format('DD MMM, YYYY')}</div>
                         </div>
                     </div>
                 ))}

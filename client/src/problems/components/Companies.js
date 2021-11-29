@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { slug } from '../../hooks and functions/Slug';
 
 const Companies = () => {
     const [companies, setCompanies] = useState([]);
@@ -22,17 +23,6 @@ const Companies = () => {
         }
     }
 
-    function string_to_slug(str) {
-        str = str.replace(/^\s+|\s+$/g, ''); // trim
-        str = str.toLowerCase();
-        str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
-            .replace(/\s+/g, '-') // collapse whitespace and replace by -
-            .replace(/-+/g, '-') // collapse dashes
-            .replace(/^-+/, '') // trim - from start of text
-            .replace(/-+$/, ''); // trim - from end of text
-        return str;
-    }
-
     useEffect(() => {
         fetchData();
     }, [])
@@ -41,7 +31,7 @@ const Companies = () => {
             <div className="sidebar-card-heading">Companies</div>
             <div className="sidebar-card-content company-list">
                 {companies.map((company, index) => (
-                    <Link key={index} to={`/problems/company/${string_to_slug(company.name)}`} className="company-link" >
+                    <Link key={index} to={`/problems/company/${slug(company.name)}`} className="company-link" >
                         <span>{company.name}</span>
                         <span className="company-question-count">{company.questions}</span>
                     </Link>
