@@ -1,25 +1,40 @@
-import React from 'react'
+import React from 'react';
+import styles from './Profile.module.css';
+import logo from '../../../images/avatar_image.png'
 
-const Profile = ({ name, username, location, education, skills }) => {
+const Profile = ({ problems, name, location, education }) => {
     return (
-        <div className="profile-card dashboard-card">
-            <div className="about">
-                <div className="user-name">{name}</div>
-                <div className="user-id">{username}</div>
+        <div className={styles["profile-card"]}>
+            <div className={styles["profile-image"]}>
+                <img src={logo} alt="" />
             </div>
-            <div className="profile-item">
-                <div>Location</div>
-                <div>{location}</div>
+            <div className={styles["profile-info"]}>
+                <div className={styles["profile-name"]}>{name}</div>
+                <div className={styles["profile-location"]}>{location}</div>
             </div>
-            <div className="profile-item">
-                <div>Education</div>
-                <div>{education}</div>
+            <div className={styles["profile-education"]}>
+                Indian Institute of Technology, Guwahati
             </div>
-            <div className="profile-item">
-                <div>Skills</div>
-                <div>{skills}</div>
+            <div className={styles["line"]}></div>
+            <div className={styles["profile-problems"]}>
+                <div className={styles["problem-types"]}>
+                    <div className={styles["problem-type"]}>Easy</div>
+                    <div className={styles["problem-count"]}>{problems[0]}</div>
+                </div>
+                <div className={styles["problem-types"]}>
+                    <div className={styles["problem-type"]}>Medium</div>
+                    <div className={styles["problem-count"]}>{problems[1]}</div>
+                </div>
+                <div className={styles["problem-types"]}>
+                    <div className={styles["problem-type"]}>Hard</div>
+                    <div className={styles["problem-count"]}>{problems[2]}</div>
+                </div>
             </div>
-        </div>
+            <div className={styles["line"]}></div>
+            <div className={styles["profile-bio"]}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum corrupti tenetur veniam sequi ipsa deserunt veritatis possimus? A, sapiente.
+            </div>
+        </div >
     )
 }
 

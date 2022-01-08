@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import { withRouter } from 'react-router';
 import UserContextProvider from './context/UserContext';
 import Navbar from './navbar/Navbar';
 import Home from './home/Home';
@@ -9,9 +8,8 @@ import Problems from './problems/Problems';
 import ProblemsList from './problems/problemlist/ProblemsList';
 import Problem from './problems/problem/Problem';
 import CompanyProblems from './problems/company/CompanyProblems';
-// Contest
-import Contests from './contest/Contests';
-import Contest from './contest/Contest';
+// Companies
+import Companies from './companies/Companies';
 // Interview
 import Interview from './interview/Interview';
 import InterviewForm from './interview/InterviewForm';
@@ -40,9 +38,6 @@ const DefaultRoutes = () => {
         <Route exact path="/problems/:topic" component={ProblemsList}></Route>
         <Route path="/problem" component={Problem}></Route>
         <Route path="/problems/company" component={CompanyProblems}></Route>
-        {/* Contests */}
-        <Route exact path="/contests" component={Contests}></Route>
-        <Route path="/contest" component={Contest}></Route>
         {/* Interviews */}
         <Route exact path="/interviews" component={Interview}></Route>
         <Route exact path="/interview/new" component={InterviewForm}></Route>
@@ -59,6 +54,8 @@ const DefaultRoutes = () => {
         <Route exact path="/blog/new" component={BlogForm}></Route>
         <Route exact path="/blog/read/:id" component={ReadBlog}></Route>
         <Route path="/blog/edit" component={BlogEdit}></Route>
+        {/* Companies */}
+        <Route exact path="/companies" component={Companies}></Route>
 
         <Route component={Error}></Route>
       </Switch>
@@ -77,38 +74,5 @@ function App() {
 
   );
 }
-
-
-// For No Navbar
-
-// const App = withRouter(({location}) => {
-
-//   return (
-//     <UserContextProvider>
-//       {location.pathname !== '/profile/edit' && <Navbar />}
-//       <Switch>
-//         <Route exact path="/" component={Home}></Route>
-//         {/* Problems */}
-//         <Route exact path="/problems" component={Problems}></Route>
-//         {/* Contests */}
-//         <Route exact path="/contests" component={Contest}></Route>
-//         {/* Interviews */}
-//         <Route exact path="/interviews" component={Interview}></Route>
-//         <Route exact path="/interview/new" component={InterviewForm}></Route>
-//         <Route exact path="/interview/read/:id" component={ReadInterview}></Route>
-//         {/* Authentication */}
-//         <Route exact path="/login" component={Login}></Route>
-//         <Route exact path="/register" component={Register}></Route>
-//         {/* Dashboard */}
-//         <Route exact path="/profile/dashboard" component={Dashboard}></Route>
-//         <Route exact path="/profile/edit" component={EditProfile}></Route>
-//         {/* Blogs */}
-//         <Route exact path="/blogs" component={Blog}></Route>
-//         <Route exact path="/blog/new" component={BlogForm}></Route>
-//         <Route exact path="/blog/read/:id" component={ReadBlog}></Route>
-//       </Switch>
-//     </UserContextProvider>
-//   );
-// })
 
 export default App;

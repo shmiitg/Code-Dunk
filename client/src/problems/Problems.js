@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import ProblemsCards from './components/ProblemsCards';
+import ProblemsCard from './components/ProblemsCard';
 import Loading from '../loading/Loading';
-import Progress from './components/Progress';
-import Companies from './components/Companies';
 import './Problems.css';
+import styles from './Problems.module.css';
 
 const Problems = () => {
     const [loading, setLoading] = useState(true);
     const [problems, setProblems] = useState([]);
-    const [done, setDone] = useState(0);
-    const [days, setDays] = useState(0);
-    const [total, setTotal] = useState(1);
 
     const fetchData = async () => {
         const res = await fetch('/api/problems');
@@ -33,11 +29,7 @@ const Problems = () => {
                 userData.problems.includes(problem._id) && probsDone++;
             })
             setProblems(probs);
-            setDone(probsDone);
-            setTotal(data.problems.length);
-            setDays(20); // feature to be added later
-        }
-        else if (res.status === 200) {
+        } else if (res.status === 200) {
             const probs = [];
             data.problems.forEach(problem => {
                 const idx = probs.map(obj => obj.topic).indexOf(problem.topic);
@@ -48,7 +40,6 @@ const Problems = () => {
                 }
             })
             setProblems(probs);
-            setTotal(data.problems.length);
         }
         setLoading(false);
     }
@@ -61,12 +52,10 @@ const Problems = () => {
     return (
         <div className="container">
             <div className="small-container">
-                <div className="main">
-                    <ProblemsCards problems={problems} />
-                </div>
-                <div className="sidebar">
-                    <Progress total={total} done={done} days={days} />
-                    <Companies />
+                <div className={styles["problem-card-container"]}>
+                    {problems.map((problem, index) => (
+                        <ProblemsCard key={index} problem={problem} />
+                    ))}
                 </div>
             </div>
         </div >

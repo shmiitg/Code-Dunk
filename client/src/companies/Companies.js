@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { slug } from '../../hooks and functions/Slug';
+import { slug } from '../hooks and functions/Slug';
+import logo from '../images/icon-company.svg';
+import styles from './Companies.module.css';
 
 const Companies = () => {
     const [companies, setCompanies] = useState([]);
@@ -21,23 +23,27 @@ const Companies = () => {
             companiesMap = companiesMap.sort((a, b) => b.questions - a.questions)
             setCompanies(companiesMap);
         }
+        console.log(data);
     }
 
     useEffect(() => {
         fetchData();
     }, [])
+
     return (
-        <div className="sidebar-card">
-            <div className="sidebar-card-heading">Companies</div>
-            <div className="sidebar-card-content company-list">
+        <div className="container">
+            <div className={styles["company-container"]}>
                 {companies.map((company, index) => (
-                    <Link key={index} to={`/problems/company/${slug(company.name)}`} className="company-link" >
-                        <span>{company.name}</span>
-                        <span className="company-question-count">{company.questions}</span>
+                    <Link key={index} className={styles["company-card"]} to={`/problems/company/${slug(company.name)}`}>
+                        <div className={styles["company-name"]}>{company.name}</div>
+                        <div className={styles["company-problems"]}>{company.questions}</div>
+                        <div className={styles["company-logo"]}>
+                            <img src={logo} alt="icon" />
+                        </div>
                     </Link>
                 ))}
-            </div>
-        </div >
+            </div >
+        </div>
     )
 }
 

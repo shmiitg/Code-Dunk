@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router';
-import Problems from './components/Problems';
 import Loading from '../../loading/Loading';
-import Rating from './components/Rating';
 import Profile from './components/Profile';
+import Progress from './components/Progress';
 import './DashBoard.css';
 
 const Dashboard = () => {
@@ -11,24 +10,28 @@ const Dashboard = () => {
     const { search } = useLocation();
     const [loading, setLoading] = useState(true);
     const [userData, setUserData] = useState({ username: '', name: '', location: '', education: '', skill: '' });
-    const [dashBoardData, setDashBoardData] = useState({ rating: '', ranking: '', contest: '' });
     const [problemsData, setProblemsData] = useState([]);
+    const [done, setDone] = useState(0);
+    const [days, setDays] = useState(0);
+    const [total, setTotal] = useState(1);
 
     const fetchData = async () => {
         const username = search.split('=')[1];
-        const res = await fetch(`/api/profile/dashboard?user=${username}`);
-        const data = await res.json();
-        setLoading(false);
-        if (res.status === 200) {
-            const user = data.user;
-            const dashBoard = data.dashBoard;
-            const problems = data.problems;
-            setUserData(user);
-            setDashBoardData(dashBoard);
-            setProblemsData(problems);
+        const resUser = await fetch(`/api/profile/dashboard?user=${username}`);
+        const dataUser = await resUser.json();
+        const resProblems = await fetch('/api/problems');
+        const dataProblems = await resProblems.json();
+
+        if (resUser.status === 200 && resProblems.status === 200) {
+            setUserData(dataUser.user);
+            setProblemsData(dataUser.problemsDifficulty);
+            setDone(dataUser.problemsDone.length);
+            setTotal(dataProblems.problems.length);
+            setDays(20); // feature to be added later
         } else {
             history.push('/');
         }
+        setLoading(false);
     }
 
     useEffect(() => {
@@ -39,13 +42,8 @@ const Dashboard = () => {
     return (
         <div className="container">
             <div className="user-container">
-                <div className="sidebar left">
-                    <Profile name={userData.name} username={userData.username} location={userData.location} education={userData.education} skills={userData.skills} />
-                </div>
-                <div className="main right">
-                    <Rating rating={dashBoardData.rating} ranking={dashBoardData.ranking} contests={dashBoardData.contests} />
-                    <Problems easy={problemsData[0]} medium={problemsData[1]} hard={problemsData[2]} />
-                </div>
+                <Profile problems={problemsData} name={userData.name} username={userData.username} location={userData.location} education={userData.education} skills={userData.skills} />
+                <Progress total={total} done={done} days={days} />
             </div>
         </div>
     )

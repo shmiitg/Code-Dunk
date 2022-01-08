@@ -9,14 +9,12 @@ const Navbar = () => {
     const [loading, setLoading] = useState(true);
     const { userName, setUserName } = useContext(UserContext);
 
-    const [navLinks, setNavLinks] = useState([
+    const navLinks = [
         { name: 'Problems', address: '/problems' },
-        { name: 'Contests', address: '/contests' },
         { name: 'Blogs', address: '/blogs' },
-        { name: 'Interviews', address: '/interviews' }
-    ]);
-    const [courses, setCourses] = useState(["Data Structrues", "Algorithms", "Web Development",
-        "Machine Learning", "Python", "C++", "Puzzles"]);
+        { name: 'Interviews', address: '/interviews' },
+        { name: 'Companies', address: '/companies' }
+    ];
 
     const fetchData = async () => {
         const res = await fetch('/user/info');
@@ -53,17 +51,7 @@ const Navbar = () => {
                             <Link className="login-btn" to="/login">Sign In</Link>
                         </div>
                         :
-                        <DropDown />
-                    }
-                </div>
-            </div>
-            <div className="course-topics">
-                <div className="courses">
-                    {courses.map((course, index) => (
-                        <div key={index} className="course-item">
-                            <Link to="/">{course}</Link>
-                        </div>
-                    ))}
+                        <DropDown />}
                 </div>
             </div>
         </div>

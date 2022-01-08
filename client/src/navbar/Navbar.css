@@ -10,7 +10,7 @@
 .nav-links {
   display: flex;
   justify-content: space-between;
-  min-height: 6rem;
+  min-height: 6.5rem;
   padding: 0 3.5rem;
 }
 

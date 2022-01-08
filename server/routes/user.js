@@ -17,8 +17,8 @@ router.get('/profile/dashboard', async (req, res) => {
             prob.difficulty === 'Medium' && problems[1]++;
             prob.difficulty === 'Hard' && problems[2]++;
         }
-        const dashBoard = await DashBoard.findOne({ email: user.email });
-        res.status(200).json({ dashBoard: dashBoard, user: user, problems: problems });
+        const problemsDone = user.problems;
+        res.status(200).json({ user: user, problemsDifficulty: problems, problemsDone: problemsDone });
     } catch (err) {
         res.status(500).json({ error: 'Some error occured' });
     }
