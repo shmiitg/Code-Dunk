@@ -91,12 +91,6 @@ Common classes
   padding: 0.5rem;
 }
 
-.container-sm {
-  max-width: 70rem;
-  margin: auto;
-  margin-bottom: 5rem;
-}
-
 .container-md {
   max-width: 75rem;
   margin: auto;
@@ -107,4 +101,22 @@ Common classes
   max-width: 85rem;
   margin: auto;
   margin-bottom: 5rem;
+}
+
+.go-back {
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.go-back a {
+  color: #989898;
+  display: flex;
+  width: fit-content;
+}
+
+.go-back svg {
+  margin-top: 1.2pt;
+  margin-right: 5px;
 }

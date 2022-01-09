@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useHistory } from 'react-router';
 import Loading from '../../loading/Loading';
-import Compiler from '../compiler/Compiler';
+import Compiler from '../components/Compiler';
+import '../css/Problems.css';
+import styles from '../css/ProblemSolve.module.css';
 
-const Problem = () => {
+const ProblemSolve = () => {
     const history = useHistory();
     const { pathname } = useLocation();
     const [loading, setLoading] = useState(true);
@@ -44,12 +46,12 @@ const Problem = () => {
 
     if (loading) return (<Loading />)
     return (
-        <div className="prob-container">
-            <div className="fluid-container">
+        <div className={styles["problem-container"]}>
+            <div className={styles["fluid-container"]}>
                 <div className="problem-container">
                     <div className="code-language"></div>
                     <div className="problem-card">
-                        <div className="problem-header">
+                        <div className={styles["problem-header"]}>
                             <div className="problem-title">{problem.title}</div>
                             <div className="problem-difficulty">{problem.difficulty}</div>
                         </div>
@@ -62,8 +64,8 @@ const Problem = () => {
                 </div>
                 <Compiler />
             </div>
-        </div>
+        </div >
     )
 }
 
-export default Problem
+export default ProblemSolve

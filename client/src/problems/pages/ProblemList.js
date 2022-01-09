@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Loading from '../../loading/Loading';
 import { IoCaretBack } from 'react-icons/io5';
-import './ProblemsList.css';
+import styles from '../css/ProblemList.module.css';
 
-const ProblemsList = () => {
+const ProblemList = () => {
     const [loading, setLoading] = useState(true);
     const [problems, setProblems] = useState([]);
     const [userProblems, setUserProblems] = useState([]);
@@ -57,15 +57,15 @@ const ProblemsList = () => {
     return (
         <div className="container">
             <div className="container-lg">
-                <div className="problem-list-title">{getTopic(topic)} Problems</div>
+                <div className={styles["problem-list-title"]}>{getTopic(topic)} Problems</div>
                 <div className="go-back">
                     <Link to='/problems'>
                         <IoCaretBack />
                         Back to all topics
                     </Link>
                 </div>
-                <div className="problems-table-container">
-                    <table className="contest-table">
+                <div className={styles["problems-table-container"]}>
+                    <table className={styles["table"]}>
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -84,7 +84,7 @@ const ProblemsList = () => {
                                     <td className="problem-status">
                                         {userProblems.includes(problem._id) ? 'Completed' : 'Incomplete'}
                                     </td>
-                                    <td className="problem-checkbox">
+                                    <td className={styles["problem-checkbox"]}>
                                         <input onChange={() => handleCheck(problem._id)} type="checkbox" value={problem._id} checked={userProblems.includes(problem._id)} />
                                     </td>
                                 </tr>
@@ -97,4 +97,4 @@ const ProblemsList = () => {
     )
 }
 
-export default ProblemsList
+export default ProblemList

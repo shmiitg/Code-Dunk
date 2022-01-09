@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import ProblemsCard from './components/ProblemsCard';
-import Loading from '../loading/Loading';
-import './Problems.css';
-import styles from './Problems.module.css';
+import ProblemsCard from '../components/ProblemsCard';
+import Loading from '../../loading/Loading';
+import styles from '../css/ProblemCards.module.css';
 
-const Problems = () => {
+const ProblemCards = () => {
     const [loading, setLoading] = useState(true);
     const [problems, setProblems] = useState([]);
 
@@ -62,4 +61,4 @@ const Problems = () => {
     )
 }
 
-export default Problems
+export default ProblemCards

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import ReadMoreProblem from '../../components/ReadMoreProblem';
 import { IoCaretBack } from 'react-icons/io5';
-import './CompanyProblems.css';
 
 const CompanyProblems = () => {
     const { pathname } = useLocation();
@@ -28,9 +27,9 @@ const CompanyProblems = () => {
         <div className="container">
             <div className="container-lg">
                 <div className="go-back">
-                    <Link to="/problems">
+                    <Link to="/companies">
                         <IoCaretBack />
-                        Back to all problems
+                        Back to all Companies
                     </Link>
                 </div>
                 <div className="problems-list">

@@ -4,10 +4,10 @@ import Navbar from './navbar/Navbar';
 import Home from './home/Home';
 import Error from './error/Error';
 // Problems
-import Problems from './problems/Problems';
-import ProblemsList from './problems/problemlist/ProblemsList';
-import Problem from './problems/problem/Problem';
-import CompanyProblems from './problems/company/CompanyProblems';
+import ProblemCards from './problems/pages/ProblemCards';
+import ProblemList from './problems/pages/ProblemList';
+import ProblemCompany from './problems/pages/ProblemComapny';
+import ProblemSolve from './problems/pages/ProblemSolve';
 // Companies
 import Companies from './companies/Companies';
 // Interview
@@ -34,10 +34,10 @@ const DefaultRoutes = () => {
       <Switch>
         <Route exact path="/" component={Home}></Route>
         {/* Problems */}
-        <Route exact path="/problems" component={Problems}></Route>
-        <Route exact path="/problems/:topic" component={ProblemsList}></Route>
-        <Route path="/problem" component={Problem}></Route>
-        <Route path="/problems/company" component={CompanyProblems}></Route>
+        <Route exact path="/problems" component={ProblemCards}></Route>
+        <Route exact path="/problems/:topic" component={ProblemList}></Route>
+        <Route path="/problems/company" component={ProblemCompany}></Route>
+        <Route path="/problem" component={ProblemSolve}></Route>
         {/* Interviews */}
         <Route exact path="/interviews" component={Interview}></Route>
         <Route exact path="/interview/new" component={InterviewForm}></Route>
