@@ -1,6 +1,5 @@
 require('dotenv').config();
 const express = require('express');
-const mongoose = require('mongoose');
 const cookieParser = require("cookie-parser");
 
 const indexRouter = require('./routes/index');
@@ -28,7 +27,6 @@ app.use('/api', blogRouter);
 app.use('/api', interviewRouter);
 app.use("*", (req, res) => res.status(404).json({ error: "not found" }));
 
-const DB = process.env.USER_DB;
 const port = process.env.PORT || 5000;
 
 const storage = multer.diskStorage({
@@ -44,6 +42,6 @@ app.post('/api/upload', upload.single('file'), (req, res) => {
     res.status(200).json({ msg: "File has been uplodad" });
 })
 
-mongoose.connect(DB, { useNewUrlParser: true, wtimeoutMS: 2500 })
-    .then(() => app.listen(port, () => console.log(`Server running at port ${port}`)))
-    .catch(err => console.log('Error: ', err))
+require('./config/db');
+
+app.listen(port, () => console.log(`Server running at port ${port}`))
