@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState, useRef } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import logo from '../images/logo.png';
 import { UserContext } from '../context/UserContext';
-import Loading from '../loading/Loading';
 import './Auth.css'
 
 const Login = () => {

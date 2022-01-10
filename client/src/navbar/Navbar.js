@@ -7,6 +7,7 @@ import './Navbar.css';
 
 const Navbar = () => {
     const [loading, setLoading] = useState(true);
+    const [user, setUser] = useState(false);
     const { userName, setUserName } = useContext(UserContext);
 
     const navLinks = [
@@ -22,6 +23,7 @@ const Navbar = () => {
         setLoading(false);
         if (res.status === 200) {
             setUserName(data.user.username);
+            setUser(true);
         } else {
             setUserName('Account');
         }
@@ -46,7 +48,7 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className="nav-right">
-                    {userName === 'Account' ?
+                    {!user ?
                         <div className="nav-item">
                             <Link className="login-btn" to="/login">Sign In</Link>
                         </div>

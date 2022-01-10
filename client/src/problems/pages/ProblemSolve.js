@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation, useHistory } from 'react-router';
+import { useLocation } from 'react-router';
 import Loading from '../../loading/Loading';
 import Compiler from '../components/Compiler';
 import '../css/Problems.css';
@@ -7,7 +7,6 @@ import Error from '../../error/Error';
 import styles from '../css/ProblemSolve.module.css';
 
 const ProblemSolve = () => {
-    const history = useHistory();
     const { pathname } = useLocation();
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);

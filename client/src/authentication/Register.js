@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Link, useHistory } from 'react-router-dom';
-import Loading from '../loading/Loading';
 import { UserContext } from '../context/UserContext';
 import logo from '../images/logo.png';
 

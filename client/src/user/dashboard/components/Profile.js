@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Profile.module.css';
-import logo from '../../../images/avatar_image.png'
 
 const Profile = ({ problems, name, location, education }) => {
     return (
