@@ -3,9 +3,7 @@
   flex-wrap: wrap;
   gap: 3rem;
   max-width: 130rem;
-  margin: auto;
-  margin-top: 15rem;
-  margin-bottom: 4rem;
+  margin: 15rem auto 5rem;
   padding: 0 5rem;
 }
 
