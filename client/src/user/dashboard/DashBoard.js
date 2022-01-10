@@ -40,11 +40,9 @@ const Dashboard = () => {
 
     if (loading) return <Loading />
     return (
-        <div className="container">
-            <div className="user-container">
-                <Profile problems={problemsData} name={userData.name} username={userData.username} location={userData.location} education={userData.education} skills={userData.skills} />
-                <Progress total={total} done={done} days={days} />
-            </div>
+        <div className="user-container">
+            <Profile problems={problemsData} name={userData.name} username={userData.username} location={userData.location} education={userData.education} skills={userData.skills} />
+            <Progress total={total} done={done} days={days} />
         </div>
     )
 }

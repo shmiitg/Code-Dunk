@@ -1,8 +1,18 @@
 .user-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
   max-width: 130rem;
   margin: auto;
-  margin-top: 20rem;
+  margin-top: 15rem;
+  margin-bottom: 4rem;
+  padding: 0 5rem;
+}
+
+@media (max-width: 786px) {
+  .user-container {
+    padding: 0 3rem;
+  }
 }
 
 .right {

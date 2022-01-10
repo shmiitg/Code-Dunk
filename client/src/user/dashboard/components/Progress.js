@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import styles from './Progress.module.css';
-import 'react-circular-progressbar/dist/styles.css';
 
 const ProgressBar = require('progressbar.js');
 

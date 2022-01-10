@@ -15,10 +15,11 @@ router.get('/user/info', verifyJWT, (req, res) => {
 
 router.post('/user/edit', verifyJWT, async (req, res) => {
     try {
-        const { name, gender, location } = req.body;
-        const user = await User.findByIdAndUpdate(req.user._id, { name: name, gender: gender, location: location });
+        const { name, education, gender, birthday, location } = req.body;
+        const user = await User.findByIdAndUpdate(req.user._id, { name: name, education: education, gender: gender, birthday: birthday, location: location });
+        console.log(user);
         req.user = user;
-        res.status(200).json({ msg: 'Edited' });
+        res.status(200).json({ msg: 'Details saved successfully' });
     } catch (err) {
         res.status(500).json({ error: 'Some error occured' });
     }
