@@ -76,12 +76,12 @@ const ProblemList = () => {
                         </thead>
                         <tbody>
                             {problems.map((problem, index) => (
-                                <tr key={index} className="cssbdr">
-                                    <td className="problem-id">{index + 1}</td>
-                                    <td className="problem-title">
+                                <tr key={index} className={styles["cssbdr"]}>
+                                    <td className={styles["problem-id"]}>{index + 1}</td>
+                                    <td className={styles["problem-title"]}>
                                         <Link to={'/problem/' + problem.link}>{problem.title}</Link>
                                     </td>
-                                    <td className="problem-status">
+                                    <td className={styles["problem-status"]}>
                                         {userProblems.includes(problem._id) ? 'Completed' : 'Incomplete'}
                                     </td>
                                     <td className={styles["problem-checkbox"]}>
