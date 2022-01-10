@@ -9,7 +9,6 @@ const CompanyProblems = () => {
     const [loading, setLoading] = useState(true);
     const { pathname } = useLocation();
     let company = pathname.split('/')[3];
-    company = company[0].toUpperCase() + company.substring(1);
     const [problems, setProblems] = useState([]);
 
     const fetchData = async () => {

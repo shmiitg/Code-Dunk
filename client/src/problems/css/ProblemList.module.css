@@ -52,4 +52,5 @@
 
 tbody :last-child {
   border-bottom: none;
+  font-size: 1.45rem;
 }

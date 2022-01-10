@@ -10,7 +10,7 @@ const ProblemsMain = () => {
         const res = await fetch('/api/problems');
         const data = await res.json();
         setLoading(false);
-        if (res.status === 200) {
+        if (res.status === 200 && data.problems.length >= 3) {
             setProblems([data.problems[0], data.problems[1], data.problems[2]]);
         }
     }

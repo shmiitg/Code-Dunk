@@ -6,7 +6,7 @@ import Error from './error/Error';
 // Problems
 import ProblemCards from './problems/pages/ProblemCards';
 import ProblemList from './problems/pages/ProblemList';
-import ProblemCompany from './problems/pages/ProblemComapny';
+import ProblemCompany from './problems/pages/ProblemCompany';
 import ProblemSolve from './problems/pages/ProblemSolve';
 // Companies
 import Companies from './companies/Companies';
