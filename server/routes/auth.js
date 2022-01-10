@@ -1,12 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/user');
-const DashBoard = require('../models/dashboard');
 const bcrypt = require('bcryptjs');
-
 const jwt = require('jsonwebtoken');
 
-// Register
 router.post('/auth/register', async (req, res) => {
     const { username, email, password, cpassword } = req.body;
     if (!username || !email || !password || !cpassword) {
@@ -19,7 +16,6 @@ router.post('/auth/register', async (req, res) => {
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
         const user = new User({ username, email, password: hashedPassword });
-        const dashboard = new DashBoard({ email: email });
         const emailExists = await User.findOne({ email: email });
         const userNameExists = await User.findOne({ username: username });
         if (emailExists) {
@@ -28,19 +24,18 @@ router.post('/auth/register', async (req, res) => {
             return res.status(400).json({ error: 'Username already taken' });
         }
         await user.save();
-        await dashboard.save();
-        res.status(200).json({ msg: 'Successfully registered' });
+        const token = jwt.sign({ id: user._id }, process.env.SECRET_KEY, { expiresIn: 24 * 60 * 60 * 1000 });
+        res.cookie('usertoken', token, {
+            expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
+            httpOnly: true
+        }).status(200).json({ msg: 'Successfully registered', token: token });
+        // res.status(200).json({ msg: 'Successfully registered' });
     } catch (err) {
         console.log(err);
         res.status(500).json({ error: 'Some error occured' });
     }
 })
 
-
-// store the token in a cookie
-// for this purpose we can also use localStorage, session, cookies
-
-// Login
 router.post('/auth/login', async (req, res) => {
     const { key, password } = req.body;
     if (!key || !password) {
@@ -55,7 +50,6 @@ router.post('/auth/login', async (req, res) => {
         if (!validated) {
             return res.status(400).json({ error: 'Invalid Credentials' })
         }
-        //create a token
         const token = jwt.sign({ id: user._id }, process.env.SECRET_KEY, { expiresIn: 24 * 60 * 60 * 1000 });
         res.cookie('usertoken', token, {
             expires: new Date(Date.now() + 24 * 60 * 60 * 1000),

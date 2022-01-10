@@ -64,7 +64,9 @@ const Login = () => {
             history.push('/');
         }
         setLoading(false);
-        keyRef.current.focus();
+        if (keyRef.current) {
+            keyRef.current.focus();
+        }
     }
 
     useEffect(() => {
@@ -72,7 +74,7 @@ const Login = () => {
     }, []);
 
 
-    if (loading) return <Loading />
+    if (loading) return <></>
     return (
         <div className="container">
             <div className="form-container">

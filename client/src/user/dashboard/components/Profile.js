@@ -10,9 +10,7 @@ const Profile = ({ problems, name, location, education }) => {
                     <div className={styles["profile-name"]}>{name}</div>
                     <div className={styles["profile-location"]}>{location}</div>
                 </div>
-                <div className={styles["profile-education"]}>
-                    Indian Institute of Technology, Guwahati
-                </div>
+                <div className={styles["profile-education"]}>{education}</div>
                 <div className={styles["line"]}></div>
                 <div className={styles["profile-problems"]}>
                     <div className={styles["problem-types"]}>

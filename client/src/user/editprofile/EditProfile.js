@@ -75,7 +75,7 @@ const EditProfile = () => {
                     </div>
                     <div className={classes["type-1"]}>
                         <div className={classes["col-placeholder"]}>location</div>
-                        <select name="country" onChange={handleInput}>
+                        <select name="location" onChange={handleInput}>
                             <option value="" selected={user.country === 'Your location'}>--Select Location--</option>
                             {countries.map((location, index) => (
                                 <option key={index} value={location} selected={user.location === location}>{location}</option>

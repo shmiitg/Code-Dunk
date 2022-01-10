@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/user');
-const DashBoard = require('../models/dashboard');
 const Problem = require('../models/problem');
 
 router.get('/profile/dashboard', async (req, res) => {

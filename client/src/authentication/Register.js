@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link, useHistory } from 'react-router-dom';
 import Loading from '../loading/Loading';
+import { UserContext } from '../context/UserContext';
 import logo from '../images/logo.png';
 
 const Register = () => {
@@ -8,6 +9,8 @@ const Register = () => {
     const history = useHistory();
     const [user, setUser] = useState({ username: '', email: '', password: '', cpassword: '' })
     const handleInput = e => setUser({ ...user, [e.target.name]: e.target.value });
+    const { setUserName } = useContext(UserContext);
+
     const handleClick = async () => {
         const { username, email, password, cpassword } = user;
         const res = await fetch('/auth/register', {
@@ -17,10 +20,9 @@ const Register = () => {
         });
         const data = await res.json();
         if (res.status === 200) {
-            window.alert(data.msg);
-            history.push('/login');
-        }
-        else {
+            setUserName(data.userName);
+            history.push('/');
+        } else {
             window.alert(data.error);
         }
     }
@@ -37,7 +39,7 @@ const Register = () => {
         fetchData();
     }, [])
 
-    if (loading) return <Loading />
+    if (loading) return <></>
     return (
         <div className="container">
             <div className="form-container">

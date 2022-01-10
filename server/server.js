@@ -7,7 +7,6 @@ const authRouter = require('./routes/auth');
 const problemRouter = require('./routes/problem');
 const blogRouter = require('./routes/blog');
 const interviewRouter = require('./routes/interview');
-const contestRouter = require('./routes/contest');
 const userRouter = require('./routes/user');
 
 const multer = require('multer');
@@ -21,7 +20,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/', indexRouter);
 app.use('/', authRouter);
 app.use('/api', problemRouter);
-app.use('/api', contestRouter);
 app.use('/api', userRouter);
 app.use('/api', blogRouter);
 app.use('/api', interviewRouter);
