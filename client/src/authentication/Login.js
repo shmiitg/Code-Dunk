@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState, useRef } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import logo from '../images/logo.png';
 import { UserContext } from '../context/UserContext';
@@ -8,9 +8,40 @@ import './Auth.css'
 const Login = () => {
     const [loading, setLoading] = useState(true);
     const history = useHistory();
-    const [user, setUser] = useState({ key: '', password: '' })
+    const [user, setUser] = useState({ key: '', password: '' });
+    const keyRef = useRef(null);
+    const passwordRef = useRef(null);
+    const submitRef = useRef(null);
     const handleLoginInput = e => setUser({ ...user, [e.target.name]: e.target.value });
     const { setUserName } = useContext(UserContext);
+
+    function keyKeyDown(e) {
+        if (e.keyCode === 13) {
+            userLogin();
+        }
+        if (e.keyCode === 40) {
+            passwordRef.current.focus();
+        }
+    }
+
+    function passwordKeyDown(e) {
+        if (e.keyCode === 13) {
+            userLogin();
+        }
+        if (e.keyCode === 38) {
+            keyRef.current.focus();
+        }
+        if (e.keyCode === 40) {
+            submitRef.current.focus();
+        }
+    }
+
+    function submitKeyDown(e) {
+        if (e.keyCode === 38) {
+            passwordRef.current.focus();
+        }
+    }
+
     const userLogin = async () => {
         const { key, password } = user;
         const res = await fetch('/auth/login', {
@@ -20,9 +51,8 @@ const Login = () => {
         });
         const data = await res.json();
         if (res.status === 200) {
-            window.alert(data.msg);
-            history.push('/');
             setUserName(data.userName);
+            history.push('/');
         } else {
             window.alert(data.error);
         }
@@ -30,15 +60,17 @@ const Login = () => {
 
     const fetchData = async () => {
         const res = await fetch('/user/info');
-        setLoading(false);
         if (res.status === 200) {
             history.push('/');
         }
+        setLoading(false);
+        keyRef.current.focus();
     }
 
     useEffect(() => {
         fetchData();
-    }, [])
+    }, []);
+
 
     if (loading) return <Loading />
     return (
@@ -47,17 +79,19 @@ const Login = () => {
                 <div className="form-logo">
                     <img src={logo} alt="logo" />
                 </div>
-                <form id="login" method="POST">
+                <div id="login" method="POST">
                     <div className="form-fields">
-                        <input name="key" type="text" className="form-control" id="key" placeholder="Username or E-mail"
-                            autoComplete="off" value={user.key} onChange={handleLoginInput} />
+                        <input name="key" type="text" className="form-control" id="key"
+                            placeholder="Username or E-mail" value={user.key} onChange={handleLoginInput}
+                            ref={keyRef} onKeyDown={keyKeyDown} />
                     </div>
                     <div className="form-fields">
                         <input name="password" type="password" className="form-control" id="password"
-                            placeholder="Password" autoComplete="off" value={user.password} onChange={handleLoginInput} />
+                            placeholder="Password" value={user.password} onChange={handleLoginInput}
+                            ref={passwordRef} onKeyDown={passwordKeyDown} />
                     </div>
-                </form>
-                <button className="btn-account" onClick={userLogin}>Submit</button>
+                </div>
+                <button className="btn-account" onClick={userLogin} ref={submitRef} onKeyDown={submitKeyDown}>Submit</button>
                 <div className="account-toggle">
                     <p>No account?</p><Link to="/register">Sign Up</Link>
                 </div>

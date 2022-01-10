@@ -38,6 +38,10 @@ button {
   cursor: pointer;
 }
 
+.btn-account:focus {
+  box-shadow: 0 0 5px #51cbee;
+}
+
 .account-toggle {
   margin-top: 1.75rem;
   display: flex;
