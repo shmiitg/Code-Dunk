@@ -37,7 +37,7 @@ const DefaultRoutes = () => {
         <Route exact path="/problems" component={ProblemCards}></Route>
         <Route exact path="/problems/:topic" component={ProblemList}></Route>
         <Route path="/problems/company" component={ProblemCompany}></Route>
-        <Route path="/problem" component={ProblemSolve}></Route>
+        <Route path="/problem/:problem" component={ProblemSolve}></Route>
         {/* Interviews */}
         <Route exact path="/interviews" component={Interview}></Route>
         <Route exact path="/interview/new" component={InterviewForm}></Route>

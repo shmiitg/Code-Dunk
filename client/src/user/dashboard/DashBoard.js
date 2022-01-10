@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router';
 import Loading from '../../loading/Loading';
+import Error from '../../error/Error';
 import Profile from './components/Profile';
 import Progress from './components/Progress';
 import './DashBoard.css';
@@ -9,6 +10,7 @@ const Dashboard = () => {
     const history = useHistory();
     const { search } = useLocation();
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
     const [userData, setUserData] = useState({ username: '', name: '', location: '', education: '', skill: '' });
     const [problemsData, setProblemsData] = useState([]);
     const [done, setDone] = useState(0);
@@ -28,6 +30,8 @@ const Dashboard = () => {
             setDone(dataUser.problemsDone.length);
             setTotal(dataProblems.problems.length);
             setDays(20); // feature to be added later
+        } else if (resUser.status === 404) {
+            setError(true);
         } else {
             history.push('/');
         }
@@ -38,7 +42,8 @@ const Dashboard = () => {
         fetchData();
     }, [search]);
 
-    if (loading) return <Loading />
+    if (loading) return (<Loading />)
+    if (error) return (<Error />)
     return (
         <div className="user-container">
             <Profile problems={problemsData} name={userData.name} username={userData.username} location={userData.location} education={userData.education} />

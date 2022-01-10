@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Loading from '../../loading/Loading';
 import { IoCaretBack } from 'react-icons/io5';
+import Error from '../../error/Error';
 import styles from '../css/ProblemList.module.css';
 
 const ProblemList = () => {
@@ -54,6 +55,7 @@ const ProblemList = () => {
     }, [userProblems]);
 
     if (loading) return (<Loading />)
+    if (problems.length === 0) return <Error />
     return (
         <div className="container">
             <div className="container-lg">

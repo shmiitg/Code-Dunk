@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router';
 import moment from 'moment';
 import Loading from '../loading/Loading';
+import Error from '../error/Error';
 import ReadPost from '../components/post/ReadPost';
 
 const ReadInterview = () => {
@@ -9,6 +10,7 @@ const ReadInterview = () => {
     const location = useLocation();
     const link = location.pathname.split('/')[3];
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
     const [interview, setInterview] = useState({ title: '', company: '', content: '', author: '' });
     const [date, setDate] = useState('');
     const fetchInterview = async () => {
@@ -19,7 +21,7 @@ const ReadInterview = () => {
             setInterview(data.interview);
             setDate(moment(data.interview.createdAt).format('MMM DD, YYYY'));
         } else if (res.status === 404) {
-            history.push('/interview');
+            setError(true);
         } else {
             window.alert(data.error);
         }
@@ -44,6 +46,7 @@ const ReadInterview = () => {
     }, [link])
 
     if (loading) return (<Loading />)
+    if (error) return (<Error />)
     return (
         <ReadPost
             type="interview"

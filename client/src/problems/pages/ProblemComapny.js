@@ -2,8 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import ReadMoreProblem from '../../components/ReadMoreProblem';
 import { IoCaretBack } from 'react-icons/io5';
+import Loading from '../../loading/Loading';
+import Error from '../../error/Error';
 
 const CompanyProblems = () => {
+    const [loading, setLoading] = useState(true);
     const { pathname } = useLocation();
     let company = pathname.split('/')[3];
     company = company[0].toUpperCase() + company.substring(1);
@@ -17,12 +20,15 @@ const CompanyProblems = () => {
         } else {
             window.alert(data.error);
         }
+        setLoading(false);
     }
 
     useEffect(() => {
         fetchData();
     }, [])
 
+    if (loading) return <Loading />
+    if (problems.length === 0) return <Error />
     return (
         <div className="container">
             <div className="container-lg">

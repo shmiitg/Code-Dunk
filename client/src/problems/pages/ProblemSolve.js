@@ -3,25 +3,27 @@ import { useLocation, useHistory } from 'react-router';
 import Loading from '../../loading/Loading';
 import Compiler from '../components/Compiler';
 import '../css/Problems.css';
+import Error from '../../error/Error';
 import styles from '../css/ProblemSolve.module.css';
 
 const ProblemSolve = () => {
     const history = useHistory();
     const { pathname } = useLocation();
     const [loading, setLoading] = useState(true);
-    const [problem, setProblem] = useState({ desc: [] });
+    const [error, setError] = useState(false);
+    const [problem, setProblem] = useState({});
 
     const fetchData = async () => {
         const problemName = pathname.split("/")[2];
         const res = await fetch(`/api/problem/${problemName}`);
         const data = await res.json();
-        setLoading(false);
-        const desc = splitSentence(data.problem.description);
         if (res.status === 200) {
+            const desc = splitSentence(data.problem.description);
             setProblem({ ...data.problem, desc });
         } else if (res.status === 404) {
-            history.push('/problems');
+            setError(true);
         }
+        setLoading(false);
     }
 
     const splitSentence = (str) => {
@@ -31,8 +33,7 @@ const ProblemSolve = () => {
             if (str[i] === '\n') {
                 newStr.push(curr);
                 curr = '';
-            }
-            else {
+            } else {
                 curr += str[i];
             }
         }
@@ -45,6 +46,7 @@ const ProblemSolve = () => {
     }, [pathname])
 
     if (loading) return (<Loading />)
+    if (error) return (<Error />)
     return (
         <div className={styles["problem-container"]}>
             <div className={styles["fluid-container"]}>
