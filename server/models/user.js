@@ -47,6 +47,10 @@ const schema = new mongoose.Schema({
         type: String,
         required: false
     },
+    bio: {
+        type: String,
+        required: false
+    },
     role: {
         type: String,
         default: 'User'

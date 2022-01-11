@@ -1,0 +1,3821 @@
+[{
+  "_id": {
+    "$oid": "61dca57b973e07c405205be5"
+  },
+  "title": "Valid BST from Preorder",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "Unbxd Inc."
+  ],
+  "link": "valid-bst-from-preorder",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.631Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.631Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205be6"
+  },
+  "title": "Kth Smallest Element In Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "kth-smallest-element-in-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.631Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.631Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205be7"
+  },
+  "title": "2-Sum Binary Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "2sum-binary-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.631Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.631Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205be8"
+  },
+  "title": "BST Iterator",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Apple",
+    "Amazon",
+    "Facebook"
+  ],
+  "link": "bst-iterator",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.631Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.631Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205be9"
+  },
+  "title": "Recover Binary Search Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Microsoft",
+    "Amazon"
+  ],
+  "link": "recover-binary-search-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.631Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.631Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bea"
+  },
+  "title": "Xor Between Two Arrays!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "Liv.ai"
+  ],
+  "link": "xor-between-two-arrays",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205beb"
+  },
+  "title": "Hotel Reviews",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "Booking.com"
+  ],
+  "link": "hotel-reviews",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bec"
+  },
+  "title": "Shortest Unique Prefix",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Google"
+  ],
+  "link": "shortest-unique-prefix",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bed"
+  },
+  "title": "Path to Given Node",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "path-to-given-node",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bee"
+  },
+  "title": "Remove Half Nodes",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "remove-half-nodes",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bef"
+  },
+  "title": "Nodes at Distance K",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "nodes-at-distance-k",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bf0"
+  },
+  "title": "Balanced Binary Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "balanced-binary-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bf1"
+  },
+  "title": "Maximum Edge Removal",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "maximum-edge-removal",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.632Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bf2"
+  },
+  "title": "Merge two Binary Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "merge-two-binary-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.633Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.633Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bf3"
+  },
+  "title": "Symmetric Binary Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "symmetric-binary-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.633Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.633Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bf4"
+  },
+  "title": "Identical Binary Trees",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "identical-binary-trees",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.633Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.633Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bf5"
+  },
+  "title": "Vertical Order traversal of Binary Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon",
+    "Grab",
+    "infoworks",
+    "Microsoft"
+  ],
+  "link": "vertical-order-traversal-of-binary-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.633Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.633Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bf6"
+  },
+  "title": "Diagonal Traversal  ",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon",
+    "DE Shaw"
+  ],
+  "link": "diagonal-traversal",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.633Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.633Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bf7"
+  },
+  "title": "Inorder Traversal",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "inorder-traversal",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.634Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.634Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bf8"
+  },
+  "title": "Preorder Traversal",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "preorder-traversal",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.634Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.634Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bf9"
+  },
+  "title": "Postorder Traversal",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "postorder-traversal",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.634Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.634Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bfa"
+  },
+  "title": "Right view of Binary tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "DE Shaw",
+    "ThoughtWorks"
+  ],
+  "link": "right-view-of-binary-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.634Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.634Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bfb"
+  },
+  "title": "Cousins in Binary Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon",
+    "DE Shaw"
+  ],
+  "link": "cousins-in-binary-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.634Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.634Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bfc"
+  },
+  "title": "Reverse Level Order",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "DE Shaw"
+  ],
+  "link": "reverse-level-order",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.635Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.635Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bfd"
+  },
+  "title": "ZigZag Level Order Traversal BT",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "zigzag-level-order-traversal-bt",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.635Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.635Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bfe"
+  },
+  "title": "Populate Next Right Pointers Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Microsoft",
+    "Amazon"
+  ],
+  "link": "populate-next-right-pointers-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.635Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.635Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205bff"
+  },
+  "title": "Burn a Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "Hippocabs",
+    "Amazon"
+  ],
+  "link": "burn-a-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.635Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.635Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c00"
+  },
+  "title": "Max Depth of Binary Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Goldman Sachs",
+    "Facebook",
+    "Bloomberg",
+    "Microsoft"
+  ],
+  "link": "max-depth-of-binary-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.635Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.635Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c01"
+  },
+  "title": "Sum Root to Leaf Numbers",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Google",
+    "Microsoft"
+  ],
+  "link": "sum-root-to-leaf-numbers",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.636Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.636Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c02"
+  },
+  "title": "Path Sum",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Microsoft",
+    "Yahoo",
+    "Amazon"
+  ],
+  "link": "path-sum",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.636Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.636Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c03"
+  },
+  "title": "Min Depth of Binary Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Facebook",
+    "Amazon"
+  ],
+  "link": "min-depth-of-binary-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.636Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.636Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c04"
+  },
+  "title": "Root to Leaf Paths With Sum",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Microsoft",
+    "Yahoo",
+    "Amazon"
+  ],
+  "link": "root-to-leaf-paths-with-sum",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.636Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.636Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c05"
+  },
+  "title": "Inorder Traversal of Cartesian Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "inorder-traversal-of-cartesian-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.637Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.637Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c06"
+  },
+  "title": "Sorted Array To Balanced BST",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "VMWare",
+    "Amazon"
+  ],
+  "link": "sorted-array-to-balanced-bst",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.637Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.637Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c07"
+  },
+  "title": "Construct Binary Tree From Inorder And Preorder",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "construct-binary-tree-from-inorder-and-preorder",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.637Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.637Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c08"
+  },
+  "title": "Binary Tree From Inorder And Postorder",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "binary-tree-from-inorder-and-postorder",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.637Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.637Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c09"
+  },
+  "title": "Invert the Binary Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "Google"
+  ],
+  "link": "invert-the-binary-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.638Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.638Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c0a"
+  },
+  "title": "Least Common Ancestor",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Facebook",
+    "Adobe",
+    "Microsoft",
+    "Amazon",
+    "Google"
+  ],
+  "link": "least-common-ancestor",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.638Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.638Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c0b"
+  },
+  "title": "Flatten Binary Tree to Linked List",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Adobe",
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "flatten-binary-tree-to-linked-list",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.638Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.638Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c0c"
+  },
+  "title": "Order of People Heights",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Hard",
+  "companies": [
+    "Google"
+  ],
+  "link": "order-of-people-heights",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.639Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.639Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c0d"
+  },
+  "title": "Vertical Sum of a Binary Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "vertical-sum-of-a-binary-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.639Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.639Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c0e"
+  },
+  "title": "Construct BST from Preorder",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "clevertap"
+  ],
+  "link": "construct-bst-from-preorder",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.640Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.640Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c0f"
+  },
+  "title": "Covered / Uncovered Nodes",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "covered-uncovered-nodes",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.640Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.640Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c10"
+  },
+  "title": "Last Node in a Complete Binary Tree",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Medium",
+  "companies": [
+    "Flipkart"
+  ],
+  "link": "last-node-in-a-complete-binary-tree",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.640Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.640Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca57b973e07c405205c11"
+  },
+  "title": "Consecutive Parent - Child",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Trees",
+  "difficulty": "Easy",
+  "companies": [
+    "Unravel Data"
+  ],
+  "link": "consecutive-parent-child",
+  "createdAt": {
+    "$date": "2022-01-10T21:30:35.640Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:30:35.640Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145eb"
+  },
+  "title": "Pick from both sides!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "Media.net"
+  ],
+  "link": "pick-from-both-sides",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.414Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.414Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145ec"
+  },
+  "title": "Min Steps in Infinite Grid",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "Directi",
+    "Amazon"
+  ],
+  "link": "min-steps-in-infinite-grid",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145ed"
+  },
+  "title": "Minimum Lights to Activate",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "Directi"
+  ],
+  "link": "minimum-lights-to-activate",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145ee"
+  },
+  "title": "Maximum Sum Triplet",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "Directi"
+  ],
+  "link": "maximum-sum-triplet",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145ef"
+  },
+  "title": "Max Sum Contiguous Subarray",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Facebook",
+    "Paypal",
+    "Yahoo",
+    "Microsoft",
+    "LinkedIn",
+    "Amazon",
+    "Goldman Sachs"
+  ],
+  "link": "max-sum-contiguous-subarray",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145f0"
+  },
+  "title": "Add One To Number",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Google",
+    "Microsoft"
+  ],
+  "link": "add-one-to-number",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145f1"
+  },
+  "title": "Maximum Absolute Difference",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "maximum-absolute-difference",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145f2"
+  },
+  "title": "Partitions",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "EzCred"
+  ],
+  "link": "partitions",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145f3"
+  },
+  "title": "Maximum Area of Triangle!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Hard",
+  "companies": [
+    "Directi"
+  ],
+  "link": "maximum-area-of-triangle",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145f4"
+  },
+  "title": "Flip",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Hard",
+  "companies": [
+    "VMWare"
+  ],
+  "link": "flip",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145f5"
+  },
+  "title": "Max Min",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "Google"
+  ],
+  "link": "max-min-05542f2f-69aa-4253-9cc7-84eb7bf739c4",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145f6"
+  },
+  "title": "Merge Intervals",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Google"
+  ],
+  "link": "merge-intervals",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145f7"
+  },
+  "title": "Merge Overlapping Intervals",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Google",
+    "Amazon"
+  ],
+  "link": "merge-overlapping-intervals",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145f8"
+  },
+  "title": "Perfect Peak of Array",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "Flipkart"
+  ],
+  "link": "perfect-peak-of-array",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145f9"
+  },
+  "title": "Kth Row of Pascal's Triangle",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Google"
+  ],
+  "link": "kth-row-of-pascals-triangle",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145fa"
+  },
+  "title": "Spiral Order Matrix II",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Microsoft",
+    "JP Morgan",
+    "Amazon"
+  ],
+  "link": "spiral-order-matrix-ii",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145fb"
+  },
+  "title": "Pascal Triangle",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Google",
+    "Amazon"
+  ],
+  "link": "pascal-triangle",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145fc"
+  },
+  "title": "Anti Diagonals",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Microsoft",
+    "Adobe"
+  ],
+  "link": "anti-diagonals",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145fd"
+  },
+  "title": "Triplets with Sum between given range",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [],
+  "link": "triplets-with-sum-between-given-range",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145fe"
+  },
+  "title": "Balance Array",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "dunzo"
+  ],
+  "link": "balance-array",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa6145ff"
+  },
+  "title": "Find Duplicate in Array",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Hard",
+  "companies": [
+    "Amazon",
+    "VMWare",
+    "Riverbed",
+    "Microsoft"
+  ],
+  "link": "find-duplicate-in-array",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614600"
+  },
+  "title": "Maximum Consecutive Gap",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Hard",
+  "companies": [
+    "Hunan Asset"
+  ],
+  "link": "maximum-consecutive-gap",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614601"
+  },
+  "title": "Sort array with squares!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "VMWare"
+  ],
+  "link": "sort-array-with-squares",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614602"
+  },
+  "title": "Largest Number",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon",
+    "Goldman Sachs",
+    "Microsoft"
+  ],
+  "link": "largest-number",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614603"
+  },
+  "title": "Rotate Matrix",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Google",
+    "Facebook",
+    "Amazon"
+  ],
+  "link": "rotate-matrix",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614604"
+  },
+  "title": "Next Permutation",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Microsoft",
+    "Amazon"
+  ],
+  "link": "next-permutation",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614605"
+  },
+  "title": "Find Permutation",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Goldman Sachs",
+    "Amazon"
+  ],
+  "link": "find-permutation",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614606"
+  },
+  "title": "Noble Integer",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [],
+  "link": "noble-integer",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614607"
+  },
+  "title": "Wave Array",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Google",
+    "Adobe",
+    "Amazon"
+  ],
+  "link": "wave-array",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614608"
+  },
+  "title": "Hotel Bookings Possible",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Goldman Sachs",
+    "Microsoft"
+  ],
+  "link": "hotel-bookings-possible",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614609"
+  },
+  "title": "Max Distance",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Google",
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "max-distance",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa61460a"
+  },
+  "title": "Maximum Unsorted Subarray",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "maximum-unsorted-subarray",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa61460b"
+  },
+  "title": "Set Matrix Zeros",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Oracle",
+    "Amazon"
+  ],
+  "link": "set-matrix-zeros",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa61460c"
+  },
+  "title": "First Missing Integer",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Model N",
+    "InMobi",
+    "Amazon"
+  ],
+  "link": "first-missing-integer",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa61460d"
+  },
+  "title": "Maximum Sum Square SubMatrix",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "DE Shaw"
+  ],
+  "link": "maximum-sum-square-submatrix",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa61460f"
+  },
+  "title": "Repeat and Missing Number Array",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Hard",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "repeat-and-missing-number-array",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614610"
+  },
+  "title": "N/3 Repeat Number",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Hard",
+  "companies": [
+    "Google"
+  ],
+  "link": "n3-repeat-number",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614611"
+  },
+  "title": "Reorder Data in Log Files",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "reorder-data-in-log-files",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614612"
+  },
+  "title": "Move Zeroes",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "Adobe"
+  ],
+  "link": "move-zeroes",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614613"
+  },
+  "title": "Make equal elements Array",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "make-equal-elements-array",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614614"
+  },
+  "title": "Segregate 0s and 1s in an array",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "Unravel Data"
+  ],
+  "link": "segregate-0s-and-1s-in-an-array",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614615"
+  },
+  "title": "Array Sum",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Paytm"
+  ],
+  "link": "array-sum",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614616"
+  },
+  "title": "Set Intersection",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Easy",
+  "companies": [
+    "uber"
+  ],
+  "link": "set-intersection",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5ca2852d2cafa614617"
+  },
+  "title": "Occurence of Each Number",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Arrays",
+  "difficulty": "Medium",
+  "companies": [
+    "Unravel Data"
+  ],
+  "link": "occurence-of-each-number",
+  "createdAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:31:54.417Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d00812c"
+  },
+  "title": "Total Moves For Bishop!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "Goldman Sachs"
+  ],
+  "link": "total-moves-for-bishop",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d00812d"
+  },
+  "title": "Distribute in Circle!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "Goldman Sachs"
+  ],
+  "link": "distribute-in-circle",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d00812e"
+  },
+  "title": "Prime Sum",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "Epic systems"
+  ],
+  "link": "prime-sum",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d00812f"
+  },
+  "title": "Sum of pairwise Hamming Distance",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "Google"
+  ],
+  "link": "sum-of-pairwise-hamming-distance",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008130"
+  },
+  "title": "FizzBuzz",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [],
+  "link": "fizzbuzz",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008131"
+  },
+  "title": "Is Rectangle?",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "Booking.com"
+  ],
+  "link": "is-rectangle",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008132"
+  },
+  "title": "Step by Step",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "toppr"
+  ],
+  "link": "step-by-step",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008133"
+  },
+  "title": "Power Of Two Integers",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Medium",
+  "companies": [
+    "Housing",
+    "Amazon"
+  ],
+  "link": "power-of-two-integers",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008134"
+  },
+  "title": "Excel Column Number",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "excel-column-number",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.459Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008135"
+  },
+  "title": "Excel Column Title",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "excel-column-title",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008136"
+  },
+  "title": "Palindrome Integer",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "HCL"
+  ],
+  "link": "palindrome-integer",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008137"
+  },
+  "title": "Reverse integer",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "HCL",
+    "Bloomberg"
+  ],
+  "link": "reverse-integer",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008138"
+  },
+  "title": "Next Smallest Palindrome!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Hard",
+  "companies": [
+    "Google",
+    "grofers"
+  ],
+  "link": "next-smallest-palindrome",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008139"
+  },
+  "title": "Greatest Common Divisor",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "NetApp",
+    "Google"
+  ],
+  "link": "greatest-common-divisor",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d00813a"
+  },
+  "title": "Find Nth Fibonacci",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "Facebook"
+  ],
+  "link": "find-nth-fibonacci",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d00813b"
+  },
+  "title": "Trailing Zeros in Factorial",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Medium",
+  "companies": [
+    "Microsoft",
+    "Jabong",
+    "Zillow"
+  ],
+  "link": "trailing-zeros-in-factorial",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d00813c"
+  },
+  "title": "Sorted Permutation Rank",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Medium",
+  "companies": [
+    "Housing",
+    "Zenefits",
+    "Microsoft"
+  ],
+  "link": "sorted-permutation-rank",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d00813d"
+  },
+  "title": "Largest Coprime Divisor",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Medium",
+  "companies": [],
+  "link": "largest-coprime-divisor",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d00813e"
+  },
+  "title": "Sorted Permutation Rank with Repeats",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Hard",
+  "companies": [
+    "Housing",
+    "Zenefits"
+  ],
+  "link": "sorted-permutation-rank-with-repeats",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d00813f"
+  },
+  "title": "Next Similar Number",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "next-similar-number",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008140"
+  },
+  "title": "Rearrange Array",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Medium",
+  "companies": [
+    "Facebook"
+  ],
+  "link": "rearrange-array",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008141"
+  },
+  "title": "Numbers of length N and value less than K",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [],
+  "link": "numbers-of-length-n-and-value-less-than-k",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008142"
+  },
+  "title": "City Tour",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Medium",
+  "companies": [],
+  "link": "city-tour",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008143"
+  },
+  "title": "Grid Unique Paths",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Hard",
+  "companies": [
+    "Google",
+    "Amazon",
+    "Microsoft",
+    "Adobe"
+  ],
+  "link": "grid-unique-paths",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008144"
+  },
+  "title": "K-th Permutation",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "k-th-permutation",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008145"
+  },
+  "title": "Divisible by 60",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Medium",
+  "companies": [
+    "Flipkart"
+  ],
+  "link": "divisible-by-60",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008146"
+  },
+  "title": "Powerful Divisors",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Medium",
+  "companies": [
+    "lenskart"
+  ],
+  "link": "powerful-divisors",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008147"
+  },
+  "title": "Addition without Summation",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Easy",
+  "companies": [
+    "Adobe"
+  ],
+  "link": "addition-without-summation",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca5f1fd0e77886d008148"
+  },
+  "title": "Highest Score",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Math",
+  "difficulty": "Medium",
+  "companies": [
+    "Goldman Sachs"
+  ],
+  "link": "highest-score",
+  "createdAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:32:33.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d14d"
+  },
+  "title": "Search in Bitonic Array!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Easy",
+  "companies": [
+    "Phonepe"
+  ],
+  "link": "search-in-bitonic-array",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d14e"
+  },
+  "title": "Smaller or equal elements",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Easy",
+  "companies": [],
+  "link": "smaller-or-equal-elements",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d14f"
+  },
+  "title": "WoodCutting Made Easy!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Easy",
+  "companies": [
+    "Flipkart"
+  ],
+  "link": "woodcutting-made-easy",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d150"
+  },
+  "title": "Matrix Search",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Medium",
+  "companies": [],
+  "link": "matrix-search",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d151"
+  },
+  "title": "Search for a Range",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Medium",
+  "companies": [
+    "Google",
+    "Microsoft"
+  ],
+  "link": "search-for-a-range",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d152"
+  },
+  "title": "Sorted Insert Position",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Medium",
+  "companies": [
+    "Yahoo"
+  ],
+  "link": "sorted-insert-position",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d153"
+  },
+  "title": "Matrix Median",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "matrix-median",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d154"
+  },
+  "title": "Square Root of Integer",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Medium",
+  "companies": [
+    "Facebook",
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "square-root-of-integer",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d155"
+  },
+  "title": "Allocate Books",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Hard",
+  "companies": [
+    "Google"
+  ],
+  "link": "allocate-books",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d156"
+  },
+  "title": "Painter's Partition Problem",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Hard",
+  "companies": [
+    "Google",
+    "Codenation"
+  ],
+  "link": "painters-partition-problem",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d157"
+  },
+  "title": "Red Zone",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Hard",
+  "companies": [],
+  "link": "red-zone",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d158"
+  },
+  "title": "Implement Power Function",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Medium",
+  "companies": [
+    "Google",
+    "LinkedIn"
+  ],
+  "link": "implement-power-function",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.942Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.942Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d159"
+  },
+  "title": "Simple Queries",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Medium",
+  "companies": [],
+  "link": "simple-queries",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.942Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.942Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d15a"
+  },
+  "title": "Median of Array",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Hard",
+  "companies": [
+    "Amazon",
+    "VMWare",
+    "Google",
+    "Microsoft",
+    "Goldman Sachs"
+  ],
+  "link": "median-of-array",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.942Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.942Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d15b"
+  },
+  "title": "Rotated Sorted Array Search",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Hard",
+  "companies": [
+    "Facebook",
+    "Google",
+    "Microsoft",
+    "Amazon"
+  ],
+  "link": "rotated-sorted-array-search",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.942Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.942Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca61ff95fec3c5a55d15c"
+  },
+  "title": "Capacity To Ship Packages Within B Days",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Binary Search",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "capacity-to-ship-packages-within-b-days",
+  "createdAt": {
+    "$date": "2022-01-10T21:33:19.942Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:33:19.942Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca657e41b67e80db63d3f"
+  },
+  "title": "Palindrome String",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [],
+  "link": "palindrome-string",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.039Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.039Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca657e41b67e80db63d40"
+  },
+  "title": "Vowel and Consonant Substrings!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [],
+  "link": "vowel-and-consonant-substrings",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.039Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.039Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca657e41b67e80db63d41"
+  },
+  "title": "Remove Consecutive Characters",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [
+    "BrowserStack"
+  ],
+  "link": "remove-consecutive-characters",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca657e41b67e80db63d42"
+  },
+  "title": "Longest Common Prefix",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Google"
+  ],
+  "link": "longest-common-prefix",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca657e41b67e80db63d43"
+  },
+  "title": "Count And Say",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Facebook",
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "count-and-say",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca657e41b67e80db63d44"
+  },
+  "title": "Amazing Subarrays",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [],
+  "link": "amazing-subarrays",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca657e41b67e80db63d45"
+  },
+  "title": "Implement StrStr",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Facebook",
+    "Amazon",
+    "Qualcomm",
+    "Wipro",
+    "Microsoft"
+  ],
+  "link": "implement-strstr",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca657e41b67e80db63d46"
+  },
+  "title": "Stringoholics",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [],
+  "link": "stringoholics",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d48"
+  },
+  "title": "Convert to Palindrome",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "convert-to-palindrome",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d49"
+  },
+  "title": "Minimum Appends for Palindrome!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [
+    "Facebook"
+  ],
+  "link": "minimum-appends-for-palindrome",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d4a"
+  },
+  "title": "Minimum Parantheses!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [
+    "Google"
+  ],
+  "link": "minimum-parantheses",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d4b"
+  },
+  "title": "Longest Palindromic Substring",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Hard",
+  "companies": [
+    "Amazon",
+    "Microsoft",
+    "Groupon"
+  ],
+  "link": "longest-palindromic-substring",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d4c"
+  },
+  "title": "Length of Last Word",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "length-of-last-word",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d4d"
+  },
+  "title": "Reverse the String",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Qualcomm",
+    "Amazon",
+    "Microsoft",
+    "Cisco",
+    "Facebook"
+  ],
+  "link": "reverse-the-string",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d4e"
+  },
+  "title": "Compare Version Numbers",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Intuit",
+    "Amazon"
+  ],
+  "link": "compare-version-numbers",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d4f"
+  },
+  "title": "Valid Number",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Adobe"
+  ],
+  "link": "valid-number",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d50"
+  },
+  "title": "Atoi",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Adobe",
+    "Nvidia",
+    "Agilent systems",
+    "Bloomberg",
+    "Amazon",
+    "Apple",
+    "Microsoft",
+    "Groupon"
+  ],
+  "link": "atoi",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d51"
+  },
+  "title": "Valid Ip Addresses",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "valid-ip-addresses",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d52"
+  },
+  "title": "Integer To Roman",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon",
+    "Facebook",
+    "Microsoft",
+    "Twitter"
+  ],
+  "link": "integer-to-roman",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d53"
+  },
+  "title": "Roman To Integer",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon",
+    "Facebook",
+    "Microsoft",
+    "Twitter"
+  ],
+  "link": "roman-to-integer",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d54"
+  },
+  "title": "Add Binary Strings",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Facebook",
+    "Microsoft"
+  ],
+  "link": "add-binary-strings",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d55"
+  },
+  "title": "Power of 2",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Hard",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "power-of-2",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d56"
+  },
+  "title": "Multiply Strings",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Hard",
+  "companies": [
+    "Microsoft",
+    "Google"
+  ],
+  "link": "multiply-strings",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d57"
+  },
+  "title": "Zigzag String",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Paypal"
+  ],
+  "link": "zigzag-string",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d58"
+  },
+  "title": "Justified Text",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "LinkedIn",
+    "Google"
+  ],
+  "link": "justified-text",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d59"
+  },
+  "title": "Pretty Json",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Hard",
+  "companies": [
+    "Facebook",
+    "Microsoft"
+  ],
+  "link": "pretty-json",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca657e41b67e80db63d47"
+  },
+  "title": "Minimum Characters required to make a String Palindromic",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "minimum-characters-required-to-make-a-string-palindromic",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.040Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d5a"
+  },
+  "title": "Bulls and Cows",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "bulls-and-cows",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d5b"
+  },
+  "title": "Deserialize",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [
+    "Flipkart"
+  ],
+  "link": "deserialize",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d5c"
+  },
+  "title": "Salutes",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [
+    "clevertap"
+  ],
+  "link": "salutes",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d5d"
+  },
+  "title": "Self Permutation",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [
+    "Grab"
+  ],
+  "link": "self-permutation",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d5e"
+  },
+  "title": "Serialize",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [
+    "Flipkart"
+  ],
+  "link": "serialize",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca658e41b67e80db63d5f"
+  },
+  "title": "String And Its Frequency",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Strings",
+  "difficulty": "Easy",
+  "companies": [
+    "clevertap"
+  ],
+  "link": "string-and-its-frequency",
+  "createdAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:34:16.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6b90c024d9f6020e6d2"
+  },
+  "title": "Number of 1 Bits",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Bit Manipulation",
+  "difficulty": "Easy",
+  "companies": [
+    "Adobe",
+    "Yahoo"
+  ],
+  "link": "number-of-1-bits",
+  "createdAt": {
+    "$date": "2022-01-10T21:35:53.341Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:35:53.341Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6b90c024d9f6020e6d3"
+  },
+  "title": "Trailing Zeroes",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Bit Manipulation",
+  "difficulty": "Easy",
+  "companies": [
+    "DE Shaw"
+  ],
+  "link": "trailing-zeroes",
+  "createdAt": {
+    "$date": "2022-01-10T21:35:53.341Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:35:53.341Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6b90c024d9f6020e6d4"
+  },
+  "title": "Reverse Bits",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Bit Manipulation",
+  "difficulty": "Medium",
+  "companies": [
+    "Nvidia",
+    "HCL",
+    "Amazon"
+  ],
+  "link": "reverse-bits",
+  "createdAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6b90c024d9f6020e6d5"
+  },
+  "title": "Divide Integers",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Bit Manipulation",
+  "difficulty": "Medium",
+  "companies": [
+    "Microsoft",
+    "Amazon"
+  ],
+  "link": "divide-integers",
+  "createdAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6b90c024d9f6020e6d6"
+  },
+  "title": "Different Bits Sum Pairwise",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Bit Manipulation",
+  "difficulty": "Medium",
+  "companies": [
+    "Google"
+  ],
+  "link": "different-bits-sum-pairwise",
+  "createdAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6b90c024d9f6020e6d7"
+  },
+  "title": "Min XOR value",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Bit Manipulation",
+  "difficulty": "Easy",
+  "companies": [
+    "Booking.com"
+  ],
+  "link": "min-xor-value",
+  "createdAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6b90c024d9f6020e6d8"
+  },
+  "title": "Count Total Set Bits",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Bit Manipulation",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "count-total-set-bits",
+  "createdAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6b90c024d9f6020e6d9"
+  },
+  "title": "Palindromic Binary Representation",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Bit Manipulation",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "palindromic-binary-representation",
+  "createdAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6b90c024d9f6020e6da"
+  },
+  "title": "XOR-ing the Subarrays!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Bit Manipulation",
+  "difficulty": "Easy",
+  "companies": [
+    "Zenefits"
+  ],
+  "link": "xor-ing-the-subarrays",
+  "createdAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6b90c024d9f6020e6db"
+  },
+  "title": "Single Number",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Bit Manipulation",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "single-number",
+  "createdAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6b90c024d9f6020e6dc"
+  },
+  "title": "Single Number II",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Bit Manipulation",
+  "difficulty": "Medium",
+  "companies": [
+    "Google",
+    "Amazon"
+  ],
+  "link": "single-number-ii",
+  "createdAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:35:53.342Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f8390"
+  },
+  "title": "Pair With Given Difference",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon",
+    "Flipkart"
+  ],
+  "link": "pair-with-given-difference",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.595Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.595Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f8391"
+  },
+  "title": "3 Sum",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Medium",
+  "companies": [
+    "Facebook",
+    "Amazon",
+    "Microsoft"
+  ],
+  "link": "3-sum",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f8392"
+  },
+  "title": "3 Sum Zero",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Medium",
+  "companies": [
+    "Facebook",
+    "Google"
+  ],
+  "link": "3-sum-zero",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f8393"
+  },
+  "title": "Counting Triangles",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Medium",
+  "companies": [],
+  "link": "counting-triangles",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f8394"
+  },
+  "title": "Diffk",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Medium",
+  "companies": [
+    "Facebook"
+  ],
+  "link": "diffk",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f8395"
+  },
+  "title": "Maximum Ones After Modification",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Easy",
+  "companies": [
+    "Amazon",
+    "hotstar"
+  ],
+  "link": "maximum-ones-after-modification",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f8396"
+  },
+  "title": "Counting Subarrays!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Easy",
+  "companies": [
+    "uber"
+  ],
+  "link": "counting-subarrays",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f8397"
+  },
+  "title": "Subarrays with distinct integers!",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Medium",
+  "companies": [
+    "uber"
+  ],
+  "link": "subarrays-with-distinct-integers",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f8398"
+  },
+  "title": "Max Continuous Series of 1s",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Medium",
+  "companies": [
+    "VMWare",
+    "Amazon"
+  ],
+  "link": "max-continuous-series-of-1s",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f8399"
+  },
+  "title": "Array 3 Pointers",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Hard",
+  "companies": [
+    "Google",
+    "Microsoft",
+    "Yahoo"
+  ],
+  "link": "array-3-pointers",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f839a"
+  },
+  "title": "Container With Most Water",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Hard",
+  "companies": [
+    "Facebook",
+    "Google",
+    "Amazon",
+    "Adobe"
+  ],
+  "link": "container-with-most-water",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f839b"
+  },
+  "title": "Merge Two Sorted Lists II",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Easy",
+  "companies": [
+    "Adobe",
+    "Expedia",
+    "Microsoft",
+    "Amazon"
+  ],
+  "link": "merge-two-sorted-lists-ii",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f839c"
+  },
+  "title": "Intersection Of Sorted Arrays",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Medium",
+  "companies": [
+    "Facebook",
+    "Google"
+  ],
+  "link": "intersection-of-sorted-arrays",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f839e"
+  },
+  "title": "Remove Duplicates from Sorted Array II",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Medium",
+  "companies": [
+    "Expedia",
+    "Microsoft"
+  ],
+  "link": "remove-duplicates-from-sorted-array-ii",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f839f"
+  },
+  "title": "Remove Element from Array",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Medium",
+  "companies": [
+    "Amazon"
+  ],
+  "link": "remove-element-from-array",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f83a0"
+  },
+  "title": "Sort by Color",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Hard",
+  "companies": [
+    "Facebook",
+    "Microsoft"
+  ],
+  "link": "sort-by-color",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61dca6e546f02a78128f839d"
+  },
+  "title": "Remove Duplicates from Sorted Array",
+  "description": "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+  "topic": "Two Pointers",
+  "difficulty": "Medium",
+  "companies": [
+    "United Healthgroup",
+    "Amazon",
+    "Google",
+    "Microsoft",
+    "Expedia"
+  ],
+  "link": "remove-duplicates-from-sorted-array",
+  "createdAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-10T21:36:37.596Z"
+  },
+  "__v": 0
+}]
