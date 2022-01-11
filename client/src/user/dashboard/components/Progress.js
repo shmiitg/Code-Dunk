@@ -15,6 +15,10 @@ const Progress = ({ total, done, days }) => {
         progressBar.animate(done / total); // percent
     };
 
+    function roundToTwo(num) {
+        return +(Math.round(num + "e+2") + "e-2");
+    }
+
     useEffect(() => {
         onLoad();
     }, [])
@@ -28,7 +32,7 @@ const Progress = ({ total, done, days }) => {
                         <div className={styles["bg"]}></div>
                         <div className={styles["inner"]}>
                             {done === 0 && 'Not yet started'}
-                            {done !== 0 && done * 100 / total}
+                            {done !== 0 && roundToTwo(done * 100 / total)}
                             {done !== 0 && '%'}
                         </div>
                     </div>
