@@ -7,8 +7,7 @@ import './Navbar.css';
 
 const Navbar = () => {
     const [loading, setLoading] = useState(true);
-    const [user, setUser] = useState(false);
-    const { userName, setUserName } = useContext(UserContext);
+    const { setUserName, userLoggedIn, setUserLoggedIn } = useContext(UserContext);
 
     const navLinks = [
         { name: 'Problems', address: '/problems' },
@@ -23,15 +22,16 @@ const Navbar = () => {
         setLoading(false);
         if (res.status === 200) {
             setUserName(data.user.username);
-            setUser(true);
+            setUserLoggedIn(true);
         } else {
             setUserName('Account');
+            setUserLoggedIn(false);
         }
     }
 
     useEffect(() => {
         fetchData();
-    }, [userName]);
+    }, [userLoggedIn]);
 
     if (loading) return (<> </>)
     return (
@@ -48,7 +48,7 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className="nav-right">
-                    {!user ?
+                    {!userLoggedIn ?
                         <div className="nav-item">
                             <Link className="login-btn" to="/login">Sign In</Link>
                         </div>

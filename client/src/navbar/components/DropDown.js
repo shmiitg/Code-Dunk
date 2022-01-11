@@ -8,16 +8,16 @@ import { FaUserCircle } from 'react-icons/fa';
 const DropDown = () => {
     const history = useHistory();
     const [dropDown, setDropDown] = useState(false);
-    const { userName, setUserName } = useContext(UserContext);
+    const { userName, setUserName, setUserLoggedIn } = useContext(UserContext);
 
     const logOut = async () => {
         const res = await fetch('/auth/logout');
         const data = await res.json();
         if (res.status === 200) {
-            window.alert(data.msg);
             setDropDown(prev => !prev);
             history.push('/login');
             setUserName('Account');
+            setUserLoggedIn(false);
         } else {
             window.alert(data.error);
         }

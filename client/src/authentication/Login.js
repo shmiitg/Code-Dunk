@@ -12,7 +12,7 @@ const Login = () => {
     const passwordRef = useRef(null);
     const submitRef = useRef(null);
     const handleLoginInput = e => setUser({ ...user, [e.target.name]: e.target.value });
-    const { setUserName } = useContext(UserContext);
+    const { setUserName, setUserLoggedIn } = useContext(UserContext);
 
     function keyKeyDown(e) {
         if (e.keyCode === 13) {
@@ -51,6 +51,7 @@ const Login = () => {
         const data = await res.json();
         if (res.status === 200) {
             setUserName(data.userName);
+            setUserLoggedIn(true);
             history.push('/');
         } else {
             window.alert(data.error);

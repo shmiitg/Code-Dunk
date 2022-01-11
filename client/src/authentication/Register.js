@@ -8,7 +8,7 @@ const Register = () => {
     const history = useHistory();
     const [user, setUser] = useState({ username: '', email: '', password: '', cpassword: '' })
     const handleInput = e => setUser({ ...user, [e.target.name]: e.target.value });
-    const { setUserName } = useContext(UserContext);
+    const { setUserName, setUserLoggedIn } = useContext(UserContext);
 
     const handleClick = async () => {
         const { username, email, password, cpassword } = user;
@@ -20,6 +20,7 @@ const Register = () => {
         const data = await res.json();
         if (res.status === 200) {
             setUserName(data.userName);
+            setUserLoggedIn(true);
             history.push('/');
         } else {
             window.alert(data.error);
