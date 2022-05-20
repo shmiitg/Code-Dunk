@@ -1,14 +1,10 @@
-import React, { useContext, useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import DropDown from "./components/DropDown";
-import { UserContext } from "../context/UserContext";
 import logo from "../images/logo.png";
 import "./Navbar.css";
 
-const Navbar = () => {
-    const [loading, setLoading] = useState(true);
-    const { setUserName, userLoggedIn, setUserLoggedIn } = useContext(UserContext);
-
+const Navbar = ({ userName }) => {
     const navLinks = [
         { name: "Problems", address: "/problems" },
         { name: "Blogs", address: "/blogs" },
@@ -16,24 +12,6 @@ const Navbar = () => {
         { name: "Companies", address: "/companies" },
     ];
 
-    const fetchData = async () => {
-        const res = await fetch("/user/info");
-        const data = await res.json();
-        setLoading(false);
-        if (res.status === 200) {
-            setUserName(data.user.username);
-            setUserLoggedIn(true);
-        } else {
-            setUserName("Account");
-            setUserLoggedIn(false);
-        }
-    };
-
-    useEffect(() => {
-        fetchData();
-    }, [userLoggedIn]);
-
-    if (loading) return <> </>;
     return (
         <div className="navbar">
             <div className="nav-links">
@@ -50,14 +28,14 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className="nav-right">
-                    {!userLoggedIn ? (
+                    {userName ? (
+                        <DropDown />
+                    ) : (
                         <div className="nav-item">
                             <Link className="login-btn" to="/login">
                                 Sign In
                             </Link>
                         </div>
-                    ) : (
-                        <DropDown />
                     )}
                 </div>
             </div>

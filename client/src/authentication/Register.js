@@ -1,14 +1,13 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 import logo from "../images/logo.png";
 
 const Register = () => {
-    const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
     const [user, setUser] = useState({ username: "", email: "", password: "", cpassword: "" });
     const handleInput = (e) => setUser({ ...user, [e.target.name]: e.target.value });
-    const { setUserName, setUserLoggedIn } = useContext(UserContext);
+    const { setUserName } = useContext(UserContext);
 
     const handleClick = async () => {
         const { username, email, password, cpassword } = user;
@@ -20,26 +19,12 @@ const Register = () => {
         const data = await res.json();
         if (res.status === 200) {
             setUserName(data.userName);
-            setUserLoggedIn(true);
             navigate("/");
         } else {
             window.alert(data.error);
         }
     };
 
-    const fetchData = async () => {
-        const res = await fetch("/user/info");
-        setLoading(false);
-        if (res.status === 200) {
-            navigate("/");
-        }
-    };
-
-    useEffect(() => {
-        fetchData();
-    }, []);
-
-    if (loading) return <></>;
     return (
         <div className="auth__container">
             <div className="form-container">

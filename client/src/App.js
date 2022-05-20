@@ -1,5 +1,7 @@
+import { UserContext } from "./context/UserContext";
+import { useContext, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import UserContextProvider from "./context/UserContext";
+// import UserContextProvider from "./context/UserContext";
 import Navbar from "./navbar/Navbar";
 import Home from "./home/Home";
 import Error from "./error/Error";
@@ -27,49 +29,64 @@ import BlogEdit from "./blog/BlogEdit";
 import DashBoard from "./user/dashboard/DashBoard";
 import EditProfile from "./user/editprofile/EditProfile";
 
-const DefaultRoutes = () => {
-    return (
-        <>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />}></Route>
-                {/* Problems */}
-                <Route path="/problems" element={<ProblemCards />}></Route>
-                <Route path="/problems/:topic" element={<ProblemList />}></Route>
-                <Route path="/problems/company/:company" element={<ProblemCompany />}></Route>
-                <Route path="/problem/:problem" element={<ProblemSolve />}></Route>
-                {/* Interviews */}
-                <Route path="/interviews" element={<Interview />}></Route>
-                <Route path="/interview/new" element={<InterviewForm />}></Route>
-                <Route path="/interview/read/:id" element={<ReadInterview />}></Route>
-                <Route path="/interview/edit" element={<InterviewEdit />}></Route>
-                {/* Authentication */}
-                <Route path="/login" element={<Login />}></Route>
-                <Route path="/register" element={<Register />}></Route>
-                {/* Dashboard */}
-                <Route path="/profile/dashboard" element={<DashBoard />}></Route>
-                <Route path="/profile/edit" element={<EditProfile />}></Route>
-                {/* Blogs */}
-                <Route path="/blogs" element={<Blog />}></Route>
-                <Route path="/blog/new" element={<BlogForm />}></Route>
-                <Route path="/blog/read/:id" element={<ReadBlog />}></Route>
-                <Route path="/blog/edit" element={<BlogEdit />}></Route>
-                {/* Companies */}
-                <Route path="/companies" element={<Companies />}></Route>
-                {/* Error */}
-                <Route path="*" element={<Error />} />
-            </Routes>
-        </>
-    );
-};
-
 function App() {
+    const { userName, setUserName } = useContext(UserContext);
+    const [loading, setLoading] = useState(true);
+    const fetchData = async () => {
+        const res = await fetch("/user/info");
+        const data = await res.json();
+        if (res.status === 200) {
+            setUserName(data.user.username);
+        } else {
+            setUserName(null);
+        }
+        setLoading(false);
+    };
+    useEffect(() => {
+        fetchData();
+    }, [userName]);
+
+    if (loading) return <></>;
     return (
-        <Router>
-            <UserContextProvider>
-                <DefaultRoutes />
-            </UserContextProvider>
-        </Router>
+        <div className="App">
+            <Router>
+                <Navbar userName={userName} />
+                <Routes>
+                    <Route path="/" element={<Home />}></Route>
+                    {/* Problems */}
+                    <Route path="/problems" element={<ProblemCards />}></Route>
+                    <Route path="/problems/:slug" element={<ProblemList />}></Route>
+                    <Route path="/problems/company/:slug" element={<ProblemCompany />}></Route>
+                    <Route path="/problem/:slug" element={<ProblemSolve />}></Route>
+                    {/* Interviews */}
+                    <Route path="/interviews" element={<Interview />}></Route>
+                    <Route path="/interview/new" element={<InterviewForm />}></Route>
+                    <Route path="/interview/read/:id" element={<ReadInterview />}></Route>
+                    <Route path="/interview/edit" element={<InterviewEdit />}></Route>
+                    {/* Authentication */}
+                    <Route path="/login" element={userName ? <Navigate to="/" /> : <Login />} />
+                    <Route
+                        path="/register"
+                        element={userName ? <Navigate to="/" /> : <Register />}
+                    />
+                    {/* Dashboard */}
+                    <Route path="/profile/dashboard" element={<DashBoard />}></Route>
+                    <Route
+                        path="/profile/edit"
+                        element={userName ? <EditProfile /> : <Navigate to="/" />}
+                    ></Route>
+                    {/* Blogs */}
+                    <Route path="/blogs" element={<Blog />}></Route>
+                    <Route path="/blog/new" element={<BlogForm />}></Route>
+                    <Route path="/blog/read/:id" element={<ReadBlog />}></Route>
+                    <Route path="/blog/edit" element={<BlogEdit />}></Route>
+                    {/* Companies */}
+                    <Route path="/companies" element={<Companies />}></Route>
+                    {/* Error */}
+                    <Route path="*" element={<Error />} />
+                </Routes>
+            </Router>
+        </div>
     );
 }
 

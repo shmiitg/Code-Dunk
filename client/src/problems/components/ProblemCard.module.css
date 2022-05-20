@@ -27,10 +27,10 @@
 }
 
 .problem-topic {
-    color: #4c4e61;
+    color: var(--clr-primary);
     font-size: 1.65rem;
     font-weight: 500;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
 }
 
 .problem-question-count {

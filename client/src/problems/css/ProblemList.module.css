@@ -2,10 +2,14 @@
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
+    color: var(--clr-primary);
+    letter-spacing: 1px;
 }
 
 .problems-table-container {
     margin-top: 3rem;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .problem-title a {

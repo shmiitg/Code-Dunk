@@ -5,14 +5,13 @@ import { UserContext } from "../context/UserContext";
 import "./Auth.css";
 
 const Login = () => {
-    const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
     const [user, setUser] = useState({ key: "", password: "" });
     const keyRef = useRef(null);
     const passwordRef = useRef(null);
     const submitRef = useRef(null);
     const handleLoginInput = (e) => setUser({ ...user, [e.target.name]: e.target.value });
-    const { setUserName, setUserLoggedIn } = useContext(UserContext);
+    const { setUserName } = useContext(UserContext);
 
     function keyKeyDown(e) {
         if (e.keyCode === 13) {
@@ -51,31 +50,19 @@ const Login = () => {
         const data = await res.json();
         if (res.status === 200) {
             setUserName(data.userName);
-            setUserLoggedIn(true);
             navigate("/");
         } else {
             window.alert(data.error);
         }
     };
 
-    const fetchData = async () => {
-        const res = await fetch("/user/info");
-        if (res.status === 200) {
-            navigate("/");
-        }
-        setLoading(false);
+    useEffect(() => {
         if (keyRef.current) {
             keyRef.current.focus();
         }
-    };
-
-    useEffect(() => {
-        fetchData();
     }, []);
 
-    if (loading) return <></>;
     return (
-        // <div className="container">
         <div className="auth__container">
             <div className="form-container">
                 <div className="form-logo">

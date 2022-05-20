@@ -20,7 +20,6 @@ const Dashboard = () => {
     });
     const [problemsData, setProblemsData] = useState([]);
     const [done, setDone] = useState(0);
-    const [days, setDays] = useState(0);
     const [total, setTotal] = useState(1);
 
     const fetchData = async () => {
@@ -35,7 +34,6 @@ const Dashboard = () => {
             setProblemsData(dataUser.problemsDifficulty);
             setDone(dataUser.problemsDone.length);
             setTotal(dataProblems.problems.length);
-            setDays(20); // feature to be added later
         } else if (resUser.status === 404) {
             setError(true);
         } else {
@@ -53,13 +51,12 @@ const Dashboard = () => {
     return (
         <div className="user-container">
             <Profile
-                problems={problemsData}
                 name={userData.name}
                 username={userData.username}
                 location={userData.location}
                 education={userData.education}
             />
-            <Progress total={total} done={done} days={days} />
+            <Progress total={total} done={done} problems={problemsData} />
         </div>
     );
 };
