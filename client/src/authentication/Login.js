@@ -1,17 +1,17 @@
-import React, { useContext, useEffect, useState, useRef } from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import logo from '../images/logo.png';
-import { UserContext } from '../context/UserContext';
-import './Auth.css'
+import React, { useContext, useEffect, useState, useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import logo from "../images/logo.png";
+import { UserContext } from "../context/UserContext";
+import "./Auth.css";
 
 const Login = () => {
     const [loading, setLoading] = useState(true);
-    const history = useHistory();
-    const [user, setUser] = useState({ key: '', password: '' });
+    const navigate = useNavigate();
+    const [user, setUser] = useState({ key: "", password: "" });
     const keyRef = useRef(null);
     const passwordRef = useRef(null);
     const submitRef = useRef(null);
-    const handleLoginInput = e => setUser({ ...user, [e.target.name]: e.target.value });
+    const handleLoginInput = (e) => setUser({ ...user, [e.target.name]: e.target.value });
     const { setUserName, setUserLoggedIn } = useContext(UserContext);
 
     function keyKeyDown(e) {
@@ -43,38 +43,37 @@ const Login = () => {
 
     const userLogin = async () => {
         const { key, password } = user;
-        const res = await fetch('/auth/login', {
+        const res = await fetch("/auth/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ key, password })
+            body: JSON.stringify({ key, password }),
         });
         const data = await res.json();
         if (res.status === 200) {
             setUserName(data.userName);
             setUserLoggedIn(true);
-            history.push('/');
+            navigate("/");
         } else {
             window.alert(data.error);
         }
-    }
+    };
 
     const fetchData = async () => {
-        const res = await fetch('/user/info');
+        const res = await fetch("/user/info");
         if (res.status === 200) {
-            history.push('/');
+            navigate("/");
         }
         setLoading(false);
         if (keyRef.current) {
             keyRef.current.focus();
         }
-    }
+    };
 
     useEffect(() => {
         fetchData();
     }, []);
 
-
-    if (loading) return <></>
+    if (loading) return <></>;
     return (
         <div className="container">
             <div className="form-container">
@@ -83,23 +82,47 @@ const Login = () => {
                 </div>
                 <div id="login" method="POST">
                     <div className="form-fields">
-                        <input name="key" type="text" className="form-control" id="key"
-                            placeholder="Username or E-mail" value={user.key} onChange={handleLoginInput}
-                            ref={keyRef} onKeyDown={keyKeyDown} />
+                        <input
+                            name="key"
+                            type="text"
+                            className="form-control"
+                            id="key"
+                            placeholder="Username or E-mail"
+                            value={user.key}
+                            onChange={handleLoginInput}
+                            ref={keyRef}
+                            onKeyDown={keyKeyDown}
+                        />
                     </div>
                     <div className="form-fields">
-                        <input name="password" type="password" className="form-control" id="password"
-                            placeholder="Password" value={user.password} onChange={handleLoginInput}
-                            ref={passwordRef} onKeyDown={passwordKeyDown} />
+                        <input
+                            name="password"
+                            type="password"
+                            className="form-control"
+                            id="password"
+                            placeholder="Password"
+                            value={user.password}
+                            onChange={handleLoginInput}
+                            ref={passwordRef}
+                            onKeyDown={passwordKeyDown}
+                        />
                     </div>
                 </div>
-                <button className="btn-account" onClick={userLogin} ref={submitRef} onKeyDown={submitKeyDown}>Submit</button>
+                <button
+                    className="btn-account"
+                    onClick={userLogin}
+                    ref={submitRef}
+                    onKeyDown={submitKeyDown}
+                >
+                    Submit
+                </button>
                 <div className="account-toggle">
-                    <p>No account?</p><Link to="/register">Sign Up</Link>
+                    <p>No account?</p>
+                    <Link to="/register">Sign Up</Link>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Login
+export default Login;

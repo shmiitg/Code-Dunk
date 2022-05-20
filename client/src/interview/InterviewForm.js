@@ -1,44 +1,48 @@
-import React, { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom';
-import PostForm from '../components/post/PostForm';
-import { slug } from '../hooks and functions/Slug';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import PostForm from "../components/post/PostForm";
+import { slug } from "../hooks and functions/Slug";
 
 const InterviewForm = () => {
-    const history = useHistory();
-    const [interviewArticle, setInterviewArticle] = useState({ title: '', company: '', content: '' });
+    const navigate = useNavigate();
+    const [interviewArticle, setInterviewArticle] = useState({
+        title: "",
+        company: "",
+        content: "",
+    });
     const handleInterviewInput = (e) => {
         let value = e.target.value;
-        if (value === '\n') value = '</br>';
-        setInterviewArticle({ ...interviewArticle, [e.target.name]: value })
-    }
+        if (value === "\n") value = "</br>";
+        setInterviewArticle({ ...interviewArticle, [e.target.name]: value });
+    };
 
     const interviewSave = async () => {
         const { title, company, content } = interviewArticle;
-        const res = await fetch('/api/interview/save', {
+        const res = await fetch("/api/interview/save", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ title, company, content })
+            body: JSON.stringify({ title, company, content }),
         });
         const data = await res.json();
         if (res.status === 200) {
             window.alert(data.msg);
-            history.push(`/interview/read/${slug(title)}`);
+            navigate(`/interview/read/${slug(title)}`);
         } else {
             window.alert(data.error);
         }
-    }
+    };
 
     const checkAuth = async () => {
-        const res = await fetch('/user/info');
+        const res = await fetch("/user/info");
         if (res.status !== 200) {
-            alert('Login to continue');
-            history.push('/login');
+            alert("Login to continue");
+            navigate("/login");
         }
-    }
+    };
 
     useEffect(() => {
         checkAuth();
-    }, [])
+    }, []);
 
     return (
         <PostForm
@@ -50,7 +54,7 @@ const InterviewForm = () => {
             handleInput={handleInterviewInput}
             save={interviewSave}
         />
-    )
-}
+    );
+};
 
-export default InterviewForm
+export default InterviewForm;
