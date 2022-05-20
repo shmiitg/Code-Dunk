@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import PostForm from "../components/post/PostForm";
-import { slug } from "../hooks and functions/Slug";
+import { slug } from "../utils/Slug";
 
 const BlogForm = () => {
     const navigate = useNavigate();

@@ -9,7 +9,7 @@
     width: 20rem;
     border-radius: 0.5rem;
     border-top: 0.3rem solid #008181;
-    box-shadow: 0 3rem 4rem --2rem #a3a5ae;
+    box-shadow: 0 3rem 4rem -2rem #a3a5ae;
     padding: 2.5rem;
     margin: 2rem;
     transition: 0.4s ease;

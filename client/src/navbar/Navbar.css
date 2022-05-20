@@ -10,7 +10,7 @@
 .nav-links {
     display: flex;
     justify-content: space-between;
-    min-height: 6.5rem;
+    min-height: 6.75rem;
     padding: 0 3.5rem;
 }
 
@@ -40,7 +40,8 @@
     outline: 0;
     background-color: #273239;
     color: #fff !important;
-    padding: 0.8rem 2.7rem;
+    padding: 10px 27px;
+    padding-top: 7px;
     border-radius: 0.5rem;
     font-size: 1.4rem;
     border: 0;

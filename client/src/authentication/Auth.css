@@ -1,15 +1,24 @@
 .form-container {
-    max-width: 38rem;
-    margin: 3rem auto;
-    padding: 3rem;
+    width: 35rem;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 3.25rem;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
 }
 
+.auth__container {
+    margin-top: 7rem;
+    height: calc(100vh - 12rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .form-logo {
     width: 15rem;
-    margin: 0 auto 3.5rem;
+    margin: 0 auto 2.2rem;
 }
 
 .form-logo img {
@@ -29,6 +38,14 @@ button {
     font-family: inherit;
 }
 
+.auth__container input {
+    line-height: 1.35;
+    font-size: 1.4rem;
+    letter-spacing: 0.2px;
+    color: var(--clr-primary);
+    font-weight: 400;
+}
+
 .btn-account {
     background: #455a64;
     border: 1px solid #b0bec5;
@@ -36,6 +53,7 @@ button {
     transition: 0.2s all ease-in-out;
     outline: 0;
     cursor: pointer;
+    margin: 1rem 0 0.5rem;
 }
 
 .btn-account:focus {
@@ -46,4 +64,10 @@ button {
     margin-top: 1.75rem;
     display: flex;
     justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.account-toggle a {
+    font-size: inherit;
+    color: var(--clr-primary);
 }

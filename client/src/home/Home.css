@@ -2,6 +2,28 @@
 Left Side
 */
 
+.home__container {
+    margin: 12rem auto 0;
+    background-color: #fff;
+    max-width: 140rem;
+    padding: 0 2rem;
+}
+
+.home__small__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 864px) {
+    .home__container {
+        margin-top: 10rem;
+    }
+    .home__small__container {
+        flex-direction: column;
+    }
+}
+
 .home-problem-card {
     position: relative;
     padding: 3rem 0;
@@ -27,8 +49,8 @@ Right Container
 
 .home-article-card {
     display: flex;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 2.15rem;
+    margin-bottom: 2.15rem;
     padding-right: 3.5rem;
 }
 
@@ -51,12 +73,13 @@ Right Container
 .home-link-card-title {
     line-height: 1.4;
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 1.78rem;
+    letter-spacing: 0.3px;
     color: var(--clr-black);
 }
 
 .home-article-card-left {
-    font-size: 3.25rem;
+    font-size: 3.5rem;
     color: #989898;
 }
 
@@ -70,4 +93,5 @@ Right Container
     font-size: 1.3rem;
     color: #6d6d6d;
     margin-top: 0.2rem;
+    font-weight: 500;
 }

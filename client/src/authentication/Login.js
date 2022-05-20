@@ -75,7 +75,8 @@ const Login = () => {
 
     if (loading) return <></>;
     return (
-        <div className="container">
+        // <div className="container">
+        <div className="auth__container">
             <div className="form-container">
                 <div className="form-logo">
                     <img src={logo} alt="logo" />
@@ -122,6 +123,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
+        // </div>
     );
 };
 

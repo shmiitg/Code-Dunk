@@ -8,10 +8,11 @@
 
 :root {
     --clr-black: #273239;
+    --clr-primary: #008181;
 }
 
 html {
-    font-size: 68.75%;
+    font-size: 62.5%;
 }
 
 body {
@@ -58,22 +59,25 @@ Common classes
 
 .container {
     margin: 12rem auto 0;
-    padding: 0 6rem;
     background-color: #fff;
+    max-width: 140rem;
+    padding: 0 3rem;
 }
 
 .small-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-evenly;
 }
 
 .main {
-    flex-basis: 60%;
+    flex-basis: 57%;
     padding: 0 2rem;
 }
 
 .sidebar {
-    flex-basis: 40%;
+    flex-basis: 37%;
     padding: 0 2rem;
 }
 
@@ -84,10 +88,11 @@ Common classes
 
 .sidebar-card-heading {
     text-transform: uppercase;
-    font-weight: 400;
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
-    margin-bottom: 2rem;
+    font-size: 2.15rem;
+    letter-spacing: 2.5px;
+    color: var(--clr-primary);
+    margin-bottom: 2.2rem;
+    font-weight: 500;
 }
 
 .sidebar-card-content {
