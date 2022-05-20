@@ -1,53 +1,53 @@
 *,
 *:before,
 *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  --clr-black: #273239;
+    --clr-black: #273239;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 68.75%;
 }
 
 body {
-  font-size: 1.4rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
-    "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.4rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
+        "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 a {
-  font-size: 1.6rem;
-  text-decoration: none;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-  transition: 0.2s color ease-in-out;
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s color ease-in-out;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 input {
-  width: 100%;
-  color: #546e7a;
-  border: 1px solid #cfd8dc;
-  font-weight: 300;
-  transition: 0.4s all;
+    width: 100%;
+    color: #546e7a;
+    border: 1px solid #cfd8dc;
+    font-weight: 300;
+    transition: 0.4s all;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-  outline: none;
-  box-shadow: 0 0 5px #51cbee;
-  border: 1px solid #51cbee;
+    outline: none;
+    box-shadow: 0 0 0.5rem #51cbee;
+    border: 1px solid #51cbee;
 }
 
 /*
@@ -57,86 +57,86 @@ Common classes
 */
 
 .container {
-  margin: 12rem auto 0;
-  padding: 0 6rem;
-  background-color: #fff;
+    margin: 12rem auto 0;
+    padding: 0 6rem;
+    background-color: #fff;
 }
 
 .small-container {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main {
-  flex-basis: 60%;
-  padding: 0 2rem;
+    flex-basis: 60%;
+    padding: 0 2rem;
 }
 
 .sidebar {
-  flex-basis: 40%;
-  padding: 0 2rem;
+    flex-basis: 40%;
+    padding: 0 2rem;
 }
 
 .main-card,
 .sidebar-card {
-  margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 .sidebar-card-heading {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
 }
 
 .sidebar-card-content {
-  padding: 0.5rem;
+    padding: 0.5rem;
 }
 
 .container-md {
-  max-width: 75rem;
-  margin: auto;
-  margin-bottom: 5rem;
+    max-width: 75rem;
+    margin: auto;
+    margin-bottom: 5rem;
 }
 
 .container-lg {
-  max-width: 85rem;
-  margin: auto;
-  margin-bottom: 5rem;
+    max-width: 85rem;
+    margin: auto;
+    margin-bottom: 5rem;
 }
 
 .go-back {
-  font-weight: 500;
-  line-height: 18px;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
 }
 
 .go-back a {
-  color: #989898;
-  display: flex;
-  width: fit-content;
+    color: #989898;
+    display: flex;
+    width: fit-content;
 }
 
 .go-back svg {
-  margin-top: 1.2pt;
-  margin-right: 5px;
+    margin-top: 0.16rem;
+    margin-right: 0.5rem;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 1rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #a5a5a5;
-  border-radius: 5px;
+    background: #a5a5a5;
+    border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8f8f8f;
+    background: #8f8f8f;
 }

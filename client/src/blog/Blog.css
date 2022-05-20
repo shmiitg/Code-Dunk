@@ -1,73 +1,73 @@
 .blog-heading {
-  padding: 1.5rem 2rem;
-  margin-bottom: 2rem;
-  box-shadow: rgb(0, 0, 0, 10%) 0 1px 2px, rgb(0, 0, 0, 8%) 0 2px 8px;
-  font-size: 20px;
-  font-weight: 500;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: rgb(0, 0, 0, 10%) 0 1px 2px, rgb(0, 0, 0, 8%) 0 2px 0.8rem;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .post {
-  display: flex;
-  align-items: center;
-  min-height: 10rem;
-  border-bottom: 1px solid rgb(0, 0, 0, 10%);
+    display: flex;
+    align-items: center;
+    min-height: 10rem;
+    border-bottom: 1px solid rgb(0, 0, 0, 10%);
 }
 
 .post:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .post-link {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem 2rem 1.65rem;
-  color: var(--clr-black);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem 1.65rem;
+    color: var(--clr-black);
 }
 
 .post-title {
-  font-size: 16px;
-  font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 .post-desc {
-  font-size: 14px;
-  margin: 0.5rem 0;
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
 }
 
 .post-author {
-  color: grey;
-  font-size: 12px;
+    color: grey;
+    font-size: 1.2rem;
 }
 
 .post-author span {
-  color: var(--clr-black);
+    color: var(--clr-black);
 }
 
 .post-write {
-  margin: auto;
-  width: fit-content;
-  margin-top: 5rem;
-  display: flex;
-  gap: 1rem;
+    margin: auto;
+    width: fit-content;
+    margin-top: 5rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .post-write-btn,
 .post-cancel-btn {
-  line-height: 1.4;
-  border-radius: 3px;
-  font-size: inherit;
-  font-family: inherit;
-  padding: 9px 13px;
-  background: #455a64;
-  border: 1px solid #b0bec5;
-  color: #fff;
-  transition: 0.2s all ease-in-out;
-  outline: 0;
-  cursor: pointer;
+    line-height: 1.4;
+    border-radius: 0.3rem;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.9rem 1.3rem;
+    background: #455a64;
+    border: 1px solid #b0bec5;
+    color: #fff;
+    transition: 0.2s all ease-in-out;
+    outline: 0;
+    cursor: pointer;
 }
 
 .post-write-btn:hover,
 .post-cancel-btn:hover {
-  color: #fff;
+    color: #fff;
 }

@@ -1,15 +1,15 @@
 .interview-heading {
-  padding: 1.5rem 2rem;
-  margin-bottom: 2rem;
-  box-shadow: rgb(0, 0, 0, 10%) 0 1px 2px, rgb(0, 0, 0, 8%) 0 2px 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: rgb(0, 0, 0, 10%) 0 1px 2px, rgb(0, 0, 0, 8%) 0 2px 0.8rem;
 }
 
 .interview-heading-title {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 2px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
 }
 
 .interview-heading-info {
-  color: grey;
+    color: grey;
 }

@@ -1,104 +1,104 @@
 .user-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  max-width: 130rem;
-  margin: 15rem auto 5rem;
-  padding: 0 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 130rem;
+    margin: 15rem auto 5rem;
+    padding: 0 5rem;
 }
 
 @media (max-width: 786px) {
-  .user-container {
-    padding: 0 3rem;
-  }
+    .user-container {
+        padding: 0 3rem;
+    }
 }
 
 .right {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .dashboard-card {
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: rgb(0, 0, 0, 10%) 0 1px 2px, rgb(0, 0, 0, 8%) 0 2px 8px;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    box-shadow: rgb(0, 0, 0, 10%) 0 1px 2px, rgb(0, 0, 0, 8%) 0 2px 0.8rem;
 }
 
 .profile-item {
-  border-top: 1px solid #e8e8e8;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: rgba(0, 0, 0, 0.65);
-  font-size: 14px;
-  padding: 1rem 0;
-  margin-bottom: 1px;
+    border-top: 1px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    margin-bottom: 1px;
 }
 
 .about {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 1.75rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.75rem;
 }
 
 .user-name {
-  font-size: 2rem;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.65);
-  line-height: 1.5;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 1.5;
 }
 
 .user-id {
-  font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.65);
-  line-height: 1.5;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 1.5;
 }
 
 .right-card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 25rem;
-  height: 15rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 25rem;
+    height: 15rem;
 }
 
 .right-card-bottom {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .r1css {
-  color: rgba(60, 60, 67, 0.6);
-  font-size: 12px;
-  line-height: 17px;
-  margin-bottom: 2px;
+    color: rgba(60, 60, 67, 0.6);
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-bottom: 0.2rem;
 }
 
 .r2css {
-  margin-top: 0.5rem;
-  font-weight: 600;
-  line-height: 100%;
-  white-space: nowrap;
-  color: rgb(38, 38, 38);
-  font-size: 22px;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    line-height: 100%;
+    white-space: nowrap;
+    color: rgb(38, 38, 38);
+    font-size: 22px;
 }
 
 .r3css {
-  color: rgba(60, 60, 67, 0.6);
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 17px;
-  margin-bottom: 2px;
-  white-space: nowrap;
+    color: rgba(60, 60, 67, 0.6);
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    margin-bottom: 0.2rem;
+    white-space: nowrap;
 }
 
 .r4css {
-  color: rgba(38, 38, 38, 0.75);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 100%;
-  white-space: nowrap;
+    color: rgba(38, 38, 38, 0.75);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    white-space: nowrap;
 }

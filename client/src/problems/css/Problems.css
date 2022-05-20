@@ -1,20 +1,20 @@
 .problem-container,
 .compiler-container {
-  flex-basis: 50%;
+    flex-basis: 50%;
 }
 
 .problem-title {
-  font-weight: 500;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
 }
 
 .problem-difficulty {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  line-height: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
 }
 
 .problem-description {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }

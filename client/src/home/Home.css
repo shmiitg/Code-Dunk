@@ -3,22 +3,22 @@ Left Side
 */
 
 .home-problem-card {
-  position: relative;
-  padding: 3rem 0;
-  border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    padding: 3rem 0;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .home-problem-title {
-  font-size: 14pt;
-  font-weight: 500;
-  color: var(--clr-black);
+    font-size: 1.86rem;
+    font-weight: 500;
+    color: var(--clr-black);
 }
 
 .home-problem-statement {
-  margin-top: 1rem;
-  letter-spacing: 0.016rem;
-  font-size: 11pt;
-  color: #989898;
+    margin-top: 1rem;
+    letter-spacing: 0.16px;
+    font-size: 1.46rem;
+    color: #989898;
 }
 
 /* 
@@ -26,48 +26,48 @@ Right Container
 */
 
 .home-article-card {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  padding-right: 3.5rem;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-right: 3.5rem;
 }
 
 .home-link-card {
-  display: flex;
-  gap: 2rem;
-  padding: 0.7rem 1rem;
-  align-items: center;
-  cursor: pointer;
-  margin-bottom: 1rem;
-  border-radius: 3px;
+    display: flex;
+    gap: 2rem;
+    padding: 0.7rem 1rem;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
 }
 
 .home-link-card:hover {
-  background: #ececec;
-  transition: 0.3s ease-in;
+    background: #ececec;
+    transition: 0.3s ease-in;
 }
 
 .home-article-card-title,
 .home-link-card-title {
-  line-height: 1.4;
-  font-weight: 500;
-  font-size: 1.7rem;
-  color: var(--clr-black);
+    line-height: 1.4;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: var(--clr-black);
 }
 
 .home-article-card-left {
-  font-size: 3.25rem;
-  color: #989898;
+    font-size: 3.25rem;
+    color: #989898;
 }
 
 .home-link-card-left {
-  display: flex;
-  font-size: 2.5rem;
-  color: #454545;
+    display: flex;
+    font-size: 2.5rem;
+    color: #454545;
 }
 
 .home-article-card-date {
-  font-size: 10pt;
-  color: #6d6d6d;
-  margin-top: 2px;
+    font-size: 1.3rem;
+    color: #6d6d6d;
+    margin-top: 0.2rem;
 }

@@ -1,56 +1,56 @@
 .problem-list-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .problems-table-container {
-  margin-top: 3rem;
+    margin-top: 3rem;
 }
 
 .problem-title a {
-  color: #000;
-  font-weight: 400;
+    color: #000;
+    font-weight: 400;
 }
 
 .problem-title a:hover {
-  color: #4862b9;
+    color: #4862b9;
 }
 
 .problem-checkbox input {
-  width: 1.5rem;
+    width: 1.5rem;
 }
 
 .table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .table .first-col {
-  width: 55%;
+    width: 55%;
 }
 
 .table thead {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 3px 0 rgb(0, 0, 0, 8%);
-  text-align: left;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.3rem 0.3rem 0 rgb(0, 0, 0, 8%);
+    text-align: left;
 }
 
 .table th {
-  color: #000000a6;
-  font-weight: bold;
-  padding: 5px 2rem;
+    color: #000000a6;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
 }
 
 .table td {
-  padding: 12px 2rem;
+    padding: 1.2rem 2rem;
 }
 
 .cssbdr {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 tbody :last-child {
-  border-bottom: none;
-  font-size: 1.45rem;
+    border-bottom: none;
+    font-size: 1.45rem;
 }

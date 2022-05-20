@@ -1,49 +1,49 @@
 .form-container {
-  max-width: 38rem;
-  margin: 3rem auto;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    max-width: 38rem;
+    margin: 3rem auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
 }
 
 .form-logo {
-  width: 15rem;
-  margin: 0 auto 3.5rem;
+    width: 15rem;
+    margin: 0 auto 3.5rem;
 }
 
 .form-logo img {
-  width: 100%;
+    width: 100%;
 }
 
 .form-fields {
-  margin-bottom: 1.75rem;
+    margin-bottom: 1.75rem;
 }
 
 input,
 button {
-  padding: 9px 13px;
-  line-height: 1.4;
-  border-radius: 3px;
-  font-size: inherit;
-  font-family: inherit;
+    padding: 0.9rem 1.3rem;
+    line-height: 1.4;
+    border-radius: 0.3rem;
+    font-size: inherit;
+    font-family: inherit;
 }
 
 .btn-account {
-  background: #455a64;
-  border: 1px solid #b0bec5;
-  color: #fff;
-  transition: 0.2s all ease-in-out;
-  outline: 0;
-  cursor: pointer;
+    background: #455a64;
+    border: 1px solid #b0bec5;
+    color: #fff;
+    transition: 0.2s all ease-in-out;
+    outline: 0;
+    cursor: pointer;
 }
 
 .btn-account:focus {
-  box-shadow: 0 0 5px #51cbee;
+    box-shadow: 0 0 0.5rem #51cbee;
 }
 
 .account-toggle {
-  margin-top: 1.75rem;
-  display: flex;
-  justify-content: space-between;
+    margin-top: 1.75rem;
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,46 +1,46 @@
 .company-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
 }
 
 .company-card {
-  width: 20rem;
-  border-radius: 5px;
-  border-top: 3px solid #008181;
-  box-shadow: 0 30px 40px -20px #a3a5ae;
-  padding: 2.5rem;
-  margin: 2rem;
-  transition: 0.4s ease;
+    width: 20rem;
+    border-radius: 0.5rem;
+    border-top: 0.3rem solid #008181;
+    box-shadow: 0 3rem 4rem --2rem #a3a5ae;
+    padding: 2.5rem;
+    margin: 2rem;
+    transition: 0.4s ease;
 }
 
 .company-card:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .company-card a {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .company-name {
-  font-weight: 500;
-  color: #4c4e61;
-  font-size: 1.9rem;
-  letter-spacing: 0.8px;
+    font-weight: 500;
+    color: #4c4e61;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
 }
 
 .company-problems {
-  font-size: 1.6rem;
-  color: #a3a5ae;
+    font-size: 1.6rem;
+    color: #a3a5ae;
 }
 
 .company-logo {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .company-logo img {
-  width: 4rem;
+    width: 4rem;
 }

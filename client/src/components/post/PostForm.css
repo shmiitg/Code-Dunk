@@ -1,26 +1,26 @@
 .post-form-field {
-  margin: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
 .post-form-field input,
 .post-form-field textarea {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .post-form-field > textarea {
-  font: inherit;
-  min-height: 15rem;
-  resize: none;
-  overflow: hidden;
-  border: 1px solid #cfd8dc;
-  color: #546e7a;
-  padding: 9px 13px;
-  border-radius: 3px;
+    font: inherit;
+    min-height: 15rem;
+    resize: none;
+    overflow: hidden;
+    border: 1px solid #cfd8dc;
+    color: #546e7a;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.3rem;
 }
 
 .post-form-field > label {
-  font-size: 1.75rem;
+    font-size: 1.75rem;
 }
