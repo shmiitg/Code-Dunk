@@ -15,7 +15,7 @@ Left Side
     justify-content: space-evenly;
 }
 
-@media (max-width: 864px) {
+@media (max-width: 900px) {
     .home__container {
         margin-top: 10rem;
     }
@@ -73,7 +73,8 @@ Right Container
 .home-link-card-title {
     line-height: 1.4;
     font-weight: 500;
-    font-size: 1.78rem;
+    /* font-size: 1.78rem; */
+    font-size: min(1.78rem, max(1.8vw, 1.65rem));
     letter-spacing: 0.3px;
     color: var(--clr-black);
 }

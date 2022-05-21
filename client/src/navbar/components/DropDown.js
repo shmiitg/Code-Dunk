@@ -8,7 +8,7 @@ import { FaUserCircle } from "react-icons/fa";
 const DropDown = () => {
     const navigate = useNavigate();
     const [dropDown, setDropDown] = useState(false);
-    const { userName, setUserName, setUserLoggedIn } = useContext(UserContext);
+    const { userName, setUserName } = useContext(UserContext);
 
     const logOut = async () => {
         const res = await fetch("/auth/logout");
@@ -16,8 +16,7 @@ const DropDown = () => {
         if (res.status === 200) {
             setDropDown((prev) => !prev);
             navigate("/login");
-            setUserName("Account");
-            setUserLoggedIn(false);
+            setUserName(null);
         } else {
             window.alert(data.error);
         }

@@ -46,7 +46,7 @@ function App() {
         fetchData();
     }, [userName]);
 
-    if (loading) return <></>;
+    // if (loading) return <></>;
     return (
         <div className="App">
             <Router>
@@ -62,7 +62,7 @@ function App() {
                     <Route path="/interviews" element={<Interview />}></Route>
                     <Route path="/interview/new" element={<InterviewForm />}></Route>
                     <Route path="/interview/read/:id" element={<ReadInterview />}></Route>
-                    <Route path="/interview/edit" element={<InterviewEdit />}></Route>
+                    <Route path="/interview/edit/:id" element={<InterviewEdit />}></Route>
                     {/* Authentication */}
                     <Route path="/login" element={userName ? <Navigate to="/" /> : <Login />} />
                     <Route
@@ -79,7 +79,7 @@ function App() {
                     <Route path="/blogs" element={<Blog />}></Route>
                     <Route path="/blog/new" element={<BlogForm />}></Route>
                     <Route path="/blog/read/:id" element={<ReadBlog />}></Route>
-                    <Route path="/blog/edit" element={<BlogEdit />}></Route>
+                    <Route path="/blog/edit/:id" element={<BlogEdit />}></Route>
                     {/* Companies */}
                     <Route path="/companies" element={<Companies />}></Route>
                     {/* Error */}

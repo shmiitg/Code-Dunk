@@ -1,19 +1,29 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './ReadMoreProblem.css';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./ReadMoreProblem.css";
 
 const ReadMoreProblem = ({ title, difficulty, description, link }) => {
-
+    const [mobile, setMobile] = useState(false);
     const readMore = (description) => {
-        let desc = '';
-        let whiteSpace = 0;
-        for (let i = 0; i < description.length; i++) {
-            if (description[i] === ' ') whiteSpace++;
-            if (whiteSpace === 30) return desc;
-            desc += description[i];
+        let desc = description.slice(0, 250);
+        if (window.innerWidth <= 550) {
+            desc = description.slice(0, 150);
         }
+        desc += "...";
         return desc;
-    }
+    };
+
+    const setMobileView = () => {
+        if (window.innerWidth <= 550) {
+            setMobile(true);
+        } else {
+            setMobile(false);
+        }
+    };
+    useEffect(() => {
+        window.addEventListener("resize", setMobileView);
+        return () => window.removeEventListener("resize", setMobileView);
+    }, [mobile]);
 
     return (
         <div className="problem-rm-card">
@@ -22,10 +32,13 @@ const ReadMoreProblem = ({ title, difficulty, description, link }) => {
                 <div className="problem-rm-difficulty">{difficulty}</div>
             </div>
             <div className="problem-rm-2">
-                <div className="problem-rm-description">{readMore(description) + '...'} <Link to={link}>Read More</Link></div>
+                <div className="problem-rm-description">
+                    {readMore(description)}
+                    <Link to={link}> Read More</Link>
+                </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ReadMoreProblem
+export default ReadMoreProblem;

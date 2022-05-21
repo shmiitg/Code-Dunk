@@ -4,12 +4,16 @@
 }
 
 .read-post-title {
-    font-size: 3.75rem;
+    /* font-size: 3.75rem; */
+    font-size: min(3.7rem, max(4vw, 2.5rem));
     font-weight: 400;
+    letter-spacing: 0.3px;
+    color: #273239;
 }
 
 .read-post-desc {
-    font-size: 2.15rem;
+    /* font-size: 2.15rem; */
+    font-size: min(2.15rem, max(2.3vw, 1.75rem));
     margin-top: 1rem;
     color: rgba(0, 0, 0, 0.5);
     font-weight: 400;
@@ -20,7 +24,7 @@
     justify-content: space-between;
     font-size: 1.5rem;
     font-weight: 400;
-    margin-top: 1.5rem;
+    margin-top: 2.25rem;
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -35,13 +39,18 @@
     font-size: 2.25rem;
 }
 
+.post-edit {
+    color: var(--clr-primary);
+}
+
 .read-post-info-right svg {
     cursor: pointer;
 }
 
 .read-post-author a {
     font-size: inherit;
-    color: var(--clr-black);
+    color: var(--clr-primary);
+    font-weight: 500;
 }
 
 .read-post-author a:hover {
@@ -54,15 +63,18 @@
 
 .read-post-content {
     margin-top: 3rem;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: min(2rem, max(1.15vw, 1.5rem));
     font-weight: 400;
     min-height: max-content;
     display: flex;
     flex-direction: column;
+    letter-spacing: 0.1px;
 }
 
 .post-lines {
     line-height: 2.8rem;
+    color: #393f3e;
 }
 
 .line-break {
