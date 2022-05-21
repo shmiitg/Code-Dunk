@@ -1,12 +1,18 @@
-import React from 'react';
-import './Loading.css';
+import React from "react";
+import "./Loading.css";
 
 const Loading = () => {
     return (
-        <div className="container">
-            <div className="loading-msg">Loading</div>
+        <div className="loader__container">
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Loading
+export default Loading;

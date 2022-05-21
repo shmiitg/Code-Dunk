@@ -9,17 +9,17 @@ const ProblemsMain = () => {
     const fetchData = async () => {
         const res = await fetch("/api/problems");
         const data = await res.json();
-        setLoading(false);
         if (res.status === 200 && data.problems.length >= 3) {
             setProblems([data.problems[0], data.problems[1], data.problems[2]]);
         }
+        setLoading(false);
     };
 
     useEffect(() => {
         fetchData();
     }, []);
 
-    if (loading) return <Loading />;
+    // if (loading) return <Loading />;
     return (
         <div className="main-card">
             {problems.map((problem, index) => (
