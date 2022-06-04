@@ -65,6 +65,8 @@
 
 .profile-svg svg {
     margin-top: 2px;
+    font-size: 1.7rem;
+    color: #626262;
 }
 
 .profile-bio {
