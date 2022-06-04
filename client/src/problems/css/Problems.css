@@ -1,6 +1,14 @@
 .problem-container,
 .compiler-container {
-    flex-basis: 50%;
+    flex: 1;
+    min-width: 400px;
+}
+
+@media (max-width: 500px) {
+    .problem-container,
+    .compiler-container {
+        min-width: 250px;
+    }
 }
 
 .problem-title {

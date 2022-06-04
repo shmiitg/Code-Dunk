@@ -59,7 +59,6 @@ const ProblemList = () => {
     return (
         <div className="container">
             <div className="container-lg">
-                {/* <div className={styles["problem__list__container"]}> */}
                 <div className={styles["problem-list-title"]}>{getTopic(topic)} Problems</div>
                 <div className="go-back">
                     <Link to="/problems">

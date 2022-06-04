@@ -1,7 +1,6 @@
 import { UserContext } from "./context/UserContext";
 import { useContext, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-// import UserContextProvider from "./context/UserContext";
 import Navbar from "./navbar/Navbar";
 import Home from "./home/Home";
 import Error from "./error/Error";
@@ -46,7 +45,7 @@ function App() {
         fetchData();
     }, [userName]);
 
-    // if (loading) return <></>;
+    if (loading) return <></>;
     return (
         <div className="App">
             <Router>

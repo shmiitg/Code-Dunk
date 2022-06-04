@@ -9,11 +9,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     padding: 3.5rem 2.5rem;
     height: fit-content;
     max-width: 50rem;
-    min-width: 40rem;
+    min-width: 37rem;
 }
 
 @media (max-width: 600px) {
@@ -22,30 +22,85 @@
     }
 }
 
-.profile-info {
-    text-align: center;
-    margin-bottom: 1.5rem;
+.profile-image img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff, 0 0 10px rgba(0, 0, 0, 0.15);
+    width: 10rem;
 }
 
 .profile-name {
-    color: #4c4e61;
-    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 0.5px;
+    color: #272727;
 }
 
-.profile-location {
-    margin-top: 0.3rem;
-    color: #4c4e61;
+.profile-info {
+    display: flex;
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
 }
 
-.profile-education {
+.profile-fields,
+.profile-svgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-field {
+    color: #828181;
+    font-size: 1.35rem;
+    letter-spacing: 0.75px;
+    height: 2.2rem;
+    margin-left: 5px;
+}
+
+.profile-svg {
+    margin-right: 5px;
+    height: 2.2rem;
+}
+
+.profile-svg svg {
+    margin-top: 2px;
+}
+
+.profile-bio {
+    color: #a7a9ab;
     font-size: 1.4rem;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    color: #4c4e61;
-    text-align: center;
+    line-height: 2.5rem;
+    letter-spacing: 0.2px;
+    margin: 1rem 0 1.5rem;
 }
+
+.profile-social-heading {
+    color: #828281;
+}
+
+.profile-social-icons {
+    display: flex;
+    margin-top: 1.25rem;
+    justify-content: space-evenly;
+}
+
+.profile-social-icons a {
+    color: #828281;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    border: 1px solid #bebebe;
+    border-radius: 50%;
+}
+
+.profile-social-icons svg {
+    font-size: 1.75rem;
+}
+
+/* Problems */
 
 .profile-problems {
     display: flex;
@@ -75,9 +130,4 @@
     height: 0.5rem;
     background: #fafafa;
     margin: 2.5rem 0;
-}
-
-.profile-bio {
-    font-size: 1.3rem;
-    color: #4c4e61;
 }

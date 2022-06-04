@@ -4,7 +4,7 @@ import "./Loading.css";
 const Loading = () => {
     return (
         <div className="loader__container">
-            <div class="loader">
+            <div className="loader">
                 <span></span>
                 <span></span>
                 <span></span>

@@ -23,7 +23,6 @@ router.post("/user/edit", verifyJWT, async (req, res) => {
             birthday: birthday,
             location: location,
         });
-        console.log(user);
         req.user = user;
         res.status(200).json({ msg: "Details saved successfully" });
     } catch (err) {
