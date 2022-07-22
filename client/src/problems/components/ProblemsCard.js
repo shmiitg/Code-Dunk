@@ -1,25 +1,24 @@
 import { Link } from "react-router-dom";
-import { slug } from "../../utils/Slug";
 import styles from "./ProblemCard.module.css";
 
-const ProblemsCard = ({ problem }) => {
+const ProblemsCard = ({ topic }) => {
     return (
-        <Link to={`/problems/${slug(problem.topic)}`} className={styles["problem-card"]}>
+        <Link to={`/problems/${topic.unique_link}`} className={styles["problem-card"]}>
             <div className={styles["problem-card-top"]}>
-                <div className={styles["problem-topic"]}>{problem.topic}</div>
+                <div className={styles["problem-topic"]}>{topic.title}</div>
                 <div className={styles["problem-question-count"]}>
-                    Total questions: <span>{problem.questions.length}</span>
+                    Total questions: <span>{topic.problems.length}</span>
                 </div>
             </div>
             <div className={styles["problem-progress"]}>
-                {problem.solved ? (
-                    problem.solved === problem.questions.length ? (
+                {topic.solved ? (
+                    topic.solved === topic.problems.length ? (
                         "Completed"
                     ) : (
                         <div className={styles["bar"]}>
                             <div
                                 style={{
-                                    width: `${(problem.solved * 100) / problem.questions.length}%`,
+                                    width: `${(topic.solved * 100) / topic.problems.length}%`,
                                 }}
                                 className={styles["current-bar"]}
                             ></div>

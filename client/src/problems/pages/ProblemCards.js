@@ -5,49 +5,37 @@ import styles from "../css/ProblemCards.module.css";
 
 const ProblemCards = () => {
     const [loading, setLoading] = useState(true);
-    const [problems, setProblems] = useState([]);
+    const [topics, setTopics] = useState([]);
+
+    function intersect(a, b) {
+        const setB = new Set(b);
+        const intersection = [...new Set(a)].filter((x) => setB.has(x));
+        return intersection.length;
+    }
 
     const fetchData = async () => {
-        const res = await fetch("/api/problems");
-        const userProbs = await fetch("/api/problems/user");
+        const res = await fetch("/api/topics");
         const data = await res.json();
+        const userProbs = await fetch("/api/problems/user");
         const userData = await userProbs.json();
-        let probsDone = 0;
 
-        if (res.status === 200 && userProbs.status === 200) {
-            const probs = [];
-            data.problems.forEach((problem) => {
-                const idx = probs.map((obj) => obj.topic).indexOf(problem.topic);
-                if (idx === -1) {
-                    probs.push({
-                        topic: problem.topic,
-                        questions: [{ title: problem.title, link: problem.link }],
-                        solved: 0,
-                    });
-                    userData.problems.includes(problem._id) && probs[probs.length - 1].solved++;
-                } else {
-                    probs[idx].questions.push({ title: problem.title, link: problem.link });
-                    userData.problems.includes(problem._id) && probs[idx].solved++;
-                }
-                userData.problems.includes(problem._id) && probsDone++;
+        const tops = [];
+        if (res.status === 200) {
+            data.topics.forEach((topic) => {
+                tops.push({
+                    title: topic.title,
+                    problems: topic.problems,
+                    unique_link: topic.unique_link,
+                    solved: 0,
+                });
             });
-            setProblems(probs);
-        } else if (res.status === 200) {
-            const probs = [];
-            data.problems.forEach((problem) => {
-                const idx = probs.map((obj) => obj.topic).indexOf(problem.topic);
-                if (idx === -1) {
-                    probs.push({
-                        topic: problem.topic,
-                        questions: [{ title: problem.title, link: problem.link }],
-                        solved: 0,
-                    });
-                } else {
-                    probs[idx].questions.push({ title: problem.title, link: problem.link });
-                }
-            });
-            setProblems(probs);
         }
+        if (userProbs.status === 200) {
+            for (let i = 0; i < tops.length; i++) {
+                tops[i].solved = intersect(userData.problems, tops[i].problems);
+            }
+        }
+        setTopics(tops);
         setLoading(false);
     };
 
@@ -60,8 +48,8 @@ const ProblemCards = () => {
         <div className="container">
             <div className="small-container">
                 <div className={styles["problem-card-container"]}>
-                    {problems.map((problem, index) => (
-                        <ProblemsCard key={index} problem={problem} />
+                    {topics.map((topic, index) => (
+                        <ProblemsCard key={index} topic={topic} />
                     ))}
                 </div>
             </div>

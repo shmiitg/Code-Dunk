@@ -8,7 +8,8 @@ import styles from "../css/ProblemList.module.css";
 const ProblemList = () => {
     const [loading, setLoading] = useState(true);
     const [problems, setProblems] = useState([]);
-    const [userProblems, setUserProblems] = useState([]);
+    const [topicName, setTopicName] = useState("");
+    const [userProblems, setUserProblems] = useState(new Set());
     const { pathname } = useLocation();
     const topic = pathname.split("/")[2];
 
@@ -17,8 +18,13 @@ const ProblemList = () => {
         const userRes = await fetch("/user/info");
         const data = await res.json();
         const userData = await userRes.json();
-        res.status === 200 && setProblems(data.problems);
-        userRes.status === 200 && setUserProblems(userData.user.problems);
+        if (res.status === 200) {
+            setTopicName(data.topic);
+            setProblems(data.problems);
+        }
+        if (userRes.status === 200) {
+            setUserProblems(new Set(userData.user.problems));
+        }
         setLoading(false);
     };
 
@@ -26,40 +32,34 @@ const ProblemList = () => {
         const res = await fetch("/api/problems/user/edit", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ problems: userProblems }),
+            body: JSON.stringify({ problems: [...userProblems] }),
         });
         res.status !== 200 && window.alert("Login to continue");
     };
 
     const handleCheck = (id) => {
-        const idx = userProblems.indexOf(id);
         let probs = userProblems;
-        idx === -1 ? probs.push(id) : probs.splice(idx, 1);
+        if (probs.has(id)) {
+            probs.delete(id);
+        } else {
+            probs.add(id);
+        }
         setUserProblems(probs);
+        setProblems((prev) => prev.concat({}));
+        setProblems((prev) => prev.slice(0, -1));
         editProblems();
     };
 
-    function getTopic(topic) {
-        topic = topic.replace("-", " ");
-        let top = "";
-        for (let i = 0; i < topic.length; i++) {
-            if (i === 0) top += topic[i].toUpperCase();
-            else if (topic[i - 1] === " ") top += topic[i].toUpperCase();
-            else top += topic[i];
-        }
-        return top;
-    }
-
     useEffect(() => {
         fetchData();
-    }, [userProblems]);
+    }, []);
 
     if (loading) return <Loading />;
     if (problems.length === 0) return <Error />;
     return (
         <div className="container">
             <div className="container-lg">
-                <div className={styles["problem-list-title"]}>{getTopic(topic)} Problems</div>
+                <div className={styles["problem-list-title"]}>{topicName} Problems</div>
                 <div className="go-back">
                     <Link to="/problems">
                         <IoCaretBack />
@@ -84,16 +84,14 @@ const ProblemList = () => {
                                         <Link to={"/problem/" + problem.link}>{problem.title}</Link>
                                     </td>
                                     <td className={styles["problem-status"]}>
-                                        {userProblems.includes(problem._id)
-                                            ? "Completed"
-                                            : "Incomplete"}
+                                        {userProblems.has(problem._id) ? "Completed" : "Incomplete"}
                                     </td>
                                     <td className={styles["problem-checkbox"]}>
                                         <input
                                             onChange={() => handleCheck(problem._id)}
                                             type="checkbox"
                                             value={problem._id}
-                                            checked={userProblems.includes(problem._id)}
+                                            checked={userProblems.has(problem._id)}
                                         />
                                     </td>
                                 </tr>
@@ -102,7 +100,6 @@ const ProblemList = () => {
                     </table>
                 </div>
             </div>
-            {/* </div> */}
         </div>
     );
 };

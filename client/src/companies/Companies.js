@@ -12,17 +12,7 @@ const Companies = () => {
         const res = await fetch("/api/companies");
         const data = await res.json();
         if (res.status === 200) {
-            let companiesMap = [];
-            data.companies.forEach((company) => {
-                const idx = companiesMap.map((e) => e.name).indexOf(company);
-                if (idx === -1) {
-                    companiesMap.push({ name: company, questions: 1 });
-                } else {
-                    companiesMap[idx].questions += 1;
-                }
-            });
-            companiesMap = companiesMap.sort((a, b) => b.questions - a.questions);
-            setCompanies(companiesMap);
+            setCompanies(data.companies);
         }
         setLoading(false);
     };
@@ -39,10 +29,10 @@ const Companies = () => {
                     <Link
                         key={index}
                         className={styles["company-card"]}
-                        to={`/problems/company/${company.name}`}
+                        to={`/problems/company/${company.unique_link}`}
                     >
                         <div className={styles["company-name"]}>{company.name}</div>
-                        <div className={styles["company-problems"]}>{company.questions}</div>
+                        <div className={styles["company-problems"]}>{company.problems?.length}</div>
                         <div className={styles["company-logo"]}>
                             <img src={logo} alt="icon" />
                         </div>
