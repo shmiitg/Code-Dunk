@@ -28,26 +28,30 @@ const ProblemList = () => {
         setLoading(false);
     };
 
-    const editProblems = async () => {
+    const editProblems = async (probs) => {
         const res = await fetch("/api/problems/user/edit", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ problems: [...userProblems] }),
+            body: JSON.stringify({ problems: [...probs] }),
         });
-        res.status !== 200 && window.alert("Login to continue");
+        return res.status;
     };
 
-    const handleCheck = (id) => {
+    const handleCheck = async (id) => {
         let probs = userProblems;
         if (probs.has(id)) {
             probs.delete(id);
         } else {
             probs.add(id);
         }
-        setUserProblems(probs);
-        setProblems((prev) => prev.concat({}));
-        setProblems((prev) => prev.slice(0, -1));
-        editProblems();
+        let editStatus = await editProblems(probs);
+        if (editStatus === 200) {
+            setUserProblems(probs);
+            setProblems((prev) => prev.concat({}));
+            setProblems((prev) => prev.slice(0, -1));
+        } else {
+            window.alert("Login to continue...");
+        }
     };
 
     useEffect(() => {
