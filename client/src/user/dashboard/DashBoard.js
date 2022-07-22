@@ -25,17 +25,20 @@ const Dashboard = () => {
     const fetchData = async () => {
         const username = search.split("=")[1];
         const resUser = await fetch(`/api/profile/dashboard?user=${username}`);
+        if (resUser.status === 404) {
+            setLoading(false);
+            setError(true);
+            return;
+        }
         const dataUser = await resUser.json();
         const resProblems = await fetch("/api/problems");
         const dataProblems = await resProblems.json();
 
         if (resUser.status === 200 && resProblems.status === 200) {
             setUserData(dataUser.user);
-            setProblemsData(dataUser.problemsDifficulty);
-            setDone(dataUser.problemsDone.length);
+            setProblemsData(dataUser.probs);
+            setDone(dataUser.done);
             setTotal(dataProblems.problems.length);
-        } else if (resUser.status === 404) {
-            setError(true);
         } else {
             navigate("/");
         }

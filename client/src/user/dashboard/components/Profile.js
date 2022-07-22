@@ -3,17 +3,17 @@ import styles from "./Profile.module.css";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaGraduationCap, FaGithub } from "react-icons/fa";
 
-const Profile = ({ name, location, education }) => {
+const Profile = ({ name, username, location, education }) => {
     return (
         <div className={styles["profile-container"]}>
             <div className={styles["profile-card"]}>
                 <div className={styles["profile-image"]}>
                     <img
-                        src={`https://avatars.dicebear.com/api/open-peeps/${name}.svg`}
+                        src={`https://avatars.dicebear.com/api/open-peeps/${username}.svg`}
                         alt="avatar"
                     />
                 </div>
-                <div className={styles["profile-name"]}>{name}</div>
+                <div className={styles["profile-name"]}>{name ? name : "Not avaiable"}</div>
                 <div className={styles["profile-info"]}>
                     <div className={styles["profile-svgs"]}>
                         <div className={styles["profile-svg"]}>
@@ -24,8 +24,12 @@ const Profile = ({ name, location, education }) => {
                         </div>
                     </div>
                     <div className={styles["profile-fields"]}>
-                        <div className={styles["profile-field"]}>{location}</div>
-                        <div className={styles["profile-field"]}>{education}</div>
+                        <div className={styles["profile-field"]}>
+                            {location ? location : "Not avaiable"}
+                        </div>
+                        <div className={styles["profile-field"]}>
+                            {education ? education : "Not avaiable"}
+                        </div>
                     </div>
                 </div>
                 <div className={styles["profile-bio"]}>
