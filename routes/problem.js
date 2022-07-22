@@ -27,6 +27,27 @@ router.get("/problems/random/:count", async (req, res) => {
     }
 });
 
+// upvote problems
+router.put("/problems/upvote/:link", verifyJWT, async (req, res) => {
+    try {
+        const link = req.params.link;
+        const userId = req.user._id;
+        let problem = await Problem.findOne({ link });
+        let upvotes = problem.upvotes;
+        let upvote = 0;
+        if (upvotes.includes(userId)) {
+            upvotes = upvotes.filter((id) => id.toString() !== userId.toString());
+        } else {
+            upvotes.push(userId);
+            upvote = 1;
+        }
+        problem = await Problem.findByIdAndUpdate(problem._id, { upvotes }, { new: true });
+        res.status(200).json({ upvote: upvote, upvoteCount: problem.upvotes.length });
+    } catch (err) {
+        res.status(500).json({ error: "Some error occured" });
+    }
+});
+
 // get problems solved by user
 router.get("/problems/user", verifyJWT, async (req, res) => {
     try {

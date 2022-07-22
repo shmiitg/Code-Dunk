@@ -27,17 +27,22 @@ import BlogEdit from "./blog/BlogEdit";
 // Dashboard
 import DashBoard from "./user/dashboard/DashBoard";
 import EditProfile from "./user/editprofile/EditProfile";
+// Loading
+import LoadingMain from "./loading/LoadingMain";
 
 function App() {
     const { userName, setUserName } = useContext(UserContext);
+    const { setUserId } = useContext(UserContext);
     const [loading, setLoading] = useState(true);
     const fetchData = async () => {
         const res = await fetch("/user/info");
         const data = await res.json();
         if (res.status === 200) {
             setUserName(data.user.username);
+            setUserId(data.user._id);
         } else {
             setUserName(null);
+            setUserId(null);
         }
         setLoading(false);
     };
@@ -45,7 +50,7 @@ function App() {
         fetchData();
     }, [userName]);
 
-    if (loading) return <></>;
+    if (loading) return <LoadingMain />;
     return (
         <div className="App">
             <Router>

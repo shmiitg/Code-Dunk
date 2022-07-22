@@ -1,4 +1,5 @@
 const express = require("express");
+const Problem = require("../models/problem");
 const Topic = require("../models/topic");
 const router = express.Router();
 
@@ -11,30 +12,28 @@ router.get("/topics", async (req, res) => {
     }
 });
 
-// const slugify = (str) =>
-//     str
-//         .toLowerCase()
-//         .trim()
-//         .replace(/[^\w\s-]/g, "")
-//         .replace(/[\s_-]+/g, "-")
-//         .replace(/^-+|-+$/g, "");
+const slugify = (str) =>
+    str
+        .toLowerCase()
+        .trim()
+        .replace(/[^\w\s-]/g, "")
+        .replace(/[\s_-]+/g, "-")
+        .replace(/^-+|-+$/g, "");
 
-// async function pushCompanies() {
-//     const problems = await Problem.find();
-//     let mp = {};
-//     problems.forEach((problem) => {
-//         mp[problem.topic] = [];
-//     });
-//     problems.forEach((problem) => {
-//         mp[problem.topic].push(problem._id.toString());
-//     });
-//     for (const key in mp) {
-//         const slug = slugify(key);
-//         const topic = new Topic({ title: key, problems: mp[key], unique_link: slug });
-//         await topic.save();
-//     }
-// }
-
-// pushCompanies();
+async function pushTopics() {
+    const problems = await Problem.find();
+    let mp = {};
+    problems.forEach((problem) => {
+        mp[problem.topic] = [];
+    });
+    problems.forEach((problem) => {
+        mp[problem.topic].push(problem._id);
+    });
+    for (const key in mp) {
+        const slug = slugify(key);
+        const topic = new Topic({ title: key, problems: mp[key], unique_link: slug });
+        await topic.save();
+    }
+}
 
 module.exports = router;

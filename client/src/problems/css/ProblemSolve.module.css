@@ -14,3 +14,21 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 1.25rem;
 }
+
+.problem-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+.problem-upvote {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.problem-upvote svg {
+    cursor: pointer;
+}
