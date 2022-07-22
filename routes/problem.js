@@ -16,6 +16,17 @@ router.get("/problems", async (req, res) => {
     }
 });
 
+//get random problems with certain count
+router.get("/problems/random/:count", async (req, res) => {
+    try {
+        const count = Number(req.params.count);
+        const problems = await Problem.aggregate([{ $sample: { size: count } }]);
+        res.status(200).json({ problems: problems });
+    } catch (err) {
+        res.status(500).json({ error: "Some error occured" });
+    }
+});
+
 // get problems solved by user
 router.get("/problems/user", verifyJWT, async (req, res) => {
     try {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Loading from "../../loading/Loading";
+import ProblemsLoading from "../../loading/ProblemsLoading";
 import ReadMoreProblem from "../../components/ReadMoreProblem";
 
 const ProblemsMain = () => {
@@ -7,10 +7,12 @@ const ProblemsMain = () => {
     const [problems, setProblems] = useState([]);
 
     const fetchData = async () => {
-        const res = await fetch("/api/problems");
+        const problemsCount = 3;
+        //get 3 random problems
+        const res = await fetch(`/api/problems/random/${problemsCount}`);
         const data = await res.json();
-        if (res.status === 200 && data.problems.length >= 3) {
-            setProblems([data.problems[0], data.problems[1], data.problems[2]]);
+        if (res.status === 200) {
+            setProblems(data.problems);
         }
         setLoading(false);
     };
@@ -19,9 +21,9 @@ const ProblemsMain = () => {
         fetchData();
     }, []);
 
-    // if (loading) return <Loading />;
     return (
         <div className="main-card">
+            {loading && [1, 2, 3].map((n) => <ProblemsLoading key={n} />)}
             {problems.map((problem, index) => (
                 <ReadMoreProblem
                     key={index}
