@@ -5,10 +5,12 @@ const schema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    problems: {
-        type: Array,
-        required: true,
-    },
+    problems: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "problem",
+        },
+    ],
     unique_link: {
         type: String,
         required: true,
