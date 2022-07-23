@@ -27,6 +27,24 @@ router.get("/problems/random/:count", async (req, res) => {
     }
 });
 
+router.get("/problems/most_liked/:count", async (req, res) => {
+    try {
+        const count = Number(req.params.count);
+        let problems = await Problem.find();
+        problems.sort((a, b) => {
+            if (a.upvotes.length !== b.upvotes.length) {
+                return b.upvotes.length - a.upvotes.length;
+            } else {
+                return b.createdAt - a.createdAt;
+            }
+        });
+        problems = problems.slice(0, count);
+        res.status(200).json({ problems: problems });
+    } catch (err) {
+        res.status(500).json({ error: "Some error occured" });
+    }
+});
+
 // upvote problems
 router.put("/problems/upvote/:link", verifyJWT, async (req, res) => {
     try {

@@ -1,5 +1,6 @@
 import React from "react";
 import ProblemsMain from "./components/ProblemsMain";
+import FeaturedLists from "./components/FeaturedLists";
 import QuickLinks from "./components/QuickLinks";
 import FeaturedArticles from "./components/FeaturedArticles";
 import "./Home.css";
@@ -14,6 +15,7 @@ const Problems = () => {
                 <div className="sidebar">
                     <QuickLinks />
                     <FeaturedArticles />
+                    <FeaturedLists />
                 </div>
             </div>
         </div>

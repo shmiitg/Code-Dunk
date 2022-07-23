@@ -1,0 +1,11 @@
+.problem-loading-container-main {
+    display: flex;
+    align-items: center;
+    min-height: 9rem;
+}
+
+.problem-loading-container-sm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

@@ -6,8 +6,13 @@
 .skeleton-post-text {
     width: 100%;
     height: 0.8rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     border-radius: 0.4rem;
+}
+
+.skeleton-post-title {
+    height: 1rem;
+    margin-bottom: 1rem;
 }
 
 @keyframes skeleton-loading {
