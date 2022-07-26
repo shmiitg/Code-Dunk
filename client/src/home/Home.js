@@ -13,9 +13,9 @@ const Problems = () => {
                     <ProblemsMain />
                 </div>
                 <div className="sidebar">
-                    <QuickLinks />
-                    <FeaturedArticles />
                     <FeaturedLists />
+                    <FeaturedArticles />
+                    <QuickLinks />
                 </div>
             </div>
         </div>

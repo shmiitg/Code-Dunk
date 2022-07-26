@@ -1,13 +1,17 @@
 import React from "react";
-import { FaEdit } from "react-icons/fa";
-import { RiArticleFill } from "react-icons/ri";
+import { FaAmazon, FaGoogle } from "react-icons/fa";
+import { SiAutoprefixer } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 const FeaturedLists = () => {
     const links = [
-        { title: "100 Most Liked Questions", icon: <RiArticleFill />, address: "/" },
-        { title: "Top Amazon Problems", icon: <FaEdit />, address: "/problems/company/amazon" },
-        { title: "Top Facebook Problems", icon: <FaEdit />, address: "/problems/company/amazon" },
+        {
+            title: "10 Most Liked Questions",
+            icon: <SiAutoprefixer />,
+            address: "/problems/most-liked",
+        },
+        { title: "Top Amazon Problems", icon: <FaAmazon />, address: "/problems/company/amazon" },
+        { title: "Top Google Problems", icon: <FaGoogle />, address: "/problems/company/google" },
     ];
 
     return (

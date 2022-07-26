@@ -9,6 +9,7 @@ import ProblemCards from "./problems/pages/ProblemCards";
 import ProblemList from "./problems/pages/ProblemList";
 import ProblemCompany from "./problems/pages/ProblemCompany";
 import ProblemSolve from "./problems/pages/ProblemSolve";
+import ProblemMostLiked from "./problems/pages/ProblemMostLiked";
 // Companies
 import Companies from "./companies/Companies";
 // Interview
@@ -62,6 +63,7 @@ function App() {
                     <Route path="/problems/:slug" element={<ProblemList />}></Route>
                     <Route path="/problems/company/:slug" element={<ProblemCompany />}></Route>
                     <Route path="/problem/:slug" element={<ProblemSolve />}></Route>
+                    <Route path="/problems/most-liked" element={<ProblemMostLiked />}></Route>
                     {/* Interviews */}
                     <Route path="/interviews" element={<Interview />}></Route>
                     <Route path="/interview/new" element={<InterviewForm />}></Route>

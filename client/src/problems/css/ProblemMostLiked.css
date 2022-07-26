@@ -1,0 +1,8 @@
+.problem-most-liked {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--clr-primary);
+    letter-spacing: 1px;
+    font-weight: 500;
+}

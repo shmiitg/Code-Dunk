@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 import "./Sidebar.css";
 
-export default ({ navLinks }) => {
+const Sidebar = ({ navLinks }) => {
     let location = useLocation();
     location = location.pathname;
 
@@ -28,3 +28,5 @@ export default ({ navLinks }) => {
         </Menu>
     );
 };
+
+export default Sidebar;
