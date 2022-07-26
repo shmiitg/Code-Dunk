@@ -32,18 +32,6 @@ const InterviewForm = () => {
         }
     };
 
-    const checkAuth = async () => {
-        const res = await fetch("/user/info");
-        if (res.status !== 200) {
-            alert("Login to continue");
-            navigate("/login");
-        }
-    };
-
-    useEffect(() => {
-        checkAuth();
-    }, []);
-
     return (
         <PostForm
             name="Share your interview experience"
