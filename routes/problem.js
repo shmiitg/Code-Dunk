@@ -5,6 +5,7 @@ const Company = require("../models/company");
 const Topic = require("../models/topic");
 const verifyJWT = require("../middleware/auth");
 const router = express.Router();
+const problems = require("../scraper/main.json");
 
 // get all problems
 router.get("/problems", async (req, res) => {
@@ -131,5 +132,14 @@ router.get("/problem/:link", async (req, res) => {
         res.status(500).json({ error: "Some error occured" });
     }
 });
+
+async function pushProblems() {
+    for (const problem of problems) {
+        const prob = new Problem(problem);
+        await prob.save();
+    }
+}
+
+// pushProblems();
 
 module.exports = router;

@@ -30,7 +30,7 @@ const ProblemsMain = () => {
                         key={index}
                         title={problem.title}
                         difficulty=""
-                        description={problem.description}
+                        statement={problem.statement}
                         link={`/problem/${problem.link}`}
                     />
                 ))}

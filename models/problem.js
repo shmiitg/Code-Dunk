@@ -10,8 +10,10 @@ const schema = new mongoose.Schema(
         description: {
             type: String,
             required: true,
-            default:
-                "This is only a test description of the problem, not the actual description. The actual description of the problem will be avaiable in the original website which you can see when you visit the link to solve this problem and then click on the solve button",
+        },
+        statement: {
+            type: String,
+            required: true,
         },
         topic: {
             type: String,

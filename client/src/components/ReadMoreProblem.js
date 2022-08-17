@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./ReadMoreProblem.css";
 
-const ReadMoreProblem = ({ title, difficulty, description, link }) => {
+const ReadMoreProblem = ({ title, difficulty, statement, link }) => {
     const [mobile, setMobile] = useState(false);
     const readMore = (description) => {
         let desc = description.slice(0, 250);
@@ -33,7 +33,7 @@ const ReadMoreProblem = ({ title, difficulty, description, link }) => {
             </div>
             <div className="problem-rm-2">
                 <div className="problem-rm-description">
-                    {readMore(description)}
+                    {readMore(statement)}
                     <Link to={link}> Read More</Link>
                 </div>
             </div>

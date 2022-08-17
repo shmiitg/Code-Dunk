@@ -6,6 +6,7 @@ import "../css/Problems.css";
 import Error from "../../error/Error";
 import styles from "../css/ProblemSolve.module.css";
 import { UserContext } from "../../context/UserContext";
+import parse from "html-react-parser";
 
 const ProblemSolve = () => {
     const { pathname } = useLocation();
@@ -21,8 +22,7 @@ const ProblemSolve = () => {
         const res = await fetch(`/api/problem/${problemName}`);
         const data = await res.json();
         if (res.status === 200) {
-            const desc = splitSentence(data.problem.description);
-            setProblem({ ...data.problem, desc });
+            setProblem({ ...data.problem });
             setUpvoteCount(data.problem.upvotes.length);
             if (data.problem.upvotes.includes(userId)) {
                 setUpvote(true);
@@ -47,21 +47,6 @@ const ProblemSolve = () => {
         } else {
             window.alert(data.error);
         }
-    };
-
-    const splitSentence = (str) => {
-        let newStr = [];
-        let curr = "";
-        for (let i = 0; i < str.length; i++) {
-            if (str[i] === "\n") {
-                newStr.push(curr);
-                curr = "";
-            } else {
-                curr += str[i];
-            }
-        }
-        newStr.push(curr);
-        return newStr;
     };
 
     useEffect(() => {
@@ -100,13 +85,7 @@ const ProblemSolve = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="problem-content">
-                            {problem.desc.map((des, idx) => (
-                                <div key={idx} className="problem-description">
-                                    {des}
-                                </div>
-                            ))}
-                        </div>
+                        <div className="problem-content">{parse(problem.description)}</div>
                     </div>
                 </div>
                 <Compiler />

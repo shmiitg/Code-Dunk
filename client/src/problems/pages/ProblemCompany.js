@@ -43,7 +43,7 @@ const CompanyProblems = () => {
                         <ReadMoreProblem
                             key={index}
                             title={problem.title}
-                            description={problem.description}
+                            statement={problem.statement}
                             difficulty={problem.difficulty}
                             link={`/problem/${problem.link}`}
                         />
